@@ -26,6 +26,9 @@
 		</Item>
 		<Item Name="PhotonPipelineResult" Type="Folder">
 			<Item Name="PhotonPipelineResult_CreateFromPacket.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_CreateFromPacket.vi"/>
+			<Item Name="PhotonPipelineResult_GetBestTarget.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetBestTarget.vi"/>
+			<Item Name="PhotonPipelineResult_GetLatency_Millis.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetLatency_Millis.vi"/>
+			<Item Name="PhotonPipelineResult_HasTargets.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_HasTargets.vi"/>
 		</Item>
 		<Item Name="PhotonTrackedTarget" Type="Folder">
 			<Item Name="PhotonTrackedTarget_CreateFromPacket.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_CreateFromPacket.vi"/>
