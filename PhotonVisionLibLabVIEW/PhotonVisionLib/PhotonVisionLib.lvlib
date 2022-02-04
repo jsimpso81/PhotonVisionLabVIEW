@@ -32,6 +32,12 @@
 		</Item>
 		<Item Name="PhotonTrackedTarget" Type="Folder">
 			<Item Name="PhotonTrackedTarget_CreateFromPacket.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_CreateFromPacket.vi"/>
+			<Item Name="PhotonTrackedTarget_GetArea.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetArea.vi"/>
+			<Item Name="PhotonTrackedTarget_GetCameraToTarget.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetCameraToTarget.vi"/>
+			<Item Name="PhotonTrackedTarget_GetCorners.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetCorners.vi"/>
+			<Item Name="PhotonTrackedTarget_GetPitch.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetPitch.vi"/>
+			<Item Name="PhotonTrackedTarget_GetSkew.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetSkew.vi"/>
+			<Item Name="PhotonTrackedTarget_GetYaw.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetYaw.vi"/>
 		</Item>
 		<Item Name="PhotonUtils" Type="Folder">
 			<Item Name="PhotonUtils_CalculateDistanceToTarget.vi" Type="VI" URL="../SubVI/PhotonUtils_CalculateDistanceToTarget.vi"/>
