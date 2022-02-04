@@ -1,0 +1,101 @@
+<HTML>
+<HEAD>
+<TITLE>PhotonVisionLib.lvlib:PhotonCamera_GetDriverMode.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="PhotonVisionLib.lvlib:PhotonCamera_GetDriverMode.vi"></A><H2>PhotonVisionLib.lvlib:PhotonCamera_GetDriverMode.vi</H2>
+<P><IMG SRC="PhotonVisionLib_lvlib_PhotonCamera__GetDriverModec.png" ALT="PhotonVisionLib.lvlib:PhotonCamera_GetDriverMode.vi"></P>
+<P>Returns whether the camera is in driver mode.</P>
+<P></P>
+<P>Inputs:</P>
+<P>   -  CameraName  --  The nickname of the camera (found in the PhotonVision UI).</P>
+<P>  </P>
+<P>Outputs:</P>
+<P>   -  DriverMode  --  Boolean indicating whether the camera is in driver mode.</P>
+<HR>
+<A NAME="PhotonVisionLib.lvlib:PhotonCamera_GetLatestResult.vi"></A><H2>PhotonVisionLib.lvlib:PhotonCamera_GetLatestResult.vi</H2>
+<P><IMG SRC="PhotonVisionLib_lvlib_PhotonCamera__GetLatestResultc.png" ALT="PhotonVisionLib.lvlib:PhotonCamera_GetLatestResult.vi"></P>
+<P>Returns the latest pipeline result.</P>
+<P></P>
+<P>Inputs:</P>
+<P>   -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).</P>
+<P></P>
+<P>Outputs:</P>
+<P>   -  PipelineResult  --  The latest pipeline result data cluster</P>
+<P>   - HasTargets  --  Boolean indicating if any targets were found</P>
+<HR>
+<A NAME="PhotonVisionLib.lvlib:PhotonCamera_GetLEDMode.vi"></A><H2>PhotonVisionLib.lvlib:PhotonCamera_GetLEDMode.vi</H2>
+<P><IMG SRC="PhotonVisionLib_lvlib_PhotonCamera__GetLEDModec.png" ALT="PhotonVisionLib.lvlib:PhotonCamera_GetLEDMode.vi"></P>
+<P>Returns the current LED mode.</P>
+<P></P>
+<P>Inputs:</P>
+<P>   -  CameraName  --  The nickname of the camera (found in the PhotonVision UI).</P>
+<P>  </P>
+<P>Outputs:</P>
+<P>   -  LedMode  --  The current LED mode.</P>
+<HR>
+<A NAME="PhotonVisionLib.lvlib:PhotonCamera_GetPipelineIndex.vi"></A><H2>PhotonVisionLib.lvlib:PhotonCamera_GetPipelineIndex.vi</H2>
+<P><IMG SRC="PhotonVisionLib_lvlib_PhotonCamera__GetPipelineIndexc.png" ALT="PhotonVisionLib.lvlib:PhotonCamera_GetPipelineIndex.vi"></P>
+<P>Returns the active pipeline index.</P>
+<P></P>
+<P>Inputs:</P>
+<P>   -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).</P>
+<P>  </P>
+<P>Outputs:</P>
+<P>   -  PipelineIndex  --  Active Pipeline Index</P>
+<HR>
+<A NAME="PhotonVisionLib.lvlib:PhotonCamera_SetDriverMode.vi"></A><H2>PhotonVisionLib.lvlib:PhotonCamera_SetDriverMode.vi</H2>
+<P><IMG SRC="PhotonVisionLib_lvlib_PhotonCamera__SetDriverModec.png" ALT="PhotonVisionLib.lvlib:PhotonCamera_SetDriverMode.vi"></P>
+<P>Toggles driver mode.</P>
+<P>  </P>
+<P>Inputs:</P>
+<P>   -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).</P>
+<P>   -  DriverMode  --  Whether to set driver mode.</P>
+<P>Outputs:</P>
+<P>   -  &gt;none&lt;  </P>
+<HR>
+<A NAME="PhotonVisionLib.lvlib:PhotonCamera_SetLEDMode.vi"></A><H2>PhotonVisionLib.lvlib:PhotonCamera_SetLEDMode.vi</H2>
+<P><IMG SRC="PhotonVisionLib_lvlib_PhotonCamera__SetLEDModec.png" ALT="PhotonVisionLib.lvlib:PhotonCamera_SetLEDMode.vi"></P>
+<P>Sets the LED mode.</P>
+<P></P>
+<P>Inputs:</P>
+<P>   -  CameraName  --  The nickname of the camera (found in the PhotonVision UI).</P>
+<P>   -  LedMod  --   The mode to set to.</P>
+<P></P>
+<P>Outputs:</P>
+<P>   -  &gt;none&lt;</P>
+<HR>
+<A NAME="PhotonVisionLib.lvlib:PhotonCamera_SetPipelineIndex.vi"></A><H2>PhotonVisionLib.lvlib:PhotonCamera_SetPipelineIndex.vi</H2>
+<P><IMG SRC="PhotonVisionLib_lvlib_PhotonCamera__SetPipelineIndexc.png" ALT="PhotonVisionLib.lvlib:PhotonCamera_SetPipelineIndex.vi"></P>
+<P>Allows the user to select the active pipeline index.</P>
+<P>  </P>
+<P>Inputs:</P>
+<P>   -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).</P>
+<P>   -  index The active pipeline index.</P>
+<P></P>
+<P>Outputs:</P>
+<P>   -  &gt;none&lt;  </P>
+<HR>
+<A NAME="PhotonVisionLib.lvlib:PhotonCamera_TakeImageSnapshot.vi"></A><H2>PhotonVisionLib.lvlib:PhotonCamera_TakeImageSnapshot.vi</H2>
+<P><IMG SRC="PhotonVisionLib_lvlib_PhotonCamera__TakeImageSnapshotc.png" ALT="PhotonVisionLib.lvlib:PhotonCamera_TakeImageSnapshot.vi"></P>
+<P>Request the camera to save a new image file from the input camera stream with overlays. Images take up space in the filesystem of the PhotonCamera. Calling it frequently will fill up disk space and eventually cause the system to stop working. Clear out images in /opt/photonvision/photonvision_config/imgSaves frequently to prevent issues.</P>
+<P></P>
+<P>Inputs:</P>
+<P>   -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).</P>
+<P></P>
+<P>Outputs:</P>
+<P>   -  &gt;none&lt; </P>
+<HR>
+<A NAME="PhotonVisionLib.lvlib:PhotonCamera_TakeOutputSnapshot.vi"></A><H2>PhotonVisionLib.lvlib:PhotonCamera_TakeOutputSnapshot.vi</H2>
+<P><IMG SRC="PhotonVisionLib_lvlib_PhotonCamera__TakeOutputSnapshotc.png" ALT="PhotonVisionLib.lvlib:PhotonCamera_TakeOutputSnapshot.vi"></P>
+<P>Request the camera to save a new image file from the output stream with overlays. Images take up space in the filesystem of the PhotonCamera. Calling it frequently will fill up disk space and eventually cause the system to stop working. Clear out images in /opt/photonvision/photonvision_config/imgSaves frequently to prevent issues.</P>
+<P></P>
+<P>Inputs:</P>
+<P>   -  CameraName  --  The nickname of the camera (found in the PhotonVision UI).</P>
+<P></P>
+<P>Outputs:</P>
+<P>   -  &gt;none&lt; </P>
+</BODY>
+</HTML>

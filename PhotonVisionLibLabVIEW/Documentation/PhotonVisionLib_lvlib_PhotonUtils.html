@@ -1,0 +1,107 @@
+<HTML>
+<HEAD>
+<TITLE>PhotonVisionLib.lvlib:PhotonUtils_CalculateDistanceToTarget.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="PhotonVisionLib.lvlib:PhotonUtils_CalculateDistanceToTarget.vi"></A><H2>PhotonVisionLib.lvlib:PhotonUtils_CalculateDistanceToTarget.vi</H2>
+<P><IMG SRC="PhotonVisionLib_lvlib_PhotonUtils__CalculateDistanceToTargetc.png" ALT="PhotonVisionLib.lvlib:PhotonUtils_CalculateDistanceToTarget.vi"></P>
+<P>Algorithm from https://docs.limelightvision.io/en/latest/cs_estimating_distance.html Estimates range to a target using the target's elevation. This method can produce more stable results than SolvePNP when well tuned, if the full 6d robot pose is not required. Note that this method requires the camera to have 0 roll (not be skewed clockwise or CCW relative to the floor), and for there to exist a height differential between goal and camera. The larger this differential, the more accurate the distance estimate will be.</P>
+<P>    </P>
+<P>Units can be converted using the {@link edu.wpi.first.math.util.Units} class.</P>
+<P>     </P>
+<P>Inputs:</P>
+<P>   -  CameraHeight_Meters  --  The physical height of the camera off the floor </P>
+<P>                          in meters.</P>
+<P>   -  TargetHeightMeters  --  The physical height of the target off the floor in meters. </P>
+<P>                          This should be the height of whatever is being targeted (i.e. if the </P>
+<P>                           targeting region is set to top, this should be the height of the top </P>
+<P>                           of the target).</P>
+<P>   -  CameraPitch_Radians  --  The pitch of the camera from the horizontal plane </P>
+<P>                            in radians.</P>
+<P>                           Positive values up.</P>
+<P>   -  TargetPitchRadian  --  The pitch of the target in the camera's lens in radians. </P>
+<P>                            Positive values up.</P>
+<P></P>
+<P>Outputs</P>
+<P>   -  DistanceToTarget_Meters  --  The estimated distance to the target in meters.</P>
+<HR>
+<A NAME="PhotonVisionLib.lvlib:PhotonUtils_EstimateCameraToTarget.vi"></A><H2>PhotonVisionLib.lvlib:PhotonUtils_EstimateCameraToTarget.vi</H2>
+<P><IMG SRC="PhotonVisionLib_lvlib_PhotonUtils__EstimateCameraToTargetc.png" ALT="PhotonVisionLib.lvlib:PhotonUtils_EstimateCameraToTarget.vi"></P>
+<P>Estimates a Transform2d that maps the camera position to the target position, using the robot's gyro. Note that the gyro angle provided *must* line up with the field coordinate system -- that is, it should read zero degrees when pointed towards the opposing alliance station, and increase as the robot rotates CCW.</P>
+<P>  </P>
+<P>Inputs:  </P>
+<P>   -  CameraToTargetTranslation  --  A Translation2d that encodes the x/y position </P>
+<P>                   of the target relative to the camera.</P>
+<P>   -  FieldToTarget  --  A Pose2d representing the target position in the field coordinate </P>
+<P>                   system.</P>
+<P>   -  GyroAngle  --  The current robot gyro angle, likely from odometry.</P>
+<P></P>
+<P>Outputs:</P>
+<P>   -  EstimateCameraToTarget  --  A Transform2d that takes us from the camera to </P>
+<P>                    the target.</P>
+<HR>
+<A NAME="PhotonVisionLib.lvlib:PhotonUtils_EstimateCameraToTargetTranslation.vi"></A><H2>PhotonVisionLib.lvlib:PhotonUtils_EstimateCameraToTargetTranslation.vi</H2>
+<P><IMG SRC="PhotonVisionLib_lvlib_PhotonUtils__EstimateCameraToTargetTranslationc.png" ALT="PhotonVisionLib.lvlib:PhotonUtils_EstimateCameraToTargetTranslation.vi"></P>
+<P>Estimate the Translation2d of the target relative to the camera.</P>
+<P>  </P>
+<P>Inputs:  </P>
+<P>   -  TargetDistance_Meters  --  The distance to the target in meters.</P>
+<P>   -  Yaw  --  The observed yaw of the target.</P>
+<P></P>
+<P>Outputs:</P>
+<P>   -  CameraToTarget  --  The target's camera-relative translation.</P>
+<HR>
+<A NAME="PhotonVisionLib.lvlib:PhotonUtils_EstimateFieldToCamera.vi"></A><H2>PhotonVisionLib.lvlib:PhotonUtils_EstimateFieldToCamera.vi</H2>
+<P><IMG SRC="PhotonVisionLib_lvlib_PhotonUtils__EstimateFieldToCamerac.png" ALT="PhotonVisionLib.lvlib:PhotonUtils_EstimateFieldToCamera.vi"></P>
+<P>Estimates the pose of the camera in the field coordinate system, given the position of the target relative to the camera, and the target relative to the field. This *only* tracks the position of the camera, not the position of the robot itself.</P>
+<P>  </P>
+<P>Inputs:  </P>
+<P>   -  CameraToTarget  --  The position of the target relative to the camera.</P>
+<P>   -  FieldToTarget  --  The position of the target in the field.</P>
+<P></P>
+<P>Outputs:</P>
+<P>   -  EstimateFieldToCamera  --  The position of the camera in the field.</P>
+<HR>
+<A NAME="PhotonVisionLib.lvlib:PhotonUtils_EstimateFieldToRobot.vi"></A><H2>PhotonVisionLib.lvlib:PhotonUtils_EstimateFieldToRobot.vi</H2>
+<P><IMG SRC="PhotonVisionLib_lvlib_PhotonUtils__EstimateFieldToRobotc.png" ALT="PhotonVisionLib.lvlib:PhotonUtils_EstimateFieldToRobot.vi"></P>
+<P>Estimate the position of the robot in the field.</P>
+<P></P>
+<P>Inputs:</P>
+<P>   -  CameraHeightMeters The physical height of the camera off the floor in meters.</P>
+<P>   -  TargetHeightMeters The physical height of the target off the floor in meters. </P>
+<P>                 This should be the height of whatever is being targeted (i.e. if the targeting</P>
+<P>                  region is set to top, this should be the height of the top of the target).</P>
+<P>   -  CameraPitchRadians The pitch of the camera from the horizontal plane in </P>
+<P>                  radians.  Positive values up.</P>
+<P>   -  TargetPitchRadians The pitch of the target in the camera's lens in radians. Positive</P>
+<P>                 values up.</P>
+<P>   -  TargetYaw The observed yaw of the target. Note that this *must* be </P>
+<P>                 CCW-positive, and Photon returns CW-positive.</P>
+<P>   -  GyroAngle The current robot gyro angle, likely from odometry.</P>
+<P>   -  FieldToTarget A Pose2d representing the target position in the field coordinate </P>
+<P>                  system.</P>
+<P>   -  CameraToRobot The position of the robot relative to the camera. If the camera </P>
+<P>                 was mounted 3 inches behind the &quot;origin&quot; (usually physical center) of the</P>
+<P>                 robot, this would be Transform2d (3 inches, 0 inches, 0 degrees).</P>
+<P></P>
+<P>Outputs</P>
+<P>   -  EstimateFieldToRobot  --  The position of the robot in the field.</P>
+<HR>
+<A NAME="PhotonVisionLib.lvlib:PhotonUtils_EstimateFieldToRobot_Alt.vi"></A><H2>PhotonVisionLib.lvlib:PhotonUtils_EstimateFieldToRobot_Alt.vi</H2>
+<P><IMG SRC="PhotonVisionLib_lvlib_PhotonUtils__EstimateFieldToRobot__Altc.png" ALT="PhotonVisionLib.lvlib:PhotonUtils_EstimateFieldToRobot_Alt.vi"></P>
+<P>Estimates the pose of the robot in the field coordinate system, given the position of the target relative to the camera, the target relative to the field, and the robot relative to the camera.</P>
+<P>  </P>
+<P>Inputs:  </P>
+<P>   -  CameraToTarget  --  The position of the target relative to the camera.</P>
+<P>   -  FieldToTarget  --  The position of the target in the field.</P>
+<P>   -  CameraToRobot  --  The position of the robot relative to the camera. If </P>
+<P>                   the camera was mounted 3 inches behind the &quot;origin&quot; (usually </P>
+<P>                   physical center) of the robot, this would be Transform2d(3 inches, </P>
+<P>                   0 inches, 0 degrees).</P>
+<P></P>
+<P>Outputs:</P>
+<P>   -  EstimateFieldToRobot  --  The position of the robot in the field.</P>
+</BODY>
+</HTML>
