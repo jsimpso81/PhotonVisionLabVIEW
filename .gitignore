@@ -10,8 +10,12 @@
 
 # Executables
 *.exe
+*.nipkg
 
 # Metadata
 *.aliases
 *.lvlps
 .cache/
+
+# Build data
+*/builds/*

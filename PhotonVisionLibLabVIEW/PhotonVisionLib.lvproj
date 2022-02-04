@@ -97,7 +97,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/ThirdParty</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{A5AA42FE-442B-4C03-92A9-ADA463D4DE3C}</Property>
-				<Property Name="Bld_version.build" Type="Int">15</Property>
+				<Property Name="Bld_version.build" Type="Int">16</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/ThirdParty</Property>
@@ -155,7 +155,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/PhotonVisionLib Package LV2019/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlib-lv2019_2022.1.0-3_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlib-lv2019_2022.1.0-5_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
@@ -163,7 +163,7 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">4</Property>
+				<Property Name="PKG_buildNumber" Type="Int">6</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">PhotonVisionLib Package LV2019</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -188,7 +188,7 @@
 				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str">Runtime driver support for CompactRIO Reconfigurable Embedded Targets. This also includes support for sbRIO and MXI-Express Targets.</Property>
 				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[1].Type" Type="Str">NIPKG</Property>
-				<Property Name="PKG_description" Type="Str"></Property>
+				<Property Name="PKG_description" Type="Str">This package is for LabVIEW 2019</Property>
 				<Property Name="PKG_destinations.Count" Type="Int">6</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{011DD094-7B58-4930-927C-EC6177230EA0}</Property>
 				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">Rock Robotics</Property>
@@ -225,6 +225,98 @@
 				<Property Name="PKG_output" Type="Path">../builds/PhotonVisionLibPackage</Property>
 				<Property Name="PKG_output.Type" Type="Str">relativeToProject</Property>
 				<Property Name="PKG_packageName" Type="Str">photonvisionlib-lv2019</Property>
+				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
+				<Property Name="PKG_section" Type="Str">Application Software</Property>
+				<Property Name="PKG_shortcuts.Count" Type="Int">0</Property>
+				<Property Name="PKG_sources.Count" Type="Int">1</Property>
+				<Property Name="PKG_sources[0].Destination" Type="Str">{AAB477E5-87F2-4BE5-BABC-18CCE6678E22}</Property>
+				<Property Name="PKG_sources[0].ID" Type="Ref">/My Computer/Build Specifications/PhotonVisionLib</Property>
+				<Property Name="PKG_sources[0].Type" Type="Str">Build</Property>
+				<Property Name="PKG_synopsis" Type="Str">PhotonVisionLib Library for First Robotics Competition</Property>
+				<Property Name="PKG_version" Type="Str">2022.1.0</Property>
+			</Item>
+			<Item Name="PhotonVisionLib Package LV2020" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
+				<Property Name="AB_Class_Path" Type="Path">/C/Program Files/National Instruments/LabVIEW 2019/resource/Framework/Providers/Builds/Package/NIPKG/NIPKG/NIPKG.lvclass</Property>
+				<Property Name="AB_UIClass_Path" Type="Path">/C/Program Files/National Instruments/LabVIEW 2019/resource/Framework/Providers/Builds/Package/Common/UI/PackageUI.lvclass</Property>
+				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
+				<Property Name="NIPKG_certificates" Type="Bool">false</Property>
+				<Property Name="NIPKG_createInstaller" Type="Bool">false</Property>
+				<Property Name="NIPKG_feedLocation" Type="Path">../builds/NI_AB_PROJECTNAME/PhotonVisionLib Package LV2019/Feed</Property>
+				<Property Name="NIPKG_feedLocation.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="NIPKG_installerArtifacts" Type="Str"></Property>
+				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
+				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/PhotonVisionLib Package LV2019/Package Installer</Property>
+				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlib-lv2020_2022.1.0-5_windows_all.nipkg</Property>
+				<Property Name="NIPKG_license" Type="Ref"></Property>
+				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
+				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
+				<Property Name="NIPKG_VisibleForRuntimeDeployment" Type="Bool">false</Property>
+				<Property Name="PKG_actions.Count" Type="Int">0</Property>
+				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
+				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
+				<Property Name="PKG_buildNumber" Type="Int">6</Property>
+				<Property Name="PKG_buildSpecName" Type="Str">PhotonVisionLib Package LV2020</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
+				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[0].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
+				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
+				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
+				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[1].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[1].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[1].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[1].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[1].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[1].NIPKG.DisplayName" Type="Str">NI CompactRIO Driver</Property>
+				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-compactrio-runtime</Property>
+				<Property Name="PKG_dependencies[1].Package.Section" Type="Str">Drivers</Property>
+				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str">Runtime driver support for CompactRIO Reconfigurable Embedded Targets. This also includes support for sbRIO and MXI-Express Targets.</Property>
+				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[1].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_description" Type="Str">This package is for LabVIEW 2020</Property>
+				<Property Name="PKG_destinations.Count" Type="Int">6</Property>
+				<Property Name="PKG_destinations[0].ID" Type="Str">{011DD094-7B58-4930-927C-EC6177230EA0}</Property>
+				<Property Name="PKG_destinations[0].Subdir.Directory" Type="Str">Rock Robotics</Property>
+				<Property Name="PKG_destinations[0].Subdir.Parent" Type="Str">{59978D5F-6F65-45CD-92E3-45DBFC00DED4}</Property>
+				<Property Name="PKG_destinations[0].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[1].ID" Type="Str">{59978D5F-6F65-45CD-92E3-45DBFC00DED4}</Property>
+				<Property Name="PKG_destinations[1].Subdir.Directory" Type="Str">vi.lib</Property>
+				<Property Name="PKG_destinations[1].Subdir.Parent" Type="Str">{82A34FD0-E818-460E-A148-3C6C1732D7DB}</Property>
+				<Property Name="PKG_destinations[1].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[2].ID" Type="Str">{82A34FD0-E818-460E-A148-3C6C1732D7DB}</Property>
+				<Property Name="PKG_destinations[2].Subdir.Directory" Type="Str">LabVIEW 2020</Property>
+				<Property Name="PKG_destinations[2].Subdir.Parent" Type="Str">{CB406106-E23D-4A2F-AAE0-8B003D716373}</Property>
+				<Property Name="PKG_destinations[2].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[3].ID" Type="Str">{AAB477E5-87F2-4BE5-BABC-18CCE6678E22}</Property>
+				<Property Name="PKG_destinations[3].Subdir.Directory" Type="Str">ThirdParty</Property>
+				<Property Name="PKG_destinations[3].Subdir.Parent" Type="Str">{F1EFEAB2-19B0-4F74-AC4E-E90B79EFE858}</Property>
+				<Property Name="PKG_destinations[3].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[4].ID" Type="Str">{CB406106-E23D-4A2F-AAE0-8B003D716373}</Property>
+				<Property Name="PKG_destinations[4].Subdir.Directory" Type="Str">National Instruments</Property>
+				<Property Name="PKG_destinations[4].Subdir.Parent" Type="Str">root_5</Property>
+				<Property Name="PKG_destinations[4].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_destinations[5].ID" Type="Str">{F1EFEAB2-19B0-4F74-AC4E-E90B79EFE858}</Property>
+				<Property Name="PKG_destinations[5].Subdir.Directory" Type="Str">WPI</Property>
+				<Property Name="PKG_destinations[5].Subdir.Parent" Type="Str">{011DD094-7B58-4930-927C-EC6177230EA0}</Property>
+				<Property Name="PKG_destinations[5].Type" Type="Str">Subdir</Property>
+				<Property Name="PKG_displayName" Type="Str">PhotonVisionLib</Property>
+				<Property Name="PKG_displayVersion" Type="Str"></Property>
+				<Property Name="PKG_feedDescription" Type="Str"></Property>
+				<Property Name="PKG_feedName" Type="Str"></Property>
+				<Property Name="PKG_homepage" Type="Str">https://github.com/jsimpso81</Property>
+				<Property Name="PKG_hostname" Type="Str"></Property>
+				<Property Name="PKG_lvrteTracking" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
+				<Property Name="PKG_maintainer" Type="Str">J. A. Simpson &lt;&gt;</Property>
+				<Property Name="PKG_output" Type="Path">../builds/PhotonVisionLibPackage</Property>
+				<Property Name="PKG_output.Type" Type="Str">relativeToProject</Property>
+				<Property Name="PKG_packageName" Type="Str">photonvisionlib-lv2020</Property>
 				<Property Name="PKG_publishToSystemLink" Type="Bool">false</Property>
 				<Property Name="PKG_section" Type="Str">Application Software</Property>
 				<Property Name="PKG_shortcuts.Count" Type="Int">0</Property>
