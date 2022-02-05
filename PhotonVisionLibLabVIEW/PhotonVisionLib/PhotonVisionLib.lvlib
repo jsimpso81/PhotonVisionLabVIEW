@@ -12,6 +12,9 @@
 			<Item Name="Packet_decode_ByteI8.vi" Type="VI" URL="../SubVI/Packet_decode_ByteI8.vi"/>
 			<Item Name="Packet_decode_Flt64.vi" Type="VI" URL="../SubVI/Packet_decode_Flt64.vi"/>
 			<Item Name="Packet_decode_Int32.vi" Type="VI" URL="../SubVI/Packet_decode_Int32.vi"/>
+			<Item Name="Packet_encode_ByteI8.vi" Type="VI" URL="../SubVI/Packet_encode_ByteI8.vi"/>
+			<Item Name="Packet_encode_FLT64.vi" Type="VI" URL="../SubVI/Packet_encode_FLT64.vi"/>
+			<Item Name="Packet_encode_Int32.vi" Type="VI" URL="../SubVI/Packet_encode_Int32.vi"/>
 		</Item>
 		<Item Name="PhotonCamera" Type="Folder">
 			<Item Name="PhotonCamera_GetDriverMode.vi" Type="VI" URL="../SubVI/PhotonCamera_GetDriverMode.vi"/>
@@ -29,6 +32,8 @@
 			<Item Name="PhotonPipelineResult_GetBestTarget.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetBestTarget.vi"/>
 			<Item Name="PhotonPipelineResult_GetLatency_Millis.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetLatency_Millis.vi"/>
 			<Item Name="PhotonPipelineResult_HasTargets.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_HasTargets.vi"/>
+			<Item Name="PhotonPipelineResult_New.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_New.vi"/>
+			<Item Name="PhotonPipelineResult_PopulatePacket.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_PopulatePacket.vi"/>
 		</Item>
 		<Item Name="PhotonTrackedTarget" Type="Folder">
 			<Item Name="PhotonTrackedTarget_CreateFromPacket.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_CreateFromPacket.vi"/>
@@ -38,7 +43,10 @@
 			<Item Name="PhotonTrackedTarget_GetPitch.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetPitch.vi"/>
 			<Item Name="PhotonTrackedTarget_GetSkew.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetSkew.vi"/>
 			<Item Name="PhotonTrackedTarget_GetYaw.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetYaw.vi"/>
+			<Item Name="PhotonTrackedTarget_Newt.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_Newt.vi"/>
+			<Item Name="PhotonTrackedTarget_PopulatePacket.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_PopulatePacket.vi"/>
 		</Item>
+		<Item Name="PhotonTrackedTargetList" Type="Folder"/>
 		<Item Name="PhotonUtils" Type="Folder">
 			<Item Name="PhotonUtils_CalculateDistanceToTarget.vi" Type="VI" URL="../SubVI/PhotonUtils_CalculateDistanceToTarget.vi"/>
 			<Item Name="PhotonUtils_EstimateCameraToTarget.vi" Type="VI" URL="../SubVI/PhotonUtils_EstimateCameraToTarget.vi"/>
