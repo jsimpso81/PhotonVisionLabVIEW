@@ -46,7 +46,6 @@
 			<Item Name="PhotonTrackedTarget_Newt.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_Newt.vi"/>
 			<Item Name="PhotonTrackedTarget_PopulatePacket.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_PopulatePacket.vi"/>
 		</Item>
-		<Item Name="PhotonTrackedTargetList" Type="Folder"/>
 		<Item Name="PhotonUtils" Type="Folder">
 			<Item Name="PhotonUtils_CalculateDistanceToTarget.vi" Type="VI" URL="../SubVI/PhotonUtils_CalculateDistanceToTarget.vi"/>
 			<Item Name="PhotonUtils_EstimateCameraToTarget.vi" Type="VI" URL="../SubVI/PhotonUtils_EstimateCameraToTarget.vi"/>
