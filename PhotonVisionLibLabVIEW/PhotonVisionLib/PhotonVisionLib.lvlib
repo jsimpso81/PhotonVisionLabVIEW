@@ -12,9 +12,11 @@
 			<Item Name="Packet_decode_ByteI8.vi" Type="VI" URL="../SubVI/Packet_decode_ByteI8.vi"/>
 			<Item Name="Packet_decode_Flt64.vi" Type="VI" URL="../SubVI/Packet_decode_Flt64.vi"/>
 			<Item Name="Packet_decode_Int32.vi" Type="VI" URL="../SubVI/Packet_decode_Int32.vi"/>
+			<Item Name="Packet_decode_Transform3d.vi" Type="VI" URL="../SubVI/Packet_decode_Transform3d.vi"/>
 			<Item Name="Packet_encode_ByteI8.vi" Type="VI" URL="../SubVI/Packet_encode_ByteI8.vi"/>
 			<Item Name="Packet_encode_FLT64.vi" Type="VI" URL="../SubVI/Packet_encode_FLT64.vi"/>
 			<Item Name="Packet_encode_Int32.vi" Type="VI" URL="../SubVI/Packet_encode_Int32.vi"/>
+			<Item Name="Packet_encode_Transform3d.vi" Type="VI" URL="../SubVI/Packet_encode_Transform3d.vi"/>
 		</Item>
 		<Item Name="PhotonCamera" Type="Folder">
 			<Item Name="PhotonCamera_GetDriverMode.vi" Type="VI" URL="../SubVI/PhotonCamera_GetDriverMode.vi"/>
@@ -31,6 +33,7 @@
 			<Item Name="PhotonPipelineResult_CreateFromPacket.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_CreateFromPacket.vi"/>
 			<Item Name="PhotonPipelineResult_Equals.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_Equals.vi"/>
 			<Item Name="PhotonPipelineResult_GetBestTarget.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetBestTarget.vi"/>
+			<Item Name="PhotonPipelineResult_GetBestTargetById.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetBestTargetById.vi"/>
 			<Item Name="PhotonPipelineResult_GetLatency_Millis.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetLatency_Millis.vi"/>
 			<Item Name="PhotonPipelineResult_HasTargets.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_HasTargets.vi"/>
 			<Item Name="PhotonPipelineResult_New.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_New.vi"/>
@@ -39,13 +42,16 @@
 		<Item Name="PhotonTrackedTarget" Type="Folder">
 			<Item Name="PhotonTrackedTarget_CreateFromPacket.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_CreateFromPacket.vi"/>
 			<Item Name="PhotonTrackedTarget_Equals.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_Equals.vi"/>
+			<Item Name="PhotonTrackedTarget_GetAltCameraToTarget.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetAltCameraToTarget.vi"/>
 			<Item Name="PhotonTrackedTarget_GetArea.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetArea.vi"/>
-			<Item Name="PhotonTrackedTarget_GetCameraToTarget.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetCameraToTarget.vi"/>
+			<Item Name="PhotonTrackedTarget_GetBestCameraToTarget.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetBestCameraToTarget.vi"/>
 			<Item Name="PhotonTrackedTarget_GetCorners.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetCorners.vi"/>
+			<Item Name="PhotonTrackedTarget_GetFiducialId.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetFiducialId.vi"/>
 			<Item Name="PhotonTrackedTarget_GetPitch.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetPitch.vi"/>
+			<Item Name="PhotonTrackedTarget_GetPoseAmbiguity.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetPoseAmbiguity.vi"/>
 			<Item Name="PhotonTrackedTarget_GetSkew.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetSkew.vi"/>
 			<Item Name="PhotonTrackedTarget_GetYaw.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetYaw.vi"/>
-			<Item Name="PhotonTrackedTarget_Newt.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_Newt.vi"/>
+			<Item Name="PhotonTrackedTarget_New.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_New.vi"/>
 			<Item Name="PhotonTrackedTarget_PopulatePacket.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_PopulatePacket.vi"/>
 		</Item>
 		<Item Name="PhotonUtils" Type="Folder">
