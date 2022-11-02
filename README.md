@@ -56,5 +56,11 @@ See ![Contributing.md!](Contributing.md) for additional details.
 Contributions of enhancements, bug fixes, and new routines are welcome.  If new routines are not already part of the C++/Java PhotonVision, then it seems fair that they should be written solely by FRC student members, with confirmation from a mentor on their team to be able to be candidates for inclusion.  See ![Contributing.md!](Contributing.md) for additional details.
 
 ---
+## Contributors
+
+- jsimpso81 -- initial LabVIEW port and maintenance
+- brandonzx3 -- initial revisions for photonvision 2023
+
+---
 File last updated: 2/3/2022
 
