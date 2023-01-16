@@ -23,10 +23,11 @@
 			<Item Name="PhotonCamera_GetLatestResult.vi" Type="VI" URL="../SubVI/PhotonCamera_GetLatestResult.vi"/>
 			<Item Name="PhotonCamera_GetLEDMode.vi" Type="VI" URL="../SubVI/PhotonCamera_GetLEDMode.vi"/>
 			<Item Name="PhotonCamera_GetPipelineIndex.vi" Type="VI" URL="../SubVI/PhotonCamera_GetPipelineIndex.vi"/>
+			<Item Name="PhotonCamera_IsConnected.vi" Type="VI" URL="../SubVI/PhotonCamera_IsConnected.vi"/>
 			<Item Name="PhotonCamera_SetDriverMode.vi" Type="VI" URL="../SubVI/PhotonCamera_SetDriverMode.vi"/>
 			<Item Name="PhotonCamera_SetLEDMode.vi" Type="VI" URL="../SubVI/PhotonCamera_SetLEDMode.vi"/>
 			<Item Name="PhotonCamera_SetPipelineIndex.vi" Type="VI" URL="../SubVI/PhotonCamera_SetPipelineIndex.vi"/>
-			<Item Name="PhotonCamera_TakeImageSnapshot.vi" Type="VI" URL="../SubVI/PhotonCamera_TakeImageSnapshot.vi"/>
+			<Item Name="PhotonCamera_TakeInputSnapshot.vi" Type="VI" URL="../SubVI/PhotonCamera_TakeInputSnapshot.vi"/>
 			<Item Name="PhotonCamera_TakeOutputSnapshot.vi" Type="VI" URL="../SubVI/PhotonCamera_TakeOutputSnapshot.vi"/>
 		</Item>
 		<Item Name="PhotonPipelineResult" Type="Folder">
@@ -35,9 +36,12 @@
 			<Item Name="PhotonPipelineResult_GetBestTarget.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetBestTarget.vi"/>
 			<Item Name="PhotonPipelineResult_GetBestTargetById.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetBestTargetById.vi"/>
 			<Item Name="PhotonPipelineResult_GetLatency_Millis.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetLatency_Millis.vi"/>
+			<Item Name="PhotonPipelineResult_GetTargets.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetTargets.vi"/>
+			<Item Name="PhotonPipelineResult_GetTimeStampSecs.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetTimeStampSecs.vi"/>
 			<Item Name="PhotonPipelineResult_HasTargets.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_HasTargets.vi"/>
 			<Item Name="PhotonPipelineResult_New.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_New.vi"/>
 			<Item Name="PhotonPipelineResult_PopulatePacket.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_PopulatePacket.vi"/>
+			<Item Name="PhotonPipelineResult_SetTimeStampSecs.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_SetTimeStampSecs.vi"/>
 		</Item>
 		<Item Name="PhotonTrackedTarget" Type="Folder">
 			<Item Name="PhotonTrackedTarget_CreateFromPacket.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_CreateFromPacket.vi"/>
@@ -45,8 +49,9 @@
 			<Item Name="PhotonTrackedTarget_GetAltCameraToTarget.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetAltCameraToTarget.vi"/>
 			<Item Name="PhotonTrackedTarget_GetArea.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetArea.vi"/>
 			<Item Name="PhotonTrackedTarget_GetBestCameraToTarget.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetBestCameraToTarget.vi"/>
-			<Item Name="PhotonTrackedTarget_GetCorners.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetCorners.vi"/>
+			<Item Name="PhotonTrackedTarget_GetDetectedCorners.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetDetectedCorners.vi"/>
 			<Item Name="PhotonTrackedTarget_GetFiducialId.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetFiducialId.vi"/>
+			<Item Name="PhotonTrackedTarget_GetMinAreaRectCorners.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetMinAreaRectCorners.vi"/>
 			<Item Name="PhotonTrackedTarget_GetPitch.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetPitch.vi"/>
 			<Item Name="PhotonTrackedTarget_GetPoseAmbiguity.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetPoseAmbiguity.vi"/>
 			<Item Name="PhotonTrackedTarget_GetSkew.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetSkew.vi"/>
@@ -63,6 +68,7 @@
 			<Item Name="PhotonUtils_EstimateFieldToRobot_Alt.vi" Type="VI" URL="../SubVI/PhotonUtils_EstimateFieldToRobot_Alt.vi"/>
 		</Item>
 		<Item Name="TargetCorner" Type="Folder">
+			<Item Name="TargetCorner_Equals.vi" Type="VI" URL="../SubVI/TargetCorner_Equals.vi"/>
 			<Item Name="TargetCorner_GetAll.vi" Type="VI" URL="../SubVI/TargetCorner_GetAll.vi"/>
 			<Item Name="TargetCorner_New.vi" Type="VI" URL="../SubVI/TargetCorner_New.vi"/>
 		</Item>
