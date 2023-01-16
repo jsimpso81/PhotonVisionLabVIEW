@@ -66,6 +66,9 @@
 			<Item Name="PhotonUtils_EstimateFieldToCamera.vi" Type="VI" URL="../SubVI/PhotonUtils_EstimateFieldToCamera.vi"/>
 			<Item Name="PhotonUtils_EstimateFieldToRobot.vi" Type="VI" URL="../SubVI/PhotonUtils_EstimateFieldToRobot.vi"/>
 			<Item Name="PhotonUtils_EstimateFieldToRobot_Alt.vi" Type="VI" URL="../SubVI/PhotonUtils_EstimateFieldToRobot_Alt.vi"/>
+			<Item Name="PhotonUtils_EstimateFieldToRobotAprilTag.vi" Type="VI" URL="../SubVI/PhotonUtils_EstimateFieldToRobotAprilTag.vi"/>
+			<Item Name="PhotonUtils_GetDistanceToPose.vi" Type="VI" URL="../SubVI/PhotonUtils_GetDistanceToPose.vi"/>
+			<Item Name="PhotonUtils_GetYawToPose.vi" Type="VI" URL="../SubVI/PhotonUtils_GetYawToPose.vi"/>
 		</Item>
 		<Item Name="TargetCorner" Type="Folder">
 			<Item Name="TargetCorner_Equals.vi" Type="VI" URL="../SubVI/TargetCorner_Equals.vi"/>
