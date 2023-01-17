@@ -18,4 +18,4 @@
 .cache/
 
 # Build data
-*/builds/*
+**/builds/**
