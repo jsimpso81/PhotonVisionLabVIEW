@@ -1,0 +1,163 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="PhotonUtils" >PhotonUtils</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonUtils_CalculateDistanceToTarget" >PhotonUtils_CalculateDistanceToTarget</h3>
+<p><IMG SRC="PhotonUtils_CalculateDistanceToTarget_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Algorithm from https://docs.limelightvision.io/en/latest/cs_estimating_distance.html Estimates range to a target using the target's elevation. This method can produce more stable results than SolvePNP when well tuned, if the full 6d robot pose is not required. Note that this method requires the camera to have 0 roll (not be skewed clockwise or CCW relative to the floor), and for there to exist a height differential between goal and camera. The larger this differential, the more accurate the distance estimate will be.<BR>
+    <BR>
+Units can be converted using the {@link edu.wpi.first.math.util.Units} class.<BR>
+     <BR>
+Inputs:<BR>
+   -  CameraHeight_Meters  --  The physical height of the camera off the floor <BR>
+                          in meters.<BR>
+   -  TargetHeightMeters  --  The physical height of the target off the floor in meters. <BR>
+                          This should be the height of whatever is being targeted (i.e. if the <BR>
+                           targeting region is set to top, this should be the height of the top <BR>
+                           of the target).<BR>
+   -  CameraPitch_Radians  --  The pitch of the camera from the horizontal plane <BR>
+                            in radians.<BR>
+                           Positive values up.<BR>
+   -  TargetPitchRadian  --  The pitch of the target in the camera's lens in radians. <BR>
+                            Positive values up.<BR>
+<BR>
+Outputs<BR>
+   -  DistanceToTarget_Meters  --  The estimated distance to the target in meters.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonUtils_EstimateCameraToTarget" >PhotonUtils_EstimateCameraToTarget</h3>
+<p><IMG SRC="PhotonUtils_EstimateCameraToTarget_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Estimates a Transform2d that maps the camera position to the target position, using the robot's gyro. Note that the gyro angle provided *must* line up with the field coordinate system -- that is, it should read zero degrees when pointed towards the opposing alliance station, and increase as the robot rotates CCW.<BR>
+  <BR>
+Inputs:  <BR>
+   -  CameraToTargetTranslation  --  A Translation2d that encodes the x/y position <BR>
+                   of the target relative to the camera.<BR>
+   -  FieldToTarget  --  A Pose2d representing the target position in the field coordinate <BR>
+                   system.<BR>
+   -  GyroAngle  --  The current robot gyro angle, likely from odometry.<BR>
+<BR>
+Outputs:<BR>
+   -  EstimateCameraToTarget  --  A Transform2d that takes us from the camera to <BR>
+                    the target.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonUtils_EstimateCameraToTargetTrans" >PhotonUtils_EstimateCameraToTargetTrans</h3>
+<p><IMG SRC="PhotonUtils_EstimateCameraToTargetTrans_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Estimate the Translation2d of the target relative to the camera.<BR>
+  <BR>
+Inputs:  <BR>
+   -  TargetDistance_Meters  --  The distance to the target in meters.<BR>
+   -  Yaw  --  The observed yaw of the target.<BR>
+<BR>
+Outputs:<BR>
+   -  CameraToTarget  --  The target's camera-relative translation.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonUtils_EstimateFieldToCamera" >PhotonUtils_EstimateFieldToCamera</h3>
+<p><IMG SRC="PhotonUtils_EstimateFieldToCamera_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Estimates the pose of the camera in the field coordinate system, given the position of the target relative to the camera, and the target relative to the field. This *only* tracks the position of the camera, not the position of the robot itself.<BR>
+  <BR>
+Inputs:  <BR>
+   -  CameraToTarget  --  The position of the target relative to the camera.<BR>
+   -  FieldToTarget  --  The position of the target in the field.<BR>
+<BR>
+Outputs:<BR>
+   -  EstimateFieldToCamera  --  The position of the camera in the field.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonUtils_EstimateFieldToRobot" >PhotonUtils_EstimateFieldToRobot</h3>
+<p><IMG SRC="PhotonUtils_EstimateFieldToRobot_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Estimate the position of the robot in the field.<BR>
+<BR>
+Inputs:<BR>
+   -  CameraHeightMeters The physical height of the camera off the floor in meters.<BR>
+   -  TargetHeightMeters The physical height of the target off the floor in meters. <BR>
+                 This should be the height of whatever is being targeted (i.e. if the targeting<BR>
+                  region is set to top, this should be the height of the top of the target).<BR>
+   -  CameraPitchRadians The pitch of the camera from the horizontal plane in <BR>
+                  radians.  Positive values up.<BR>
+   -  TargetPitchRadians The pitch of the target in the camera's lens in radians. Positive<BR>
+                 values up.<BR>
+   -  TargetYaw The observed yaw of the target. Note that this *must* be <BR>
+                 CCW-positive, and Photon returns CW-positive.<BR>
+   -  GyroAngle The current robot gyro angle, likely from odometry.<BR>
+   -  FieldToTarget A Pose2d representing the target position in the field coordinate <BR>
+                  system.<BR>
+   -  CameraToRobot The position of the robot relative to the camera. If the camera <BR>
+                 was mounted 3 inches behind the "origin" (usually physical center) of the<BR>
+                 robot, this would be Transform2d (3 inches, 0 inches, 0 degrees).<BR>
+<BR>
+Outputs<BR>
+   -  EstimateFieldToRobot  --  The position of the robot in the field.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonUtils_EstimateFieldToRobotAprilTag" >PhotonUtils_EstimateFieldToRobotAprilTag</h3>
+<p><IMG SRC="PhotonUtils_EstimateFieldToRobotAprilTag_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Estimates the pose3d of the robot in the field coordinate system, given the pose3d of the fiducial tag, the robot relative to the camera, and the target relative to the camera.<BR>
+<BR>
+ nputs:<BR>
+    -  CameraToTarget  --  Transform3D of the target relative to the camera, returned by PhotonVision<BR>
+    -  FieldRelativeTagPose3d  --  The field relative pose3d of the target<BR>
+    -  CameraToRobot  --   Transform3D of the robot relative to the camera. Origin of the robot is defined as the center.<BR>
+ <BR>
+Outputs<BR>
+     -  FieldToRobot  --  Transform3d Robot position relative to the field<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonUtils_EstimateFieldToRobot_Alt" >PhotonUtils_EstimateFieldToRobot_Alt</h3>
+<p><IMG SRC="PhotonUtils_EstimateFieldToRobot_Alt_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Estimates the pose of the robot in the field coordinate system, given the position of the target relative to the camera, the target relative to the field, and the robot relative to the camera.<BR>
+  <BR>
+Inputs:  <BR>
+   -  CameraToTarget  --  The position of the target relative to the camera.<BR>
+   -  FieldToTarget  --  The position of the target in the field.<BR>
+   -  CameraToRobot  --  The position of the robot relative to the camera. If <BR>
+                   the camera was mounted 3 inches behind the "origin" (usually <BR>
+                   physical center) of the robot, this would be Transform2d(3 inches, <BR>
+                   0 inches, 0 degrees).<BR>
+<BR>
+Outputs:<BR>
+   -  EstimateFieldToRobot  --  The position of the robot in the field.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonUtils_GetDistanceToPose" >PhotonUtils_GetDistanceToPose</h3>
+<p><IMG SRC="PhotonUtils_GetDistanceToPose_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the distance between two poses<BR>
+<BR>
+Inputs:<BR>
+   -  RobotPose  --  Pose2d of the robot.<BR>
+   -  TargetPose  --  Pose2d of the target<BR>
+<BR>
+Outputs<BR>
+   -  DistanceToPose  --  The calculated distance between the poses.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonUtils_GetYawToPose" >PhotonUtils_GetYawToPose</h3>
+<p><IMG SRC="PhotonUtils_GetYawToPose_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the yaw between your robot and a target.<BR>
+<BR>
+Inputs:<BR>
+   -  RobotPose  --  Pose2d of the robot.<BR>
+   -  TargetPose  --  Pose2d of the target<BR>
+<BR>
+Outputs<BR>
+   -  YawToPose  --  Yaw to the target<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

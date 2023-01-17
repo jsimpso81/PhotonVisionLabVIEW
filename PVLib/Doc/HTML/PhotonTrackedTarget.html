@@ -1,0 +1,175 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="PhotonTrackedTarget" >PhotonTrackedTarget</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonTrackedTarget_CreateFromPacket" >PhotonTrackedTarget_CreateFromPacket</h3>
+<p><IMG SRC="PhotonTrackedTarget_CreateFromPacket_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function to parse the data for each target returned by PhotonCamera_GetLatestResult.<BR>
+<BR>
+Inputs:<BR>
+   -  RawData  --  Byte array containing the data to parse.<BR>
+<BR>
+Outputs:<BR>
+   - TrackedTarget  --  Parsed TrackedTarget cluster.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonTrackedTarget_Equals" >PhotonTrackedTarget_Equals</h3>
+<p><IMG SRC="PhotonTrackedTarget_Equals_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Determines if two tracked targets are equal<BR>
+<BR>
+Inputs:<BR>
+   - TrackedTarget  --  TrackedTarget cluster.<BR>
+   - OtherTrackedTarget  --  Second TrackedTarget cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  Area  -- Boolean, equals TRUE if both TrackedTargets are the same.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonTrackedTarget_GetAltCameraToTarget" >PhotonTrackedTarget_GetAltCameraToTarget</h3>
+<p><IMG SRC="PhotonTrackedTarget_GetAltCameraToTarget_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get CameraToTarget Transform2d from Tracked Target<BR>
+<BR>
+Inputs:<BR>
+   - TrackedTarget  --  Parsed TrackedTarget cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  CameraToTarget  -- Camera to Target Transform2d</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonTrackedTarget_GetArea" >PhotonTrackedTarget_GetArea</h3>
+<p><IMG SRC="PhotonTrackedTarget_GetArea_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get Area from Tracked Target<BR>
+<BR>
+Inputs:<BR>
+   - TrackedTarget  --  Parsed TrackedTarget cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  Area  -- Area value</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonTrackedTarget_GetBestCameraToTarget" >PhotonTrackedTarget_GetBestCameraToTarget</h3>
+<p><IMG SRC="PhotonTrackedTarget_GetBestCameraToTarget_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get CameraToTarget Transform2d from Tracked Target<BR>
+<BR>
+Inputs:<BR>
+   - TrackedTarget  --  Parsed TrackedTarget cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  CameraToTarget  -- Camera to Target Transform2d</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonTrackedTarget_GetDetectedCorners" >PhotonTrackedTarget_GetDetectedCorners</h3>
+<p><IMG SRC="PhotonTrackedTarget_GetDetectedCorners_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get Detected Corners from Tracked Target<BR>
+<BR>
+Inputs:<BR>
+   - TrackedTarget  --  Parsed TrackedTarget cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  Detected Corners  --  Array of TargetCorner cluster containing detected corners</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonTrackedTarget_GetFiducialId" >PhotonTrackedTarget_GetFiducialId</h3>
+<p><IMG SRC="PhotonTrackedTarget_GetFiducialId_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get Area from Tracked Target<BR>
+<BR>
+Inputs:<BR>
+   - TrackedTarget  --  Parsed TrackedTarget cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  Area  -- Area value</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonTrackedTarget_GetMinAreaRectCorners" >PhotonTrackedTarget_GetMinAreaRectCorners</h3>
+<p><IMG SRC="PhotonTrackedTarget_GetMinAreaRectCorners_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get Minimum Area Rectagle Corners from Tracked Target<BR>
+<BR>
+Inputs:<BR>
+   - TrackedTarget  --  Parsed TrackedTarget cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  MinAreaRectCorners  -- Corners array of TargetCorner cluster</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonTrackedTarget_GetPitch" >PhotonTrackedTarget_GetPitch</h3>
+<p><IMG SRC="PhotonTrackedTarget_GetPitch_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get Pitch from Tracked Target<BR>
+<BR>
+Inputs:<BR>
+   - TrackedTarget  --  Parsed TrackedTarget cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  Pitch  -- Pitch value</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonTrackedTarget_GetPoseAmbiguity" >PhotonTrackedTarget_GetPoseAmbiguity</h3>
+<p><IMG SRC="PhotonTrackedTarget_GetPoseAmbiguity_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get Area from Tracked Target<BR>
+<BR>
+Inputs:<BR>
+   - TrackedTarget  --  Parsed TrackedTarget cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  Area  -- Area value</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonTrackedTarget_GetSkew" >PhotonTrackedTarget_GetSkew</h3>
+<p><IMG SRC="PhotonTrackedTarget_GetSkew_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get Skew from Tracked Target<BR>
+<BR>
+Inputs:<BR>
+   - TrackedTarget  --  Parsed TrackedTarget cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  Skew  -- Skew value</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonTrackedTarget_GetYaw" >PhotonTrackedTarget_GetYaw</h3>
+<p><IMG SRC="PhotonTrackedTarget_GetYaw_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get Yaw from Tracked Target<BR>
+<BR>
+Inputs:<BR>
+   - TrackedTarget  --  Parsed TrackedTarget cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  Yaw  -- Yaw value</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonTrackedTarget_New" >PhotonTrackedTarget_New</h3>
+<p><IMG SRC="PhotonTrackedTarget_New_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a new TracedTarget data cluster<BR>
+<BR>
+Inputs:<BR>
+   -  Yaw  --  <BR>
+   -  Pitch  --  <BR>
+   -  Area  --  <BR>
+   -  Skew  --  <BR>
+   -  CameraToTarget  --  Transform2d<BR>
+   -  MinAreaRectCorners  -- Array of 4 corners.<BR>
+   -  Pose Ambiguity<BR>
+   -  Fiducial ID<BR>
+   -  Detected Corners<BR>
+<BR>
+Outputs:<BR>
+   - TrackedTarget  --  Created TrackedTarget cluster.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonTrackedTarget_PopulatePacket" >PhotonTrackedTarget_PopulatePacket</h3>
+<p><IMG SRC="PhotonTrackedTarget_PopulatePacket_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Encode a TrackedTarget cluster into an array of bytes.<BR>
+<BR>
+Inputs:<BR>
+   - TrackedTarget  --  TrackedTarget cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  RawDataOut  --  Byte array containing the encoded data.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

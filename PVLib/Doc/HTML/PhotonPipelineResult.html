@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="PhotonPipelineResult" >PhotonPipelineResult</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPipelineResult_CreateFromPacket" >PhotonPipelineResult_CreateFromPacket</h3>
+<p><IMG SRC="PhotonPipelineResult_CreateFromPacket_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function to parse the data returned by PhotonCamera_GetLatestResult.<BR>
+<BR>
+Inputs:<BR>
+   -  RawData  --  Byte array containing the data to parse.<BR>
+<BR>
+Outputs:<BR>
+   - PipelineResult  --  Parsed PipelineResult cluster.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPipelineResult_Equals" >PhotonPipelineResult_Equals</h3>
+<p><IMG SRC="PhotonPipelineResult_Equals_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Determines if two PipelineResults are equal.<BR>
+<BR>
+Inputs:<BR>
+   - PipelineResult  --  PipelineResult cluster.<BR>
+   - Other PipelineResult  --  Other PipelineResult cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  Equal  --  Returns TRUE, if both pipeline results are equal..<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPipelineResult_GetBestTarget" >PhotonPipelineResult_GetBestTarget</h3>
+<p><IMG SRC="PhotonPipelineResult_GetBestTarget_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the best target in this pipeline result. If there are no targets, this method will return an empty target. The best target is determined by the target sort mode in the PhotonVision UI.<BR>
+<BR>
+Inputs:<BR>
+   - PipelineResult  --  Parsed PipelineResult cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  TrackedTarget  --  Cluster containing the best target</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPipelineResult_GetBestTargetById" >PhotonPipelineResult_GetBestTargetById</h3>
+<p><IMG SRC="PhotonPipelineResult_GetBestTargetById_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the best target in this pipeline result filtered by fiducial ID (April tag numer).  If there are no targets, or no targets with this fiducial ID, this method will return an empty target.   IF more than 1 targets have the same fiducial ID, the best target is determined by the sort mode in the PhotonVision UI.<BR>
+<BR>
+Inputs:<BR>
+   - PipelineResult  --  Parsed PipelineResult cluster.<BR>
+   - Fiducial ID  -- The April tag number being searched for.<BR>
+<BR>
+Outputs:<BR>
+   -  TrackedTarget  --  Cluster containing the best target<BR>
+   - TargetFound  -- TRUE if a target matching the search criteria exits.<BR>
+   -  TargetIndex  -- Index into the targets array of the best target matching the search criteria.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPipelineResult_GetLatency_Millis" >PhotonPipelineResult_GetLatency_Millis</h3>
+<p><IMG SRC="PhotonPipelineResult_GetLatency_Millis_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the latency in the pipeline.<BR>
+<BR>
+Inputs:<BR>
+   - PipelineResult  --  Parsed PipelineResult cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  Latency_Millis  --  The latency in the pipeline.<BR>
+   -  TimeStampSec  --  Time stamp of packet (FPGA elapsed time) seconds<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPipelineResult_GetTargets" >PhotonPipelineResult_GetTargets</h3>
+<p><IMG SRC="PhotonPipelineResult_GetTargets_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the targets in this pipeline result. If there are no targets, this method will return an empty target array. <BR>
+<BR>
+Inputs:<BR>
+   - PipelineResult  --  Parsed PipelineResult cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  Targets  --  Array of Target clusters.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPipelineResult_GetTimeStampSecs" >PhotonPipelineResult_GetTimeStampSecs</h3>
+<p><IMG SRC="PhotonPipelineResult_GetTimeStampSecs_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns pipeline packet time stamp<BR>
+<BR>
+Inputs:<BR>
+   - PipelineResult  --  Parsed PipelineResult cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  TimeStampSec  --  Time stamp of packet (FPGA elapsed time) seconds<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPipelineResult_HasTargets" >PhotonPipelineResult_HasTargets</h3>
+<p><IMG SRC="PhotonPipelineResult_HasTargets_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns whether the pipeline has targets.<BR>
+<BR>
+Inputs:<BR>
+   - PipelineResult  --  Parsed PipelineResult cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  HasTargets  --  Whether the pipeline has targets.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPipelineResult_New" >PhotonPipelineResult_New</h3>
+<p><IMG SRC="PhotonPipelineResult_New_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Create a new PhotonPipelineResult cluster.<BR>
+<BR>
+Inputs:<BR>
+   -  Latency_Millis  --  Latency, milliseconds<BR>
+   -  TrackedTargets  --  Array of TracedTarget clusters<BR>
+<BR>
+Outputs:<BR>
+   - PipelineResult  --  Parsed PipelineResult cluster.</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPipelineResult_PopulatePacket" >PhotonPipelineResult_PopulatePacket</h3>
+<p><IMG SRC="PhotonPipelineResult_PopulatePacket_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convert a PipelineResult to a Packet array of bytes ready for writing to a Network Table variable.<BR>
+<BR>
+Inputs:<BR>
+   - PipelineResult  --  PipelineResult cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  Pacet_RawData  --  Byte array containing the encoded PipelineResult.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPipelineResult_SetTimeStampSecs" >PhotonPipelineResult_SetTimeStampSecs</h3>
+<p><IMG SRC="PhotonPipelineResult_SetTimeStampSecs_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns pipeline packet time stamp<BR>
+<BR>
+Inputs:<BR>
+   - PipelineResult  --  Parsed PipelineResult cluster.<BR>
+   -  TimeStampSec  --  Time stamp of packet (FPGA elapsed time) seconds<BR>
+<BR>
+Outputs:<BR>
+   - Out PipelineResult  --  Updated PipelineResult cluster.<BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>

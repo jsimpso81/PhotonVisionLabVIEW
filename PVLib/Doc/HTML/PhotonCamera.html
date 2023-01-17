@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<!-- Constructed with LabVIEW Report Generation -->
+<HEAD>
+<TITLE></TITLE>
+</HEAD>
+
+<BODY>
+<h2 id="PhotonCamera" >PhotonCamera</h2>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonCamera_GetDriverMode" >PhotonCamera_GetDriverMode</h3>
+<p><IMG SRC="PhotonCamera_GetDriverMode_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns whether the camera is in driver mode.<BR>
+<BR>
+Inputs:<BR>
+   -  CameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+  <BR>
+Outputs:<BR>
+   -  DriverMode  --  Boolean indicating whether the camera is in driver mode.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonCamera_GetLEDMode" >PhotonCamera_GetLEDMode</h3>
+<p><IMG SRC="PhotonCamera_GetLEDMode_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the current LED mode.<BR>
+<BR>
+Inputs:<BR>
+   -  CameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+  <BR>
+Outputs:<BR>
+   -  LedMode  --  The current LED mode.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonCamera_GetLatestResult" >PhotonCamera_GetLatestResult</h3>
+<p><IMG SRC="PhotonCamera_GetLatestResult_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the latest pipeline result.<BR>
+<BR>
+Inputs:<BR>
+   -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+   - PassThroughTime  --  (Optional.  Default: Use FPGA time.)  Time.  Once time is available from network tables, this won't be needed.  (Seconds)<BR>
+   - EstimatedDataAndSampleLatency  --  Estimated Network Table packet latency.  This is based on the frames per second and other communications latencies.  (Optional.  Default: 0.050)  Once time is available from network tables, this won't be needed.  <BR>
+<BR>
+Outputs:<BR>
+   -  PipelineResult  --  The latest pipeline result data cluster<BR>
+   - HasTargets  --  Boolean indicating if any targets were found<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonCamera_GetPipelineIndex" >PhotonCamera_GetPipelineIndex</h3>
+<p><IMG SRC="PhotonCamera_GetPipelineIndex_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the active pipeline index.<BR>
+<BR>
+Inputs:<BR>
+   -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+  <BR>
+Outputs:<BR>
+   -  PipelineIndex  --  Active Pipeline Index<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonCamera_IsConnected" >PhotonCamera_IsConnected</h3>
+<p><IMG SRC="PhotonCamera_IsConnected_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Determines if communications to camera is valid.<BR>
+<BR>
+Inputs:<BR>
+   -  CameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+  <BR>
+Outputs:<BR>
+   -  IsConnected --  TRUE if communications have been received within the last 0.5 seconds.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonCamera_SetDriverMode" >PhotonCamera_SetDriverMode</h3>
+<p><IMG SRC="PhotonCamera_SetDriverMode_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Toggles driver mode.<BR>
+  <BR>
+Inputs:<BR>
+   -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+   -  DriverMode  --  Whether to set driver mode.<BR>
+Outputs:<BR>
+   -  >none<  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonCamera_SetLEDMode" >PhotonCamera_SetLEDMode</h3>
+<p><IMG SRC="PhotonCamera_SetLEDMode_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the LED mode.<BR>
+<BR>
+Inputs:<BR>
+   -  CameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+   -  LedMod  --   The mode to set to.<BR>
+<BR>
+Outputs:<BR>
+   -  >none<<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonCamera_SetPipelineIndex" >PhotonCamera_SetPipelineIndex</h3>
+<p><IMG SRC="PhotonCamera_SetPipelineIndex_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Allows the user to select the active pipeline index.<BR>
+  <BR>
+Inputs:<BR>
+   -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+   -  index The active pipeline index.<BR>
+<BR>
+Outputs:<BR>
+   -  >none<  <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonCamera_TakeInputSnapshot" >PhotonCamera_TakeInputSnapshot</h3>
+<p><IMG SRC="PhotonCamera_TakeInputSnapshot_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Request the camera to save a new image file from the input camera stream with overlays. Images take up space in the filesystem of the PhotonCamera. Calling it frequently will fill up disk space and eventually cause the system to stop working. Clear out images in /opt/photonvision/photonvision_config/imgSaves frequently to prevent issues.<BR>
+<BR>
+Inputs:<BR>
+   -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+<BR>
+Outputs:<BR>
+   -  >none< <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonCamera_TakeOutputSnapshot" >PhotonCamera_TakeOutputSnapshot</h3>
+<p><IMG SRC="PhotonCamera_TakeOutputSnapshot_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Request the camera to save a new image file from the output stream with overlays. Images take up space in the filesystem of the PhotonCamera. Calling it frequently will fill up disk space and eventually cause the system to stop working. Clear out images in /opt/photonvision/photonvision_config/imgSaves frequently to prevent issues.<BR>
+<BR>
+Inputs:<BR>
+   -  CameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+<BR>
+Outputs:<BR>
+   -  >none< <BR>
+</pre></p>
+<br>
+</BODY>
+</HTML>
