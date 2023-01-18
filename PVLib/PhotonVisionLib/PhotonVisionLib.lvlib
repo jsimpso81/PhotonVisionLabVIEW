@@ -30,6 +30,10 @@
 			<Item Name="PhotonCamera_TakeInputSnapshot.vi" Type="VI" URL="../SubVI/PhotonCamera_TakeInputSnapshot.vi"/>
 			<Item Name="PhotonCamera_TakeOutputSnapshot.vi" Type="VI" URL="../SubVI/PhotonCamera_TakeOutputSnapshot.vi"/>
 		</Item>
+		<Item Name="PhotonEstimatedRobotPose" Type="Folder">
+			<Item Name="PhotonEstimatedRobotPose_GetAll.vi" Type="VI" URL="../SubVI/PhotonEstimatedRobotPose_GetAll.vi"/>
+			<Item Name="PhotonEstimatedRobotPose_New.vi" Type="VI" URL="../SubVI/PhotonEstimatedRobotPose_New.vi"/>
+		</Item>
 		<Item Name="PhotonPipelineResult" Type="Folder">
 			<Item Name="PhotonPipelineResult_CreateFromPacket.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_CreateFromPacket.vi"/>
 			<Item Name="PhotonPipelineResult_Equals.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_Equals.vi"/>
@@ -54,6 +58,7 @@
 			<Item Name="PhotonPoseEstimator_SetReferencePose.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetReferencePose.vi"/>
 			<Item Name="PhotonPoseEstimator_SetReferencePose_Pose2d.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetReferencePose_Pose2d.vi"/>
 			<Item Name="PhotonPoseEstimator_SetStategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetStategy.vi"/>
+			<Item Name="PhotonPoseEstimator_Update.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_Update.vi"/>
 		</Item>
 		<Item Name="PhotonTrackedTarget" Type="Folder">
 			<Item Name="PhotonTrackedTarget_CreateFromPacket.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_CreateFromPacket.vi"/>
@@ -89,6 +94,7 @@
 		</Item>
 	</Item>
 	<Item Name="TypeDef" Type="Folder">
+		<Item Name="PhotonEstimatedRobotPoseType.ctl" Type="VI" URL="../TypeDef/PhotonEstimatedRobotPoseType.ctl"/>
 		<Item Name="PhotonPipelineResultType.ctl" Type="VI" URL="../TypeDef/PhotonPipelineResultType.ctl"/>
 		<Item Name="PhotonPoseEstimatorType.ctl" Type="VI" URL="../TypeDef/PhotonPoseEstimatorType.ctl"/>
 		<Item Name="PhotonPoseStrategy_ENUM.ctl" Type="VI" URL="../TypeDef/PhotonPoseStrategy_ENUM.ctl"/>
