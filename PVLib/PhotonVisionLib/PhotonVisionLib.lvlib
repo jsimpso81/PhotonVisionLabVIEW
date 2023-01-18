@@ -43,6 +43,18 @@
 			<Item Name="PhotonPipelineResult_PopulatePacket.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_PopulatePacket.vi"/>
 			<Item Name="PhotonPipelineResult_SetTimeStampSecs.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_SetTimeStampSecs.vi"/>
 		</Item>
+		<Item Name="PhotonPoseEstimator" Type="Folder">
+			<Item Name="PhotonPoseEstimator_GetFieldTags.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetFieldTags.vi"/>
+			<Item Name="PhotonPoseEstimator_GetReferencePose.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetReferencePose.vi"/>
+			<Item Name="PhotonPoseEstimator_GetStrategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetStrategy.vi"/>
+			<Item Name="PhotonPoseEstimator_New.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_New.vi"/>
+			<Item Name="PhotonPoseEstimator_SetFieldTags.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetFieldTags.vi"/>
+			<Item Name="PhotonPoseEstimator_SetLastPose.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetLastPose.vi"/>
+			<Item Name="PhotonPoseEstimator_SetLastPose_Pose2d.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetLastPose_Pose2d.vi"/>
+			<Item Name="PhotonPoseEstimator_SetReferencePose.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetReferencePose.vi"/>
+			<Item Name="PhotonPoseEstimator_SetReferencePose_Pose2d.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetReferencePose_Pose2d.vi"/>
+			<Item Name="PhotonPoseEstimator_SetStategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetStategy.vi"/>
+		</Item>
 		<Item Name="PhotonTrackedTarget" Type="Folder">
 			<Item Name="PhotonTrackedTarget_CreateFromPacket.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_CreateFromPacket.vi"/>
 			<Item Name="PhotonTrackedTarget_Equals.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_Equals.vi"/>
@@ -78,6 +90,8 @@
 	</Item>
 	<Item Name="TypeDef" Type="Folder">
 		<Item Name="PhotonPipelineResultType.ctl" Type="VI" URL="../TypeDef/PhotonPipelineResultType.ctl"/>
+		<Item Name="PhotonPoseEstimatorType.ctl" Type="VI" URL="../TypeDef/PhotonPoseEstimatorType.ctl"/>
+		<Item Name="PhotonPoseStrategy_ENUM.ctl" Type="VI" URL="../TypeDef/PhotonPoseStrategy_ENUM.ctl"/>
 		<Item Name="PhotonTrackedTargetType.ctl" Type="VI" URL="../TypeDef/PhotonTrackedTargetType.ctl"/>
 		<Item Name="TargetCornerType.ctl" Type="VI" URL="../TypeDef/TargetCornerType.ctl"/>
 		<Item Name="VisionLEDModeType.ctl" Type="VI" URL="../TypeDef/VisionLEDModeType.ctl"/>
