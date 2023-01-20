@@ -19,3 +19,6 @@
 
 # Build data
 **/builds/**
+
+# temp files
+/temp/**
