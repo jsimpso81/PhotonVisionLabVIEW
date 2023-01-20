@@ -72,6 +72,7 @@
 			<Item Name="PhotonPoseEstimator_SetReferencePose_Pose2d.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetReferencePose_Pose2d.vi"/>
 			<Item Name="PhotonPoseEstimator_SetStategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetStategy.vi"/>
 			<Item Name="PhotonPoseEstimator_Update.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_Update.vi"/>
+			<Item Name="PhotonPoseEstimator_Update_PipeResult.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_Update_PipeResult.vi"/>
 		</Item>
 		<Item Name="PhotonTrackedTarget" Type="Folder">
 			<Item Name="PhotonTrackedTarget_CreateFromPacket.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_CreateFromPacket.vi"/>
