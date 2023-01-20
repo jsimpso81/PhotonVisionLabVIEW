@@ -1,0 +1,37 @@
+destinations for temp build of pdf doc..
+
+Uses WPILIB LabVIEW Math documentation builder....
+
+DOC
+---
+source library
+C:\Shares\github\PhotonVisionLabVIEW\PVLib\PhotonVisionLib\SubVI
+
+output, 2nd source library
+C:\Shares\github\PhotonVisionLabVIEW\Temp
+
+
+TYPEDEF
+-------
+source
+C:\Shares\github\PhotonVisionLabVIEW\PVLib\PhotonVisionLib\TypeDef
+
+output
+C:\Shares\github\PhotonVisionLabVIEW\Temp
+
+
+ENUM
+-------
+source
+C:\Shares\github\PhotonVisionLabVIEW\PVLib\PhotonVisionLib\TypeDef
+
+output
+C:\Shares\github\PhotonVisionLabVIEW\Temp\Temp2
+
+Need to edit TYPEDEF and ENUM html files since these are not in separate directories.
+
+Then merge TEMP2 back into TEMP.
+
+
+
+
