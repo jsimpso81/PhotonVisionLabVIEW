@@ -10,7 +10,10 @@
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PhotonEstimatedRobotPoseType" >TypeDef-PhotonEstimatedRobotPoseType</h3>
 <p><IMG SRC="PhotonEstimatedRobotPoseType_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The PhotonPoseEstimator cluster contains data that filters or combines readings from all the fiducials visible at a given timestamp on the field to produce a single robot in field pose, using the strategy set below. Example usage can be found in our apriltagExample example project.</pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">An estimated pose based on pipeline result.   This cluster contains:<BR>
+<BR>
+  -- EstimatedPose  -- Pose3d  -- Estimated absolute robot position based on vision location of April Tags<BR>
+  --  TimeStamp_Seconds  -- Double  -- Timestamp of data from photonvision.  This can be set by the user to add latency or other time offsets.</pre></p>
 <p><IMG SRC="PhotonEstimatedRobotPoseType_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonEstimatedRobotPoseType.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -22,13 +25,13 @@
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PhotonPoseEstimatorType" >TypeDef-PhotonPoseEstimatorType</h3>
 <p><IMG SRC="PhotonPoseEstimatorType_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The PhotonPoseEstimator cluster contains data that filters or combines readings from all the fiducials visible at a given timestamp on the field to produce a single robot in field pose, using the strategy set below. Example usage can be found in our apriltagExample example project.</pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The PhotonPoseEstimator cluster contains data that filters or combines readings from all the fiducials visible at a given timestamp on the field to produce a single robot in field pose, using the strategy set below. Example usage can be found under LabVIEW Find Examples..</pre></p>
 <p><IMG SRC="PhotonPoseEstimatorType_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonPoseEstimatorType.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PhotonPoseEstimator_PotentialRobotLocation" >TypeDef-PhotonPoseEstimator_PotentialRobotLocation</h3>
 <p><IMG SRC="PhotonPoseEstimator_PotentialRobotLocation_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This data cluster is used internally by the PhotonPoseEstimator routines to compare individual potential positions.</pre></p>
 <p><IMG SRC="PhotonPoseEstimator_PotentialRobotLocation_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonPoseEstimator_PotentialRobotLocation.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
