@@ -55,6 +55,7 @@
 			<Item Name="PhotonPoseEstimator_closestToCameraHeightStrategy_calc.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_closestToCameraHeightStrategy_calc.vi"/>
 			<Item Name="PhotonPoseEstimator_closestToReferencePoseStrategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_closestToReferencePoseStrategy.vi"/>
 			<Item Name="PhotonPoseEstimator_closestToReferencePoseStrategy_calc.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_closestToReferencePoseStrategy_calc.vi"/>
+			<Item Name="PhotonPoseEstimator_Execute.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_Execute.vi"/>
 			<Item Name="PhotonPoseEstimator_GetEmptyPose.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetEmptyPose.vi"/>
 			<Item Name="PhotonPoseEstimator_GetFieldTags.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetFieldTags.vi"/>
 			<Item Name="PhotonPoseEstimator_GetHighestAmbiguity.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetHighestAmbiguity.vi"/>
@@ -64,12 +65,15 @@
 			<Item Name="PhotonPoseEstimator_GetStrategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetStrategy.vi"/>
 			<Item Name="PhotonPoseEstimator_lowestAmbiguityStrategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_lowestAmbiguityStrategy.vi"/>
 			<Item Name="PhotonPoseEstimator_New.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_New.vi"/>
+			<Item Name="PhotonPoseEstimator_PackConfig.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_PackConfig.vi"/>
+			<Item Name="PhotonPoseEstimator_SetCamera.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetCamera.vi"/>
 			<Item Name="PhotonPoseEstimator_SetFieldTags.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetFieldTags.vi"/>
 			<Item Name="PhotonPoseEstimator_SetHighestAmbiguity.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetHighestAmbiguity.vi"/>
 			<Item Name="PhotonPoseEstimator_SetLastPose.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetLastPose.vi"/>
 			<Item Name="PhotonPoseEstimator_SetLastPose_Pose2d.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetLastPose_Pose2d.vi"/>
 			<Item Name="PhotonPoseEstimator_SetReferencePose.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetReferencePose.vi"/>
 			<Item Name="PhotonPoseEstimator_SetReferencePose_Pose2d.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetReferencePose_Pose2d.vi"/>
+			<Item Name="PhotonPoseEstimator_SetRobotToCamera.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetRobotToCamera.vi"/>
 			<Item Name="PhotonPoseEstimator_SetStategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetStategy.vi"/>
 			<Item Name="PhotonPoseEstimator_Update.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_Update.vi"/>
 			<Item Name="PhotonPoseEstimator_Update_PipeResult.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_Update_PipeResult.vi"/>
@@ -91,6 +95,7 @@
 			<Item Name="PhotonTrackedTarget_PopulatePacket.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_PopulatePacket.vi"/>
 		</Item>
 		<Item Name="PhotonUtils" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="PhotonUtils_CalculateDistanceToTarget.vi" Type="VI" URL="../SubVI/PhotonUtils_CalculateDistanceToTarget.vi"/>
 			<Item Name="PhotonUtils_EstimateCameraToTarget.vi" Type="VI" URL="../SubVI/PhotonUtils_EstimateCameraToTarget.vi"/>
 			<Item Name="PhotonUtils_EstimateCameraToTargetTrans.vi" Type="VI" URL="../SubVI/PhotonUtils_EstimateCameraToTargetTrans.vi"/>
@@ -110,6 +115,7 @@
 	<Item Name="TypeDef" Type="Folder">
 		<Item Name="PhotonEstimatedRobotPoseType.ctl" Type="VI" URL="../TypeDef/PhotonEstimatedRobotPoseType.ctl"/>
 		<Item Name="PhotonPipelineResultType.ctl" Type="VI" URL="../TypeDef/PhotonPipelineResultType.ctl"/>
+		<Item Name="PhotonPoseEstimator_Configuration.ctl" Type="VI" URL="../TypeDef/PhotonPoseEstimator_Configuration.ctl"/>
 		<Item Name="PhotonPoseEstimator_PotentialRobotLocation.ctl" Type="VI" URL="../TypeDef/PhotonPoseEstimator_PotentialRobotLocation.ctl"/>
 		<Item Name="PhotonPoseEstimatorType.ctl" Type="VI" URL="../TypeDef/PhotonPoseEstimatorType.ctl"/>
 		<Item Name="PhotonPoseStrategy_ENUM.ctl" Type="VI" URL="../TypeDef/PhotonPoseStrategy_ENUM.ctl"/>
