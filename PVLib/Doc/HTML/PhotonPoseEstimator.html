@@ -17,6 +17,22 @@ It calculates an overall difference between two poses.  Difference is defined as
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPoseEstimator_Execute" >PhotonPoseEstimator_Execute</h3>
+<p><IMG SRC="PhotonPoseEstimator_Execute_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Provided data from polling a camera,  update the estimated position of the robot. Returns empty if there are no cameras set or no targets were found from the cameras.  <BR>
+<BR>
+Inputs:<BR>
+  --  PhotonPoseEstimator  --  data cluster -- Data guiding how the position determination is done.<BR>
+  -- PipelineResults  -- data cluster -- Data provided from PhotonCamera_GetLatestResults.<BR>
+  -- HasResults -- boolean  - TRUE if targets have been identified in the Pipeline results.  This can be provided by PhotonCamera_GetLatestResults.<BR>
+<BR>
+Outputs:<BR>
+  --  PhotonPoseEstimator  --  data cluster -- Updated data cluster.<BR>
+  --  PhotonEstimatedRobotPose  -- data cluster  -- Estimated robot position and timestamp.<BR>
+  -- PosFound -- boolean  -- A position has been determined.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonPoseEstimator_GetEmptyPose" >PhotonPoseEstimator_GetEmptyPose</h3>
 <p><IMG SRC="PhotonPoseEstimator_GetEmptyPose_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This is an internal function.  <BR>
@@ -126,6 +142,40 @@ Outputs:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPoseEstimator_PackConfig" >PhotonPoseEstimator_PackConfig</h3>
+<p><IMG SRC="PhotonPoseEstimator_PackConfig_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Provided data from polling a camera,  update the estimated position of the robot. Returns empty if there are no cameras set or no targets were found from the cameras.  <BR>
+<BR>
+Inputs:<BR>
+  --  PhotonPoseEstimator  --  data cluster -- Data guiding how the position determination is done.<BR>
+  -- PipelineResults  -- data cluster -- Data provided from PhotonCamera_GetLatestResults.<BR>
+  -- HasResults -- boolean  - TRUE if targets have been identified in the Pipeline results.  This can be provided by PhotonCamera_GetLatestResults.<BR>
+<BR>
+Outputs:<BR>
+  --  PhotonPoseEstimator  --  data cluster -- Updated data cluster.<BR>
+  --  PhotonEstimatedRobotPose  -- data cluster  -- Estimated robot position and timestamp.<BR>
+  -- PosFound -- boolean  -- A position has been determined.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPoseEstimator_SetCamera" >PhotonPoseEstimator_SetCamera</h3>
+<p><IMG SRC="PhotonPoseEstimator_SetCamera_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Set the current strategy being used by the PhotonPoseEstimator.<BR>
+<BR>
+Inputs: <BR>
+  --  PhotonVisionPoseEstimator  -- cluster -- The estimator.<BR>
+  --  PhotonPoseStrategy  -- enum -- Current strategy being used by the Photon Pose Estimator.  Current strategies include:<BR>
+            LOWEST_AMBIGUITY --  Choose the Pose with the lowest ambiguity<BR>
+            CLOSEST_TO_CAMERA_HEIGHT  --  Choose the Pose which is closest to the camera height.<BR>
+            CLOSEST_TO_REFERENCE_POSE  --  Choose the Pose which is closest to a set Reference position.<BR>
+            CLOSEST_TO_LAST_POSE  --  Choose the Pose which is closest to the last pose calculated<BR>
+            AVERAGE_BEST_TARGETS  --  Weight average of acceptable targets based on ambiguity..<BR>
+<BR>
+Outputs:<BR>
+  --  PhotonVisionPoseEstimator  -- cluster -- The updated estimator.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonPoseEstimator_SetFieldTags" >PhotonPoseEstimator_SetFieldTags</h3>
 <p><IMG SRC="PhotonPoseEstimator_SetFieldTags_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Set the AprilTagFIeldLayout cluster into the PhotonPoseEstimator cluster.<BR>
@@ -205,6 +255,24 @@ Inputs: <BR>
 Outputs:<BR>
   --  PhotonVisionPoseEstimator  -- cluster -- The updated estimator.<BR>
 <BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPoseEstimator_SetRobotToCamera" >PhotonPoseEstimator_SetRobotToCamera</h3>
+<p><IMG SRC="PhotonPoseEstimator_SetRobotToCamera_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Set the current strategy being used by the PhotonPoseEstimator.<BR>
+<BR>
+Inputs: <BR>
+  --  PhotonVisionPoseEstimator  -- cluster -- The estimator.<BR>
+  --  PhotonPoseStrategy  -- enum -- Current strategy being used by the Photon Pose Estimator.  Current strategies include:<BR>
+            LOWEST_AMBIGUITY --  Choose the Pose with the lowest ambiguity<BR>
+            CLOSEST_TO_CAMERA_HEIGHT  --  Choose the Pose which is closest to the camera height.<BR>
+            CLOSEST_TO_REFERENCE_POSE  --  Choose the Pose which is closest to a set Reference position.<BR>
+            CLOSEST_TO_LAST_POSE  --  Choose the Pose which is closest to the last pose calculated<BR>
+            AVERAGE_BEST_TARGETS  --  Weight average of acceptable targets based on ambiguity..<BR>
+<BR>
+Outputs:<BR>
+  --  PhotonVisionPoseEstimator  -- cluster -- The updated estimator.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
