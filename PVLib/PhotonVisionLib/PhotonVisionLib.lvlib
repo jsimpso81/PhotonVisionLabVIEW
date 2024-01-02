@@ -13,20 +13,25 @@
 	</Item>
 	<Item Name="SubVI" Type="Folder">
 		<Item Name="Packet" Type="Folder">
+			<Item Name="Packet_decode_Boolean.vi" Type="VI" URL="../SubVI/Packet_decode_Boolean.vi"/>
 			<Item Name="Packet_decode_ByteI8.vi" Type="VI" URL="../SubVI/Packet_decode_ByteI8.vi"/>
 			<Item Name="Packet_decode_Flt64.vi" Type="VI" URL="../SubVI/Packet_decode_Flt64.vi"/>
 			<Item Name="Packet_decode_Int32.vi" Type="VI" URL="../SubVI/Packet_decode_Int32.vi"/>
 			<Item Name="Packet_decode_Transform3d.vi" Type="VI" URL="../SubVI/Packet_decode_Transform3d.vi"/>
+			<Item Name="Packet_encode_Boolean.vi" Type="VI" URL="../SubVI/Packet_encode_Boolean.vi"/>
 			<Item Name="Packet_encode_ByteI8.vi" Type="VI" URL="../SubVI/Packet_encode_ByteI8.vi"/>
 			<Item Name="Packet_encode_FLT64.vi" Type="VI" URL="../SubVI/Packet_encode_FLT64.vi"/>
 			<Item Name="Packet_encode_Int32.vi" Type="VI" URL="../SubVI/Packet_encode_Int32.vi"/>
 			<Item Name="Packet_encode_Transform3d.vi" Type="VI" URL="../SubVI/Packet_encode_Transform3d.vi"/>
 		</Item>
 		<Item Name="PhotonCamera" Type="Folder">
+			<Item Name="PhotonCamera_GetCameraMatrix.vi" Type="VI" URL="../SubVI/PhotonCamera_GetCameraMatrix.vi"/>
+			<Item Name="PhotonCamera_GetDistCoeffs.vi" Type="VI" URL="../SubVI/PhotonCamera_GetDistCoeffs.vi"/>
 			<Item Name="PhotonCamera_GetDriverMode.vi" Type="VI" URL="../SubVI/PhotonCamera_GetDriverMode.vi"/>
 			<Item Name="PhotonCamera_GetLatestResult.vi" Type="VI" URL="../SubVI/PhotonCamera_GetLatestResult.vi"/>
 			<Item Name="PhotonCamera_GetLEDMode.vi" Type="VI" URL="../SubVI/PhotonCamera_GetLEDMode.vi"/>
 			<Item Name="PhotonCamera_GetPipelineIndex.vi" Type="VI" URL="../SubVI/PhotonCamera_GetPipelineIndex.vi"/>
+			<Item Name="PhotonCamera_GetVersion.vi" Type="VI" URL="../SubVI/PhotonCamera_GetVersion.vi"/>
 			<Item Name="PhotonCamera_IsConnected.vi" Type="VI" URL="../SubVI/PhotonCamera_IsConnected.vi"/>
 			<Item Name="PhotonCamera_SetDriverMode.vi" Type="VI" URL="../SubVI/PhotonCamera_SetDriverMode.vi"/>
 			<Item Name="PhotonCamera_SetLEDMode.vi" Type="VI" URL="../SubVI/PhotonCamera_SetLEDMode.vi"/>
@@ -38,6 +43,7 @@
 			<Item Name="PhotonEstimatedRobotPose_GetAll.vi" Type="VI" URL="../SubVI/PhotonEstimatedRobotPose_GetAll.vi"/>
 			<Item Name="PhotonEstimatedRobotPose_New.vi" Type="VI" URL="../SubVI/PhotonEstimatedRobotPose_New.vi"/>
 		</Item>
+		<Item Name="PhotonMultiTargetPNPResult" Type="Folder"/>
 		<Item Name="PhotonPipelineResult" Type="Folder">
 			<Item Name="PhotonPipelineResult_CreateFromPacket.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_CreateFromPacket.vi"/>
 			<Item Name="PhotonPipelineResult_Equals.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_Equals.vi"/>
@@ -50,6 +56,13 @@
 			<Item Name="PhotonPipelineResult_New.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_New.vi"/>
 			<Item Name="PhotonPipelineResult_PopulatePacket.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_PopulatePacket.vi"/>
 			<Item Name="PhotonPipelineResult_SetTimeStampSecs.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_SetTimeStampSecs.vi"/>
+		</Item>
+		<Item Name="PhotonPNPResult" Type="Folder">
+			<Item Name="PhotonPNPResult_New.vi" Type="VI" URL="../SubVI/PhotonPNPResult_New.vi"/>
+			<Item Name="PhotonPNPResult_New_Empty.vi" Type="VI" URL="../SubVI/PhotonPNPResult_New_Empty.vi"/>
+			<Item Name="PhotonPNPResult_New_OnlyBest.vi" Type="VI" URL="../SubVI/PhotonPNPResult_New_OnlyBest.vi"/>
+			<Item Name="PhotonPNPResult_pack.vi" Type="VI" URL="../SubVI/PhotonPNPResult_pack.vi"/>
+			<Item Name="PhotonPNPResult_unpackt.vi" Type="VI" URL="../SubVI/PhotonPNPResult_unpackt.vi"/>
 		</Item>
 		<Item Name="PhotonPoseEstimator" Type="Folder">
 			<Item Name="PhotonPoseEstimator_averageBestTargetsStrategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_averageBestTargetsStrategy.vi"/>
@@ -119,6 +132,7 @@
 	<Item Name="TypeDef" Type="Folder">
 		<Item Name="PhotonEstimatedRobotPoseType.ctl" Type="VI" URL="../TypeDef/PhotonEstimatedRobotPoseType.ctl"/>
 		<Item Name="PhotonPipelineResultType.ctl" Type="VI" URL="../TypeDef/PhotonPipelineResultType.ctl"/>
+		<Item Name="PhotonPNPResult.ctl" Type="VI" URL="../TypeDef/PhotonPNPResult.ctl"/>
 		<Item Name="PhotonPoseEstimator_Configuration.ctl" Type="VI" URL="../TypeDef/PhotonPoseEstimator_Configuration.ctl"/>
 		<Item Name="PhotonPoseEstimator_PotentialRobotLocation.ctl" Type="VI" URL="../TypeDef/PhotonPoseEstimator_PotentialRobotLocation.ctl"/>
 		<Item Name="PhotonPoseEstimatorType.ctl" Type="VI" URL="../TypeDef/PhotonPoseEstimatorType.ctl"/>
