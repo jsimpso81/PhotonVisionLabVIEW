@@ -134,7 +134,7 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/ThirdParty</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{A5AA42FE-442B-4C03-92A9-ADA463D4DE3C}</Property>
-				<Property Name="Bld_version.build" Type="Int">79</Property>
+				<Property Name="Bld_version.build" Type="Int">80</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/ThirdParty</Property>
@@ -214,7 +214,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/PhotonVisionLib Package LV2019/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlib-lv2019_2023.3.0-37_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlib-lv2019_2023.3.0-38_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
@@ -222,18 +222,18 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">38</Property>
+				<Property Name="PKG_buildNumber" Type="Int">39</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">PhotonVisionLib Package LV2019</Property>
-				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
-				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">NI Vision Common Resources</Property>
+				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-vision-common-resources</Property>
+				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Drivers</Property>
+				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">Runtime components required to deploy applications that use NI Vision image management functions, Image Display controls, or image shared variables.</Property>
 				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_dependencies[1].Enhanced" Type="Bool">false</Property>
@@ -241,12 +241,34 @@
 				<Property Name="PKG_dependencies[1].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[1].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[1].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[1].NIPKG.DisplayName" Type="Str">NI CompactRIO Driver</Property>
-				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-compactrio-runtime</Property>
+				<Property Name="PKG_dependencies[1].NIPKG.DisplayName" Type="Str">NI Vision Runtime</Property>
+				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-vision-runtime</Property>
 				<Property Name="PKG_dependencies[1].Package.Section" Type="Str">Drivers</Property>
-				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str">Runtime driver support for CompactRIO Reconfigurable Embedded Targets. This also includes support for sbRIO and MXI-Express Targets.</Property>
+				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str">Runtime components required to deploy machine vision and image processing applications.</Property>
 				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[1].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[2].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[2].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[2].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[2].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[2].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[2].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
+				<Property Name="PKG_dependencies[2].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
+				<Property Name="PKG_dependencies[2].Package.Section" Type="Str">Programming Environments</Property>
+				<Property Name="PKG_dependencies[2].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[2].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[2].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[3].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[3].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[3].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[3].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[3].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[3].NIPKG.DisplayName" Type="Str">NI CompactRIO Driver</Property>
+				<Property Name="PKG_dependencies[3].Package.Name" Type="Str">ni-compactrio-runtime</Property>
+				<Property Name="PKG_dependencies[3].Package.Section" Type="Str">Drivers</Property>
+				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str">Runtime driver support for CompactRIO Reconfigurable Embedded Targets. This also includes support for sbRIO and MXI-Express Targets.</Property>
+				<Property Name="PKG_dependencies[3].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[3].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_description" Type="Str">This package is for LabVIEW 2019</Property>
 				<Property Name="PKG_destinations.Count" Type="Int">8</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{011DD094-7B58-4930-927C-EC6177230EA0}</Property>
@@ -336,7 +358,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/PhotonVisionLib Package LV2019/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlib-lv2020_2023.3.0-37_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlib-lv2020_2023.3.0-38_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
@@ -344,18 +366,18 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">38</Property>
+				<Property Name="PKG_buildNumber" Type="Int">39</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">PhotonVisionLib Package LV2020</Property>
-				<Property Name="PKG_dependencies.Count" Type="Int">2</Property>
+				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[0].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[0].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
-				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[0].NIPKG.DisplayName" Type="Str">NI Vision Common Resources</Property>
+				<Property Name="PKG_dependencies[0].Package.Name" Type="Str">ni-vision-common-resources</Property>
+				<Property Name="PKG_dependencies[0].Package.Section" Type="Str">Drivers</Property>
+				<Property Name="PKG_dependencies[0].Package.Synopsis" Type="Str">Runtime components required to deploy applications that use NI Vision image management functions, Image Display controls, or image shared variables.</Property>
 				<Property Name="PKG_dependencies[0].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[0].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_dependencies[1].Enhanced" Type="Bool">false</Property>
@@ -363,12 +385,34 @@
 				<Property Name="PKG_dependencies[1].MaxVersionInclusive" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[1].MinVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[1].MinVersionType" Type="Str">Inclusive</Property>
-				<Property Name="PKG_dependencies[1].NIPKG.DisplayName" Type="Str">NI CompactRIO Driver</Property>
-				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-compactrio-runtime</Property>
+				<Property Name="PKG_dependencies[1].NIPKG.DisplayName" Type="Str">NI Vision Runtime</Property>
+				<Property Name="PKG_dependencies[1].Package.Name" Type="Str">ni-vision-runtime</Property>
 				<Property Name="PKG_dependencies[1].Package.Section" Type="Str">Drivers</Property>
-				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str">Runtime driver support for CompactRIO Reconfigurable Embedded Targets. This also includes support for sbRIO and MXI-Express Targets.</Property>
+				<Property Name="PKG_dependencies[1].Package.Synopsis" Type="Str">Runtime components required to deploy machine vision and image processing applications.</Property>
 				<Property Name="PKG_dependencies[1].Relationship" Type="Str">Required Dependency</Property>
 				<Property Name="PKG_dependencies[1].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[2].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[2].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[2].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[2].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[2].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[2].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
+				<Property Name="PKG_dependencies[2].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
+				<Property Name="PKG_dependencies[2].Package.Section" Type="Str">Programming Environments</Property>
+				<Property Name="PKG_dependencies[2].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[2].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[2].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[3].Enhanced" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[3].MaxVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[3].MaxVersionInclusive" Type="Bool">false</Property>
+				<Property Name="PKG_dependencies[3].MinVersion" Type="Str"></Property>
+				<Property Name="PKG_dependencies[3].MinVersionType" Type="Str">Inclusive</Property>
+				<Property Name="PKG_dependencies[3].NIPKG.DisplayName" Type="Str">NI CompactRIO Driver</Property>
+				<Property Name="PKG_dependencies[3].Package.Name" Type="Str">ni-compactrio-runtime</Property>
+				<Property Name="PKG_dependencies[3].Package.Section" Type="Str">Drivers</Property>
+				<Property Name="PKG_dependencies[3].Package.Synopsis" Type="Str">Runtime driver support for CompactRIO Reconfigurable Embedded Targets. This also includes support for sbRIO and MXI-Express Targets.</Property>
+				<Property Name="PKG_dependencies[3].Relationship" Type="Str">Required Dependency</Property>
+				<Property Name="PKG_dependencies[3].Type" Type="Str">NIPKG</Property>
 				<Property Name="PKG_description" Type="Str">This package is for LabVIEW 2020</Property>
 				<Property Name="PKG_destinations.Count" Type="Int">8</Property>
 				<Property Name="PKG_destinations[0].ID" Type="Str">{011DD094-7B58-4930-927C-EC6177230EA0}</Property>
