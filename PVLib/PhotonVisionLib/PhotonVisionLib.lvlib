@@ -87,8 +87,10 @@
 			<Item Name="PhotonPoseEstimator_GetHighestAmbiguity.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetHighestAmbiguity.vi"/>
 			<Item Name="PhotonPoseEstimator_GetLastPose.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetLastPose.vi"/>
 			<Item Name="PhotonPoseEstimator_GetReferencePose.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetReferencePose.vi"/>
-			<Item Name="PhotonPoseEstimator_GetRobotToCamera.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetRobotToCamera.vi"/>
+			<Item Name="PhotonPoseEstimator_GetRobotToCameraTransform.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetRobotToCameraTransform.vi"/>
 			<Item Name="PhotonPoseEstimator_GetStrategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetStrategy.vi"/>
+			<Item Name="PhotonPoseEstimator_GetTagModel.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetTagModel.vi"/>
+			<Item Name="PhotonPoseEstimator_InvalidatePoseCache.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_InvalidatePoseCache.vi"/>
 			<Item Name="PhotonPoseEstimator_lowestAmbiguityStrategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_lowestAmbiguityStrategy.vi"/>
 			<Item Name="PhotonPoseEstimator_New.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_New.vi"/>
 			<Item Name="PhotonPoseEstimator_PackConfig.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_PackConfig.vi"/>
@@ -97,14 +99,22 @@
 			<Item Name="PhotonPoseEstimator_SetHighestAmbiguity.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetHighestAmbiguity.vi"/>
 			<Item Name="PhotonPoseEstimator_SetLastPose.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetLastPose.vi"/>
 			<Item Name="PhotonPoseEstimator_SetLastPose_Pose2d.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetLastPose_Pose2d.vi"/>
+			<Item Name="PhotonPoseEstimator_SetMultiTagFallbackStrategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetMultiTagFallbackStrategy.vi"/>
 			<Item Name="PhotonPoseEstimator_SetPrimaryStategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetPrimaryStategy.vi"/>
 			<Item Name="PhotonPoseEstimator_SetReferencePose.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetReferencePose.vi"/>
 			<Item Name="PhotonPoseEstimator_SetReferencePose_Pose2d.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetReferencePose_Pose2d.vi"/>
-			<Item Name="PhotonPoseEstimator_SetRobotToCamera.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetRobotToCamera.vi"/>
+			<Item Name="PhotonPoseEstimator_SetRobotToCameraTransform.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetRobotToCameraTransform.vi"/>
+			<Item Name="PhotonPoseEstimator_SetTagModel.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetTagModel.vi"/>
 			<Item Name="PhotonPoseEstimator_Update.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_Update.vi"/>
+			<Item Name="PhotonPoseEstimator_Update_All.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_Update_All.vi"/>
 			<Item Name="PhotonPoseEstimator_Update_PipeResult.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_Update_PipeResult.vi"/>
 		</Item>
-		<Item Name="PhotonTargetModel" Type="Folder"/>
+		<Item Name="PhotonTargetModel" Type="Folder">
+			<Item Name="PhotonTargetModel_New.vi" Type="VI" URL="../SubVI/PhotonTargetModel_New.vi"/>
+			<Item Name="PhotonTargetModel_New_AprilTag16h5.vi" Type="VI" URL="../SubVI/PhotonTargetModel_New_AprilTag16h5.vi"/>
+			<Item Name="PhotonTargetModel_New_AprilTag36H11.vi" Type="VI" URL="../SubVI/PhotonTargetModel_New_AprilTag36H11.vi"/>
+			<Item Name="PhotonTargetModel_New_RectPlanar.vi" Type="VI" URL="../SubVI/PhotonTargetModel_New_RectPlanar.vi"/>
+		</Item>
 		<Item Name="PhotonTrackedTarget" Type="Folder">
 			<Item Name="PhotonTrackedTarget_Equals.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_Equals.vi"/>
 			<Item Name="PhotonTrackedTarget_GetAltCameraToTarget.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetAltCameraToTarget.vi"/>
@@ -147,6 +157,7 @@
 		<Item Name="PhotonPoseEstimator_Configuration.ctl" Type="VI" URL="../TypeDef/PhotonPoseEstimator_Configuration.ctl"/>
 		<Item Name="PhotonPoseEstimator_PotentialRobotLocation.ctl" Type="VI" URL="../TypeDef/PhotonPoseEstimator_PotentialRobotLocation.ctl"/>
 		<Item Name="PhotonPoseEstimatorType.ctl" Type="VI" URL="../TypeDef/PhotonPoseEstimatorType.ctl"/>
+		<Item Name="PhotonTargetModel.ctl" Type="VI" URL="../TypeDef/PhotonTargetModel.ctl"/>
 		<Item Name="PhotonTrackedTargetType.ctl" Type="VI" URL="../TypeDef/PhotonTrackedTargetType.ctl"/>
 		<Item Name="TargetCornerType.ctl" Type="VI" URL="../TypeDef/TargetCornerType.ctl"/>
 	</Item>
