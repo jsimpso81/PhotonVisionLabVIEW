@@ -8,6 +8,30 @@
 <BODY>
 <h2 id="PhotonCamera" >PhotonCamera</h2>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonCamera_GetCameraMatrix" >PhotonCamera_GetCameraMatrix</h3>
+<p><IMG SRC="PhotonCamera_GetCameraMatrix_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the camera matrix<BR>
+<BR>
+Inputs:<BR>
+   -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+  <BR>
+Outputs:<BR>
+   - CameraMatrix  - matrix -  3 x 3 matrix of camera intrinsics.  If empty, nothing was returned or nothing exists.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonCamera_GetDistCoeffs" >PhotonCamera_GetDistCoeffs</h3>
+<p><IMG SRC="PhotonCamera_GetDistCoeffs_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the distortion coeeficitions<BR>
+<BR>
+Inputs:<BR>
+   -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+  <BR>
+Outputs:<BR>
+   - DistCoeffs  - matrix -  5 x 1 matrix of distortion coefficients.  If empty, nothing was returned or nothing exists.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonCamera_GetDriverMode" >PhotonCamera_GetDriverMode</h3>
 <p><IMG SRC="PhotonCamera_GetDriverMode_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns whether the camera is in driver mode.<BR>
@@ -25,8 +49,8 @@ Outputs:<BR>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the current LED mode.<BR>
 <BR>
 Inputs:<BR>
-   -  CameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
-  <BR>
+  <none><BR>
+<BR>
 Outputs:<BR>
    -  LedMode  --  The current LED mode.<BR>
 </pre></p>
@@ -57,6 +81,18 @@ Inputs:<BR>
   <BR>
 Outputs:<BR>
    -  PipelineIndex  --  Active Pipeline Index<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonCamera_GetVersion" >PhotonCamera_GetVersion</h3>
+<p><IMG SRC="PhotonCamera_GetVersion_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returned photonvision version string<BR>
+<BR>
+Inputs:<BR>
+   -  CameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+  <BR>
+Outputs:<BR>
+   -  Version  -  string  -  Photonvision version string<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">

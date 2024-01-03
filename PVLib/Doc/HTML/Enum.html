@@ -22,7 +22,12 @@ Values are:<BR>
 <BR>
         CLOSEST_TO_LAST_POSE -- Choose the Pose which is closest to the last pose calculated<BR>
 <BR>
-        AVERAGE_BEST_TARGETS  --  Choose the Pose with the lowest ambiguity</pre></p>
+        AVERAGE_BEST_TARGETS  --  Choose the Pose with the lowest ambiguity<BR>
+<BR>
+        MULTI_TAG_PNP_ON_COPROCESSOR  --   Use all visible tags to compute a single pose estimate on coprocessor. This option needs to be enabled on the PhotonVision web UI as well.<BR>
+<BR>
+        MULTI_TAG_PNP_ON_RIO  --  Use all visible tags to compute a single pose estimate. This runs on the RoboRIO, and can take a lot of time.<BR>
+</pre></p>
 <p><IMG SRC="PhotonPoseStrategy_ENUM_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonPoseStrategy_ENUM.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">

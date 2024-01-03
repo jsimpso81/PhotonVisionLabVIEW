@@ -8,17 +8,6 @@
 <BODY>
 <h2 id="PhotonTrackedTarget" >PhotonTrackedTarget</h2>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
-<h3 id="PhotonTrackedTarget_CreateFromPacket" >PhotonTrackedTarget_CreateFromPacket</h3>
-<p><IMG SRC="PhotonTrackedTarget_CreateFromPacket_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function to parse the data for each target returned by PhotonCamera_GetLatestResult.<BR>
-<BR>
-Inputs:<BR>
-   -  RawData  --  Byte array containing the data to parse.<BR>
-<BR>
-Outputs:<BR>
-   - TrackedTarget  --  Parsed TrackedTarget cluster.</pre></p>
-<br>
-<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonTrackedTarget_Equals" >PhotonTrackedTarget_Equals</h3>
 <p><IMG SRC="PhotonTrackedTarget_Equals_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Determines if two tracked targets are equal<BR>
@@ -160,8 +149,8 @@ Outputs:<BR>
    - TrackedTarget  --  Created TrackedTarget cluster.</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
-<h3 id="PhotonTrackedTarget_PopulatePacket" >PhotonTrackedTarget_PopulatePacket</h3>
-<p><IMG SRC="PhotonTrackedTarget_PopulatePacket_iconc.png"  ALIGN=BOTTOM></p>
+<h3 id="PhotonTrackedTarget_Pack" >PhotonTrackedTarget_Pack</h3>
+<p><IMG SRC="PhotonTrackedTarget_Pack_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Encode a TrackedTarget cluster into an array of bytes.<BR>
 <BR>
 Inputs:<BR>
@@ -170,6 +159,17 @@ Inputs:<BR>
 Outputs:<BR>
    -  RawDataOut  --  Byte array containing the encoded data.<BR>
 </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonTrackedTarget_Unpack" >PhotonTrackedTarget_Unpack</h3>
+<p><IMG SRC="PhotonTrackedTarget_Unpack_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function to parse the data for each target returned by PhotonCamera_GetLatestResult.<BR>
+<BR>
+Inputs:<BR>
+   -  RawData  --  Byte array containing the data to parse.<BR>
+<BR>
+Outputs:<BR>
+   - TrackedTarget  --  Parsed TrackedTarget cluster.</pre></p>
 <br>
 </BODY>
 </HTML>

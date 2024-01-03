@@ -8,17 +8,6 @@
 <BODY>
 <h2 id="PhotonPipelineResult" >PhotonPipelineResult</h2>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
-<h3 id="PhotonPipelineResult_CreateFromPacket" >PhotonPipelineResult_CreateFromPacket</h3>
-<p><IMG SRC="PhotonPipelineResult_CreateFromPacket_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function to parse the data returned by PhotonCamera_GetLatestResult.<BR>
-<BR>
-Inputs:<BR>
-   -  RawData  --  Byte array containing the data to parse.<BR>
-<BR>
-Outputs:<BR>
-   - PipelineResult  --  Parsed PipelineResult cluster.</pre></p>
-<br>
-<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonPipelineResult_Equals" >PhotonPipelineResult_Equals</h3>
 <p><IMG SRC="PhotonPipelineResult_Equals_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Determines if two PipelineResults are equal.<BR>
@@ -70,6 +59,17 @@ Outputs:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPipelineResult_GetMultiTagResult" >PhotonPipelineResult_GetMultiTagResult</h3>
+<p><IMG SRC="PhotonPipelineResult_GetMultiTagResult_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the best target in this pipeline result. If there are no targets, this method will return an empty target. The best target is determined by the target sort mode in the PhotonVision UI.<BR>
+<BR>
+Inputs:<BR>
+   - PipelineResult  --  Parsed PipelineResult cluster.<BR>
+<BR>
+Outputs:<BR>
+   -  TrackedTarget  --  Cluster containing the best target</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonPipelineResult_GetTargets" >PhotonPipelineResult_GetTargets</h3>
 <p><IMG SRC="PhotonPipelineResult_GetTargets_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the targets in this pipeline result. If there are no targets, this method will return an empty target array. <BR>
@@ -117,8 +117,8 @@ Outputs:<BR>
    - PipelineResult  --  Parsed PipelineResult cluster.</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
-<h3 id="PhotonPipelineResult_PopulatePacket" >PhotonPipelineResult_PopulatePacket</h3>
-<p><IMG SRC="PhotonPipelineResult_PopulatePacket_iconc.png"  ALIGN=BOTTOM></p>
+<h3 id="PhotonPipelineResult_Pack" >PhotonPipelineResult_Pack</h3>
+<p><IMG SRC="PhotonPipelineResult_Pack_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Convert a PipelineResult to a Packet array of bytes ready for writing to a Network Table variable.<BR>
 <BR>
 Inputs:<BR>
@@ -140,6 +140,17 @@ Inputs:<BR>
 Outputs:<BR>
    - Out PipelineResult  --  Updated PipelineResult cluster.<BR>
 </pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPipelineResult_Unpack" >PhotonPipelineResult_Unpack</h3>
+<p><IMG SRC="PhotonPipelineResult_Unpack_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function to parse the data returned by PhotonCamera_GetLatestResult.<BR>
+<BR>
+Inputs:<BR>
+   -  RawData  --  Byte array containing the data to parse.<BR>
+<BR>
+Outputs:<BR>
+   - PipelineResult  --  Parsed PipelineResult cluster.</pre></p>
 <br>
 </BODY>
 </HTML>

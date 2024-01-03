@@ -17,6 +17,68 @@
 <p><IMG SRC="PhotonEstimatedRobotPoseType_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonEstimatedRobotPoseType.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-PhotonMultiTargetPNPResultType" >TypeDef-PhotonMultiTargetPNPResultType</h3>
+<p><IMG SRC="PhotonMultiTargetPNPResultType_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">    /**<BR>
+     * If this result is valid. A false value indicates there was an error in estimation, and this<BR>
+     * result should not be used.<BR>
+     */<BR>
+    public final boolean isPresent;<BR>
+<BR>
+    /**<BR>
+     * The best-fit transform. The coordinate frame of this transform depends on the method which gave<BR>
+     * this result.<BR>
+     */<BR>
+    public final Transform3d best;<BR>
+<BR>
+    /** Reprojection error of the best solution, in pixels */<BR>
+    public final double bestReprojErr;<BR>
+<BR>
+    /**<BR>
+     * Alternate, ambiguous solution from solvepnp. If no alternate solution is found, this is equal<BR>
+     * to the best solution.<BR>
+     */<BR>
+    public final Transform3d alt;<BR>
+<BR>
+    /** If no alternate solution is found, this is bestReprojErr */<BR>
+    public final double altReprojErr;<BR>
+<BR>
+    /** If no alternate solution is found, this is 0 */<BR>
+    public final double ambiguity;</pre></p>
+<p><IMG SRC="PhotonMultiTargetPNPResultType_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonMultiTargetPNPResultType.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-PhotonPNPResultType" >TypeDef-PhotonPNPResultType</h3>
+<p><IMG SRC="PhotonPNPResultType_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">    /**<BR>
+     * If this result is valid. A false value indicates there was an error in estimation, and this<BR>
+     * result should not be used.<BR>
+     */<BR>
+    public final boolean isPresent;<BR>
+<BR>
+    /**<BR>
+     * The best-fit transform. The coordinate frame of this transform depends on the method which gave<BR>
+     * this result.<BR>
+     */<BR>
+    public final Transform3d best;<BR>
+<BR>
+    /** Reprojection error of the best solution, in pixels */<BR>
+    public final double bestReprojErr;<BR>
+<BR>
+    /**<BR>
+     * Alternate, ambiguous solution from solvepnp. If no alternate solution is found, this is equal<BR>
+     * to the best solution.<BR>
+     */<BR>
+    public final Transform3d alt;<BR>
+<BR>
+    /** If no alternate solution is found, this is bestReprojErr */<BR>
+    public final double altReprojErr;<BR>
+<BR>
+    /** If no alternate solution is found, this is 0 */<BR>
+    public final double ambiguity;</pre></p>
+<p><IMG SRC="PhotonPNPResultType_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonPNPResultType.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PhotonPipelineResultType" >TypeDef-PhotonPipelineResultType</h3>
 <p><IMG SRC="PhotonPipelineResultType_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>

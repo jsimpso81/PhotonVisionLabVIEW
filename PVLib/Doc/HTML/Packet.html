@@ -8,6 +8,20 @@
 <BODY>
 <h2 id="Packet" >Packet</h2>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Packet_decode_Boolean" >Packet_decode_Boolean</h3>
+<p><IMG SRC="Packet_decode_Boolean_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Decode (or strip out) a boolean an array of bytes.   No conversion or decoding is actually done, the memory is just copied, and the value is cast to the correct type.   A TRUE boolean is stroed as an integer value = 1.<BR>
+<BR>
+Inputs<BR>
+   - RawData  --  Array of bytes containing the data to be extracted.<BR>
+   - StartByte  --  The starting byte number (the first byte starts at 0)<BR>
+<BR>
+Outputs<BR>
+   - Boolean_Value  --  Boolean value.<BR>
+   - NextByte  --  The starting byte index for the next value (regardless of type).<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="Packet_decode_ByteI8" >Packet_decode_ByteI8</h3>
 <p><IMG SRC="Packet_decode_ByteI8_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Decode (or strip out) an unsigned byte from an array of bytes.   No conversion or decoding is actually done, the memory is just copied, and the value is cast to the correct type.<BR>
@@ -32,6 +46,20 @@ Inputs<BR>
 <BR>
 Outputs<BR>
    - FLT64_Value  --  Extracted float 64 (double) value.<BR>
+   - NextByte  --  The starting byte index for the next value (regardless of type).<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Packet_decode_Int16" >Packet_decode_Int16</h3>
+<p><IMG SRC="Packet_decode_Int16_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Decode (or strip out) a 16 bit integer value from the provided byte array.   No conversion or decoding is actually done, the memory is just copied, and the value is cast to the correct type.<BR>
+<BR>
+Inputs<BR>
+   - RawData  --  Array of bytes containing the data to be extracted.<BR>
+   - StartByte  --  The starting byte number (the first byte starts at 0)<BR>
+<BR>
+Outputs<BR>
+   - INT16_Value  --  Extracted 16 bit integer value.<BR>
    - NextByte  --  The starting byte index for the next value (regardless of type).<BR>
 </pre></p>
 <br>
@@ -64,6 +92,19 @@ Outputs<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Packet_encode_Boolean" >Packet_encode_Boolean</h3>
+<p><IMG SRC="Packet_encode_Boolean_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Encode (or append) a boolean to the end of an array of bytes.   The boolean is stored as an unsigned integer byte, where TRUE = 1, FALSE = 0.  <BR>
+<BR>
+Inputs<BR>
+   - RawData In  --  Array of bytes to be appended to..<BR>
+   - Boolean_Value  --  Boolean value.<BR>
+<BR>
+Outputs<BR>
+   - RawData Out  --  Array of bytes containing the appended value.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="Packet_encode_ByteI8" >Packet_encode_ByteI8</h3>
 <p><IMG SRC="Packet_encode_ByteI8_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Encode (or append) an unsigned byte at the end of an array of bytes.   No conversion is actually done, the memory is just copied to the end of the array.<BR>
@@ -84,6 +125,19 @@ Outputs<BR>
 Inputs<BR>
    - RawData In  --  Array of bytes to be appended to..<BR>
    - FLT64_Value  --  Double floating point value.<BR>
+<BR>
+Outputs<BR>
+   - RawData Out  --  Array of bytes containing the appended value.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="Packet_encode_Int16" >Packet_encode_Int16</h3>
+<p><IMG SRC="Packet_encode_Int16_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Encode (or append) a 16 bit integer at the end of an array of bytes.   No conversion is actually done, the memory is just copied to the end of the array.<BR>
+<BR>
+Inputs<BR>
+   - RawData In  --  Array of bytes to be appended to..<BR>
+   - Int16_Value  --  16 bit integer the form of an INT 16 value.<BR>
 <BR>
 Outputs<BR>
    - RawData Out  --  Array of bytes containing the appended value.<BR>
