@@ -23,7 +23,7 @@ C:\Shares\github\PhotonVisionLabVIEW\Temp2
 ENUM
 -------
 source
-C:\Shares\github\PhotonVisionLabVIEW\PVLib\PhotonVisionLib\TypeDef
+C:\Shares\github\PhotonVisionLabVIEW\PVLib\PhotonVisionLib\Enum
 
 output
 C:\Shares\github\PhotonVisionLabVIEW\Temp2

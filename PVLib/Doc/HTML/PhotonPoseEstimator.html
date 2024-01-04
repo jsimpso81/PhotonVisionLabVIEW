@@ -98,8 +98,8 @@ Outputs:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
-<h3 id="PhotonPoseEstimator_GetRobotToCamera" >PhotonPoseEstimator_GetRobotToCamera</h3>
-<p><IMG SRC="PhotonPoseEstimator_GetRobotToCamera_iconc.png"  ALIGN=BOTTOM></p>
+<h3 id="PhotonPoseEstimator_GetRobotToCameraTransform" >PhotonPoseEstimator_GetRobotToCameraTransform</h3>
+<p><IMG SRC="PhotonPoseEstimator_GetRobotToCameraTransform_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the robot to camera transform from the PhotonPoseEstimator cluster.<BR>
 <BR>
 Inputs: <BR>
@@ -118,6 +118,30 @@ Inputs: <BR>
 <BR>
 Outputs:<BR>
   --  PhotonPoseStrategy  -- enum -- Current strategy being used by the Photon Pose Estimator</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPoseEstimator_GetTagModel" >PhotonPoseEstimator_GetTagModel</h3>
+<p><IMG SRC="PhotonPoseEstimator_GetTagModel_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get the current tag model used by the PhotonPoseEstimator.<BR>
+<BR>
+Inputs: <BR>
+  --  PhotonVisionPoseEstimator  -- cluster -- The estimator.<BR>
+<BR>
+Outputs:<BR>
+  --  TagModel  -- cluster -- Current tag model.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPoseEstimator_InvalidatePoseCache" >PhotonPoseEstimator_InvalidatePoseCache</h3>
+<p><IMG SRC="PhotonPoseEstimator_InvalidatePoseCache_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Invalidate Pose Cache.<BR>
+<BR>
+Inputs: <BR>
+  --  PhotonVisionPoseEstimator  -- cluster -- The estimator.<BR>
+<BR>
+Outputs:<BR>
+  --  PhotonVisionPoseEstimator  -- cluster -- The updated estimator.<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonPoseEstimator_New" >PhotonPoseEstimator_New</h3>
@@ -230,6 +254,24 @@ Outputs:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPoseEstimator_SetMultiTagFallbackStrategy" >PhotonPoseEstimator_SetMultiTagFallbackStrategy</h3>
+<p><IMG SRC="PhotonPoseEstimator_SetMultiTagFallbackStrategy_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Set the current fallback strategy being used by the PhotonPoseEstimator.<BR>
+<BR>
+Inputs: <BR>
+  --  PhotonVisionPoseEstimator  -- cluster -- The estimator.<BR>
+  --  Fallback Strategy  -- enum -- Current strategy being used by the Photon Pose Estimator.  Current strategies include:<BR>
+            LOWEST_AMBIGUITY --  Choose the Pose with the lowest ambiguity<BR>
+            CLOSEST_TO_CAMERA_HEIGHT  --  Choose the Pose which is closest to the camera height.<BR>
+            CLOSEST_TO_REFERENCE_POSE  --  Choose the Pose which is closest to a set Reference position.<BR>
+            CLOSEST_TO_LAST_POSE  --  Choose the Pose which is closest to the last pose calculated<BR>
+            AVERAGE_BEST_TARGETS  --  Weight average of acceptable targets based on ambiguity..<BR>
+<BR>
+Outputs:<BR>
+  --  PhotonVisionPoseEstimator  -- cluster -- The updated estimator.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonPoseEstimator_SetPrimaryStategy" >PhotonPoseEstimator_SetPrimaryStategy</h3>
 <p><IMG SRC="PhotonPoseEstimator_SetPrimaryStategy_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Set the current strategy being used by the PhotonPoseEstimator.<BR>
@@ -276,8 +318,8 @@ Outputs:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
-<h3 id="PhotonPoseEstimator_SetRobotToCamera" >PhotonPoseEstimator_SetRobotToCamera</h3>
-<p><IMG SRC="PhotonPoseEstimator_SetRobotToCamera_iconc.png"  ALIGN=BOTTOM></p>
+<h3 id="PhotonPoseEstimator_SetRobotToCameraTransform" >PhotonPoseEstimator_SetRobotToCameraTransform</h3>
+<p><IMG SRC="PhotonPoseEstimator_SetRobotToCameraTransform_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Set the current strategy being used by the PhotonPoseEstimator.<BR>
 <BR>
 Inputs: <BR>
@@ -294,24 +336,42 @@ Outputs:<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPoseEstimator_SetTagModel" >PhotonPoseEstimator_SetTagModel</h3>
+<p><IMG SRC="PhotonPoseEstimator_SetTagModel_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Set the current tag model used by the PhotonPoseEstimator.<BR>
+<BR>
+Inputs: <BR>
+  --  PhotonVisionPoseEstimator  -- cluster -- The estimator.<BR>
+  --  TagModel  -- cluster -- Current April Tag model  used by the Photon Pose Estimator.  <BR>
+<BR>
+Outputs:<BR>
+  --  PhotonVisionPoseEstimator  -- cluster -- The updated estimator.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonPoseEstimator_Update" >PhotonPoseEstimator_Update</h3>
 <p><IMG SRC="PhotonPoseEstimator_Update_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Poll data from the configured cameras and update the estimated position of the robot. Returns empty if there are no cameras set or no targets were found from the cameras.  <BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Poll data from the configured cameras and update the estimated position of the robot. Returns empty if:<BR>
+<BR>
+    -   New data has not been received since the last call to {@code update()}.<BR>
+    -   No targets were found from the camera<BR>
+    -   There is no camera set<BR>
 <BR>
 Inputs:<BR>
   --  PhotonPoseEstimator  --  data cluster -- Data guiding how the position determination is done.<BR>
   -- PassThroughTime  -- double  -- FPGA time stamp in seconds.  (Optional. Default: Read FPGA time.)<BR>
 <BR>
 Outputs:<BR>
-  --  PhotonPoseEstimator  --  data cluster -- Updated data cluster.<BR>
-  --  PhotonEstimatedRobotPose  -- data cluster  -- Estimated robot position and timestamp.<BR>
+  --  PhotonPoseEstimator  --  data cluster -- Updated data cluster <BR>
+  --  PhotonEstimatedRobotPose  -- data cluster  -- Estimated robot with an estimated pose, timestamp, and targets used to create the estimate.<BR>
   -- PosFound -- boolean  -- A position has been determined.<BR>
   -- NewData  -- boolean  -- The data from photonvision is newer than the last time this routine was called.<BR>
+<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
-<h3 id="PhotonPoseEstimator_Update_PipeResult" >PhotonPoseEstimator_Update_PipeResult</h3>
-<p><IMG SRC="PhotonPoseEstimator_Update_PipeResult_iconc.png"  ALIGN=BOTTOM></p>
+<h3 id="PhotonPoseEstimator_Update_All" >PhotonPoseEstimator_Update_All</h3>
+<p><IMG SRC="PhotonPoseEstimator_Update_All_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Provided data from polling a camera,  update the estimated position of the robot. Returns empty if there are no cameras set or no targets were found from the cameras.  <BR>
 <BR>
 Inputs:<BR>
@@ -322,6 +382,25 @@ Inputs:<BR>
 Outputs:<BR>
   --  PhotonPoseEstimator  --  data cluster -- Updated data cluster.<BR>
   --  PhotonEstimatedRobotPose  -- data cluster  -- Estimated robot position and timestamp.<BR>
+  -- PosFound -- boolean  -- A position has been determined.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPoseEstimator_Update_PipeResult" >PhotonPoseEstimator_Update_PipeResult</h3>
+<p><IMG SRC="PhotonPoseEstimator_Update_PipeResult_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Provided data from polling a camera,  updates the estimated position of the robot. Returns empty if:<BR>
+<BR>
+    -   The timestamp of the provided pipeline result is the same as in the previous call to update<BR>
+    -   No targets were found in the pipeline results.<BR>
+<BR>
+Inputs:<BR>
+  --  PhotonPoseEstimator  --  data cluster -- Data guiding how the position determination is done.<BR>
+  -- PipelineResults  -- data cluster -- Data provided from PhotonCamera_GetLatestResults.<BR>
+  -- HasResults -- boolean  - TRUE if targets have been identified in the Pipeline results.  This can be provided by PhotonCamera_GetLatestResults.<BR>
+<BR>
+Outputs:<BR>
+  --  PhotonPoseEstimator  --  data cluster -- Updated data cluster.<BR>
+  --  PhotonEstimatedRobotPose  -- data cluster  -- Estimated robot position, timestamp, , and targets used to create the estimate.<BR>
   -- PosFound -- boolean  -- A position has been determined.<BR>
 </pre></p>
 <br>

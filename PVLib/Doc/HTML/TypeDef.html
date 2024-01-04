@@ -19,63 +19,28 @@
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PhotonMultiTargetPNPResultType" >TypeDef-PhotonMultiTargetPNPResultType</h3>
 <p><IMG SRC="PhotonMultiTargetPNPResultType_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">    /**<BR>
-     * If this result is valid. A false value indicates there was an error in estimation, and this<BR>
-     * result should not be used.<BR>
-     */<BR>
-    public final boolean isPresent;<BR>
-<BR>
-    /**<BR>
-     * The best-fit transform. The coordinate frame of this transform depends on the method which gave<BR>
-     * this result.<BR>
-     */<BR>
-    public final Transform3d best;<BR>
-<BR>
-    /** Reprojection error of the best solution, in pixels */<BR>
-    public final double bestReprojErr;<BR>
-<BR>
-    /**<BR>
-     * Alternate, ambiguous solution from solvepnp. If no alternate solution is found, this is equal<BR>
-     * to the best solution.<BR>
-     */<BR>
-    public final Transform3d alt;<BR>
-<BR>
-    /** If no alternate solution is found, this is bestReprojErr */<BR>
-    public final double altReprojErr;<BR>
-<BR>
-    /** If no alternate solution is found, this is 0 */<BR>
-    public final double ambiguity;</pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">
+   -   IsPresent  -  boolean  -  If this result is valid. A false value indicates there was an error in estimation, and this result should not be used.<BR>
+   -   best  -  transform3d  -  The best-fit transform. The coordinate frame of this transform depends on the method which gave this result.<BR>
+   -   BestReprojErr   -  double  -  Reprojection error of the best solution, in pixels<BR>
+   -   alt  -  transform3d  -  Alternate, ambiguous solution from solvepnp. If no alternate solution is found, this is equal to the best solution.<BR>
+   -   AltReproErr  -  double  -  Reprojection error of the alternate solution, in pixels.  If no alternate solution is found, this is bestReprojErr  <BR>
+   -   ambiguity  -  double  - <BR>  
+</pre></p>
 <p><IMG SRC="PhotonMultiTargetPNPResultType_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonMultiTargetPNPResultType.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PhotonPNPResultType" >TypeDef-PhotonPNPResultType</h3>
 <p><IMG SRC="PhotonPNPResultType_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">    /**<BR>
-     * If this result is valid. A false value indicates there was an error in estimation, and this<BR>
-     * result should not be used.<BR>
-     */<BR>
-    public final boolean isPresent;<BR>
-<BR>
-    /**<BR>
-     * The best-fit transform. The coordinate frame of this transform depends on the method which gave<BR>
-     * this result.<BR>
-     */<BR>
-    public final Transform3d best;<BR>
-<BR>
-    /** Reprojection error of the best solution, in pixels */<BR>
-    public final double bestReprojErr;<BR>
-<BR>
-    /**<BR>
-     * Alternate, ambiguous solution from solvepnp. If no alternate solution is found, this is equal<BR>
-     * to the best solution.<BR>
-     */<BR>
-    public final Transform3d alt;<BR>
-<BR>
-    /** If no alternate solution is found, this is bestReprojErr */<BR>
-    public final double altReprojErr;<BR>
-<BR>
-    /** If no alternate solution is found, this is 0 */<BR>
-    public final double ambiguity;</pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">    
+   -   isPresent  -  boolean  -  If this result is valid. A false value indicates there was an error in estimation, and this result should not be used.   <BR>
+   -   best  -  transform3d  -  The best-fit transform. The coordinate frame of this transform depends on the method which gave this result.
+   -   BestReprojErr  -  double  -  Reprojection error of the best solution, in pixels<BR>
+   -   alt  -  transform3d  -  Alternate, ambiguous solution from solvepnp. If no alternate solution is found, this is equal to the best solution.<BR>
+   -   AltReprojErr  -  double  -  If no alternate solution is found, this is bestReprojErr<BR>
+   -  Ambiguity  -  double  -  If no alternate solution is found, this is 0<BR>
+</pre></p>
+<br>
 <p><IMG SRC="PhotonPNPResultType_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonPNPResultType.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -101,6 +66,12 @@
 <p><IMG SRC="PhotonPoseEstimator_PotentialRobotLocation_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This data cluster is used internally by the PhotonPoseEstimator routines to compare individual potential positions.</pre></p>
 <p><IMG SRC="PhotonPoseEstimator_PotentialRobotLocation_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonPoseEstimator_PotentialRobotLocation.ctl" ALIGN=BOTTOM></p><br>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="TypeDef-PhotonTargetModel" >TypeDef-PhotonTargetModel</h3>
+<p><IMG SRC="PhotonTargetModel_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><IMG SRC="PhotonTargetModel_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonTargetModel.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PhotonTrackedTargetType" >TypeDef-PhotonTrackedTargetType</h3>
