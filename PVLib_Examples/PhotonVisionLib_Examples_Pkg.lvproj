@@ -402,7 +402,6 @@
 				<Item Name="Open File+.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Open File+.vi"/>
 				<Item Name="Open_Create_Replace File.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/Open_Create_Replace File.vi"/>
 				<Item Name="ParseXMLFragments.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/ParseXMLFragments.vi"/>
-				<Item Name="PhotonPoseEstimator_GetRobotToCamera.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/PhotonVisionLib/SubVI/PhotonPoseEstimator_GetRobotToCamera.vi"/>
 				<Item Name="PhotonVisionLib.lvlib" Type="Library" URL="/&lt;vilib&gt;/Rock Robotics/WPI/ThirdParty/PhotonVisionLib/PhotonVisionLib.lvlib"/>
 				<Item Name="PlugIn Accel.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Simulation/Protocol/Devices/Accel/PlugIn Accel.vi"/>
 				<Item Name="PlugIn AI.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/WPI/Simulation/Protocol/Devices/AI/PlugIn AI.vi"/>
@@ -970,7 +969,7 @@
 				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
-				<Property Name="Bld_version.build" Type="Int">19</Property>
+				<Property Name="Bld_version.build" Type="Int">21</Property>
 				<Property Name="Bld_version.major" Type="Int">2023</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
@@ -1006,7 +1005,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlibexampleslv19_2024.0.0-33_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlibexampleslv19_2024.0.0-34_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/PhotonVIsionLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -1014,7 +1013,7 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">34</Property>
+				<Property Name="PKG_buildNumber" Type="Int">35</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">photonvisionlibexampleslv19</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">7</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -1271,7 +1270,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlibexampleslv20_2024.0.0-33_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlibexampleslv20_2024.0.0-34_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/PhotonVIsionLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -1279,7 +1278,7 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">34</Property>
+				<Property Name="PKG_buildNumber" Type="Int">35</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">photonvisionlibexampleslv20</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">7</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -1536,7 +1535,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/JASJunkFrcTrajLib/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlibexampleslv23_2024.0.0-33_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlibexampleslv23_2024.0.0-34_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str">See github for complete release notes.   https://github.com/jsimpso81/PhotonVIsionLabVIEW/releases/latest</Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">true</Property>
@@ -1544,7 +1543,7 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">34</Property>
+				<Property Name="PKG_buildNumber" Type="Int">35</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">photonvisionlibexampleslv23</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">7</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>

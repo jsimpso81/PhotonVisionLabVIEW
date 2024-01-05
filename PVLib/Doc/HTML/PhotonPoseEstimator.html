@@ -372,16 +372,21 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonPoseEstimator_Update_All" >PhotonPoseEstimator_Update_All</h3>
 <p><IMG SRC="PhotonPoseEstimator_Update_All_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Provided data from polling a camera,  update the estimated position of the robot. Returns empty if there are no cameras set or no targets were found from the cameras.  <BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Provided data from polling a camera, updates the estimated position of the robot. Returns empty if:<BR>
+    -    The timestamp of the provided pipeline result is the same as in the previous call to Update<BR>
+    -    No targets were found in the pipeline results.<BR>
+<BR>
 <BR>
 Inputs:<BR>
   --  PhotonPoseEstimator  --  data cluster -- Data guiding how the position determination is done.<BR>
   -- PipelineResults  -- data cluster -- Data provided from PhotonCamera_GetLatestResults.<BR>
   -- HasResults -- boolean  - TRUE if targets have been identified in the Pipeline results.  This can be provided by PhotonCamera_GetLatestResults.<BR>
+   -- cameraMatrix  --  matrix  --  Camera calibration data that can be used in the case of no assigned PhotonCamera.<BR>
+   --  distCoeffs  -- matrix  --   Camera calibration data that can be used in the case of no assigned PhotonCamera<BR>
 <BR>
 Outputs:<BR>
   --  PhotonPoseEstimator  --  data cluster -- Updated data cluster.<BR>
-  --  PhotonEstimatedRobotPose  -- data cluster  -- Estimated robot position and timestamp.<BR>
+  --  PhotonEstimatedRobotPose  -- data cluster  -- Estimated robot position, timestamp, and targets used to create the estimte.<BR>
   -- PosFound -- boolean  -- A position has been determined.<BR>
 </pre></p>
 <br>
@@ -465,6 +470,15 @@ Determine the best target based on the closest to a set Reference position<BR>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This is an internal function.  Use Update or Update_Pipeline instead of this function.<BR>
 <BR>
 Determine the best target based the lowest ambiguity.<BR>
+<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonPoseEstimator_multiTagOnCoprocStrategy" >PhotonPoseEstimator_multiTagOnCoprocStrategy</h3>
+<p><IMG SRC="PhotonPoseEstimator_multiTagOnCoprocStrategy_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">This is an internal function.  Use Update or Update_Pipeline instead of this function.<BR>
+<BR>
+Determine the best target based the multi-target routine on the coprocessor<BR>
 <BR>
 </pre></p>
 <br>

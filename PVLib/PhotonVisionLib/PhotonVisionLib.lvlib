@@ -92,6 +92,7 @@
 			<Item Name="PhotonPoseEstimator_GetTagModel.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetTagModel.vi"/>
 			<Item Name="PhotonPoseEstimator_InvalidatePoseCache.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_InvalidatePoseCache.vi"/>
 			<Item Name="PhotonPoseEstimator_lowestAmbiguityStrategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_lowestAmbiguityStrategy.vi"/>
+			<Item Name="PhotonPoseEstimator_multiTagOnCoprocStrategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_multiTagOnCoprocStrategy.vi"/>
 			<Item Name="PhotonPoseEstimator_New.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_New.vi"/>
 			<Item Name="PhotonPoseEstimator_PackConfig.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_PackConfig.vi"/>
 			<Item Name="PhotonPoseEstimator_SetCamera.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetCamera.vi"/>
