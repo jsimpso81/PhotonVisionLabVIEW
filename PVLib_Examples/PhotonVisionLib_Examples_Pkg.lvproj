@@ -966,12 +966,13 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/examples</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{28B4C50E-6258-47A4-9812-E82EA2A09295}</Property>
-				<Property Name="Bld_removeVIObj" Type="Int">2</Property>
+				<Property Name="Bld_removeVIObj" Type="Int">1</Property>
 				<Property Name="Bld_userLogFile" Type="Path">../builds/All_SourceDistribution_log.txt</Property>
 				<Property Name="Bld_userLogFile.pathType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_version.build" Type="Int">21</Property>
-				<Property Name="Bld_version.major" Type="Int">2023</Property>
+				<Property Name="Bld_version.major" Type="Int">2924</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
+				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/examples</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
@@ -984,7 +985,7 @@
 				<Property Name="Destination[2].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="Destination[2].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="DestinationCount" Type="Int">3</Property>
-				<Property Name="Source[0].itemID" Type="Str">{FC3A089C-90E3-4717-BE91-53FBCA61A2A6}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{722A5130-D6EA-49BE-947E-8AAABB733900}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
@@ -1079,10 +1080,10 @@
 				<Property Name="PKG_dependencies[5].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[5].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
 				<Property Name="PKG_dependencies[5].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[5].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[5].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[5].Package.Section" Type="Str"></Property>
+				<Property Name="PKG_dependencies[5].Package.Synopsis" Type="Str"></Property>
 				<Property Name="PKG_dependencies[5].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[5].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[5].Type" Type="Str">Package</Property>
 				<Property Name="PKG_dependencies[6].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[6].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[6].MaxVersionInclusive" Type="Bool">false</Property>
@@ -1257,7 +1258,7 @@
 				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
 				<Property Name="PKG_sources[2].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">LabVIEW FRC PhotonVision Lib LabVIEW Examples</Property>
-				<Property Name="PKG_version" Type="Str">2024.0.0</Property>
+				<Property Name="PKG_version" Type="Str">2024.1.2</Property>
 			</Item>
 			<Item Name="photonvisionlibexampleslv20" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
@@ -1344,10 +1345,10 @@
 				<Property Name="PKG_dependencies[5].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[5].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
 				<Property Name="PKG_dependencies[5].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[5].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[5].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[5].Package.Section" Type="Str"></Property>
+				<Property Name="PKG_dependencies[5].Package.Synopsis" Type="Str"></Property>
 				<Property Name="PKG_dependencies[5].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[5].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[5].Type" Type="Str">Package</Property>
 				<Property Name="PKG_dependencies[6].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[6].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[6].MaxVersionInclusive" Type="Bool">false</Property>
@@ -1522,7 +1523,7 @@
 				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
 				<Property Name="PKG_sources[2].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">LabVIEW FRC PhotonVision Lib LabVIEW Examples</Property>
-				<Property Name="PKG_version" Type="Str">2024.0.0</Property>
+				<Property Name="PKG_version" Type="Str">2024.1.1</Property>
 			</Item>
 			<Item Name="photonvisionlibexampleslv23" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
@@ -1609,10 +1610,10 @@
 				<Property Name="PKG_dependencies[5].MinVersionType" Type="Str">Inclusive</Property>
 				<Property Name="PKG_dependencies[5].NIPKG.DisplayName" Type="Str">LabVIEW Runtime (32-bit)</Property>
 				<Property Name="PKG_dependencies[5].Package.Name" Type="Str">ni-labview-2019-runtime-engine-x86</Property>
-				<Property Name="PKG_dependencies[5].Package.Section" Type="Str">Programming Environments</Property>
-				<Property Name="PKG_dependencies[5].Package.Synopsis" Type="Str">The LabVIEW Runtime is a software add-on that enables engineers to run executables on a nondevelopment machine.</Property>
+				<Property Name="PKG_dependencies[5].Package.Section" Type="Str"></Property>
+				<Property Name="PKG_dependencies[5].Package.Synopsis" Type="Str"></Property>
 				<Property Name="PKG_dependencies[5].Relationship" Type="Str">Required Dependency</Property>
-				<Property Name="PKG_dependencies[5].Type" Type="Str">NIPKG</Property>
+				<Property Name="PKG_dependencies[5].Type" Type="Str">Package</Property>
 				<Property Name="PKG_dependencies[6].Enhanced" Type="Bool">false</Property>
 				<Property Name="PKG_dependencies[6].MaxVersion" Type="Str"></Property>
 				<Property Name="PKG_dependencies[6].MaxVersionInclusive" Type="Bool">false</Property>
@@ -1787,7 +1788,7 @@
 				<Property Name="PKG_sources[2].ID" Type="Ref">/My Computer/Build Specifications/All_SourceDistribution</Property>
 				<Property Name="PKG_sources[2].Type" Type="Str">Build</Property>
 				<Property Name="PKG_synopsis" Type="Str">LabVIEW FRC PhotonVision Lib LabVIEW Examples</Property>
-				<Property Name="PKG_version" Type="Str">2024.0.0</Property>
+				<Property Name="PKG_version" Type="Str">2024.1.2</Property>
 			</Item>
 		</Item>
 	</Item>
