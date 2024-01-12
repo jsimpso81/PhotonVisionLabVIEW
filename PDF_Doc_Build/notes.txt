@@ -4,33 +4,42 @@ Uses WPILIB LabVIEW Math documentation builder....
 
 DOC
 ---
+
+output
+C:\Shares\github\PhotonVisionLabVIEW\Temp
+
 source library
 C:\Shares\github\PhotonVisionLabVIEW\PVLib\PhotonVisionLib\SubVI
 
-output, 2nd source library
-C:\Shares\github\PhotonVisionLabVIEW\Temp
+	- Use second source - FALSE
+	- Group name is second part - FALSE
 
 
 TYPEDEF
 -------
-source
-C:\Shares\github\PhotonVisionLabVIEW\PVLib\PhotonVisionLib\TypeDef
 
 output
 C:\Shares\github\PhotonVisionLabVIEW\Temp2
+
+source
+C:\Shares\github\PhotonVisionLabVIEW\PVLib\PhotonVisionLib\TypeDef
 
 
 ENUM
 -------
-source
-C:\Shares\github\PhotonVisionLabVIEW\PVLib\PhotonVisionLib\Enum
-
 output
 C:\Shares\github\PhotonVisionLabVIEW\Temp2
 
-Need to edit TYPEDEF and ENUM html files since these are not in separate directories.
+source
+C:\Shares\github\PhotonVisionLabVIEW\PVLib\PhotonVisionLib\Enum
 
-Then merge TEMP2 back into TEMP.
+--------------------
+After done
+   - update doc file.  Add/remove sections.   Update external docs.  Update TOC. Make PDF
+   - update index.html
+   - copy PDF to pvlib / doc
+   - move temp and temp2 to pvlib / doc / html
+
 
 
 

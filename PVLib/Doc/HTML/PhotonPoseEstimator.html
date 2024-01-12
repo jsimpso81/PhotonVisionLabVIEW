@@ -171,14 +171,19 @@ Outputs:<BR>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Provided data from polling a camera,  update the estimated position of the robot. Returns empty if there are no cameras set or no targets were found from the cameras.  <BR>
 <BR>
 Inputs:<BR>
-  --  PhotonPoseEstimator  --  data cluster -- Data guiding how the position determination is done.<BR>
-  -- PipelineResults  -- data cluster -- Data provided from PhotonCamera_GetLatestResults.<BR>
-  -- HasResults -- boolean  - TRUE if targets have been identified in the Pipeline results.  This can be provided by PhotonCamera_GetLatestResults.<BR>
+   -  BaseTNName  --  string  -  Base network tables name.  Default: /photonvision<BR>
+   -  CustomAprilTagField  -- cluster  -- If a custom field is used, this defines the field.<BR>
+   -   UseCustomField  --  boolean  -- use a custom apriltag field instead of one of the predefined ones.<BR>
+   -   AprilTagField  -- enum  -  Field selector<BR>
+   -  Camera  --  string  -  Camera name<BR>
+   -   Primary Strategy  --  enum  -  Primary estimation strategy<BR>
+   -   HighestAmbiguity  -- double  --  Highest permitted ambiguity value<BR>
+   -  RobotToCamera  --  Transform3d  --  Position of camera on robot<BR>
+   -  InitialPose   --  Pose3d   -  Initial location of robot on the field.<BR>
+   -   Fallback Strategy  --  enum  -  Strategy to use when primary strategy fails.<BR>
 <BR>
 Outputs:<BR>
-  --  PhotonPoseEstimator  --  data cluster -- Updated data cluster.<BR>
-  --  PhotonEstimatedRobotPose  -- data cluster  -- Estimated robot position and timestamp.<BR>
-  -- PosFound -- boolean  -- A position has been determined.<BR>
+  --  PhotonPoseEstimator _Configuration --  data cluster -- Pose Estimator Configuration data<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
