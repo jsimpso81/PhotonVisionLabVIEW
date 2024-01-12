@@ -40,6 +40,7 @@
 			<Item Name="PhotonCamera_SetPipelineIndex.vi" Type="VI" URL="../SubVI/PhotonCamera_SetPipelineIndex.vi"/>
 			<Item Name="PhotonCamera_TakeInputSnapshot.vi" Type="VI" URL="../SubVI/PhotonCamera_TakeInputSnapshot.vi"/>
 			<Item Name="PhotonCamera_TakeOutputSnapshot.vi" Type="VI" URL="../SubVI/PhotonCamera_TakeOutputSnapshot.vi"/>
+			<Item Name="PhotonCamera_VerifyVersion.vi" Type="VI" URL="../SubVI/PhotonCamera_VerifyVersion.vi"/>
 		</Item>
 		<Item Name="PhotonEstimatedRobotPose" Type="Folder">
 			<Item Name="PhotonEstimatedRobotPose_GetAll.vi" Type="VI" URL="../SubVI/PhotonEstimatedRobotPose_GetAll.vi"/>

@@ -19,69 +19,52 @@
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PhotonMultiTargetPNPResultType" >TypeDef-PhotonMultiTargetPNPResultType</h3>
 <p><IMG SRC="PhotonMultiTargetPNPResultType_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">    /**<BR>
-     * If this result is valid. A false value indicates there was an error in estimation, and this<BR>
-     * result should not be used.<BR>
-     */<BR>
-    public final boolean isPresent;<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The best estimated transformation from solvePnP, and possibly an alternate transformation depending on the solvePNP method. If an alternate solution is present, the ambiguity value represents the ratio of reprojection error in the best solution to the alternate (best / alternate).<BR>
 <BR>
-    /**<BR>
-     * The best-fit transform. The coordinate frame of this transform depends on the method which gave<BR>
-     * this result.<BR>
-     */<BR>
-    public final Transform3d best;<BR>
+Note that the coordinate frame of these transforms depends on the implementing solvePnP method.<BR>
 <BR>
-    /** Reprojection error of the best solution, in pixels */<BR>
-    public final double bestReprojErr;<BR>
+Contains:<BR>
 <BR>
-    /**<BR>
-     * Alternate, ambiguous solution from solvepnp. If no alternate solution is found, this is equal<BR>
-     * to the best solution.<BR>
-     */<BR>
-    public final Transform3d alt;<BR>
-<BR>
-    /** If no alternate solution is found, this is bestReprojErr */<BR>
-    public final double altReprojErr;<BR>
-<BR>
-    /** If no alternate solution is found, this is 0 */<BR>
-    public final double ambiguity;</pre></p>
+   -   isPresent  -  boolean  -  If this result is valid. A false value indicates there was an error in estimation, and this result should not be used.<BR>
+   -   best  -  Transform3d  -  The best-fit transform. The coordinate frame of this transform depends on the method which gave this result.<BR>
+   -   bestReprojErr -  double  -  Reprojection error of the best solution, in pixels<BR>
+   -   alt  -  Transform3d  -  Alternate, ambiguous solution from solvepnp. If no alternate solution is found, this is equal to the best solution.<BR>
+   -   altReprojErr  -  double  -  If no alternate solution is found, this is bestReprojErr <BR>
+   -   ambiguity  -  double  -  If no alternate solution is found, this is 0 <BR>
+   -   FidudicalIDsUsed  - array  -  List of fiducial IDs used to determine multi target result.<BR>
+</pre></p>
 <p><IMG SRC="PhotonMultiTargetPNPResultType_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonMultiTargetPNPResultType.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PhotonPNPResultType" >TypeDef-PhotonPNPResultType</h3>
 <p><IMG SRC="PhotonPNPResultType_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">    /**<BR>
-     * If this result is valid. A false value indicates there was an error in estimation, and this<BR>
-     * result should not be used.<BR>
-     */<BR>
-    public final boolean isPresent;<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">The best estimated transformation from solvePnP, and possibly an alternate transformation depending on the solvePNP method. If an alternate solution is present, the ambiguity value represents the ratio of reprojection error in the best solution to the alternate (best / alternate).<BR>
 <BR>
-    /**<BR>
-     * The best-fit transform. The coordinate frame of this transform depends on the method which gave<BR>
-     * this result.<BR>
-     */<BR>
-    public final Transform3d best;<BR>
+Note that the coordinate frame of these transforms depends on the implementing solvePnP method.<BR>
 <BR>
-    /** Reprojection error of the best solution, in pixels */<BR>
-    public final double bestReprojErr;<BR>
+Contains:<BR>
 <BR>
-    /**<BR>
-     * Alternate, ambiguous solution from solvepnp. If no alternate solution is found, this is equal<BR>
-     * to the best solution.<BR>
-     */<BR>
-    public final Transform3d alt;<BR>
-<BR>
-    /** If no alternate solution is found, this is bestReprojErr */<BR>
-    public final double altReprojErr;<BR>
-<BR>
-    /** If no alternate solution is found, this is 0 */<BR>
-    public final double ambiguity;</pre></p>
+   -   isPresent  -  boolean  -  If this result is valid. A false value indicates there was an error in estimation, and this result should not be used.<BR>
+   -   best  -  Transform3d  -  The best-fit transform. The coordinate frame of this transform depends on the method which gave this result.<BR>
+   -   bestReprojErr -  double  -  Reprojection error of the best solution, in pixels<BR>
+   -   alt  -  Transform3d  -  Alternate, ambiguous solution from solvepnp. If no alternate solution is found, this is equal to the best solution.<BR>
+   -   altReprojErr  -  double  -  If no alternate solution is found, this is bestReprojErr <BR>
+   -   ambiguity  -  double  -  If no alternate solution is found, this is 0 <BR>
+</pre></p>
 <p><IMG SRC="PhotonPNPResultType_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonPNPResultType.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PhotonPipelineResultType" >TypeDef-PhotonPipelineResultType</h3>
 <p><IMG SRC="PhotonPipelineResultType_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a pipeline result from a PhotonCamera.<BR>
+<BR>
+Contains:<BR>
+<BR>
+   -   targets  -  array  -  Targets to store.<BR>
+   -   latencyMillis  -  double  -  Latency in milliseconds.<BR>
+   -   timestampSeconds  -  double  -  Timestamp in milliseconds.<BR>
+   -   MultiTargetPNPResult  -  cluster  -  Multi-tag result<BR>
+</pre></p>
 <p><IMG SRC="PhotonPipelineResultType_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonPipelineResultType.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -93,7 +76,18 @@
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PhotonPoseEstimator_Configuration" >TypeDef-PhotonPoseEstimator_Configuration</h3>
 <p><IMG SRC="PhotonPoseEstimator_Configuration_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Stores the configuration information for PhotonPoseEstimator_Execute.  <BR>
+<BR>
+Contains:<BR>
+   -   AprilTagField  -- enum  -  Field selector<BR>
+   -   UseCustomField  --  boolean  -- use a custom apriltag field instead of one of the predefined ones.<BR>
+   -   Primary Strategy  --  enum  -  Primary estimation strategy<BR>
+   -   Fallback Strategy  --  enum  -  Strategy to use when primary strategy fails.<BR>
+   -  Camera  --  string  -  Camera name<BR>
+   -  BaseTNName  --  string  -  Base network tables name.  Default: /photonvision<BR>
+   -  RobotToCamera  --  Transform3d  --  Position of camera on robot<BR>
+   -  InitialPose   --  Pose3d   -  Initial location of robot on the field.<BR>
+   -  CustomAprilTagField  -- cluster  -- If a custom field is used, this defines the field.</pre></p>
 <p><IMG SRC="PhotonPoseEstimator_Configuration_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonPoseEstimator_Configuration.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -105,19 +99,26 @@
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PhotonTargetModel" >TypeDef-PhotonTargetModel</h3>
 <p><IMG SRC="PhotonTargetModel_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Describes the 3d model of a target.<BR>
+<BR>
+Contains:<BR>
+   -   vertices   -   Translation3d array  -  Translations of this target's vertices relative to its pose. Rectangular and spherical targets will have four vertices. See their respective constructors for more info.<BR>
+   -   isPlanar  -  boolean  <BR>
+   -   isSpherical  -  boolean<BR>
+</pre></p>
 <p><IMG SRC="PhotonTargetModel_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonTargetModel.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-PhotonTrackedTargetType" >TypeDef-PhotonTrackedTargetType</h3>
 <p><IMG SRC="PhotonTrackedTargetType_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Stores information about identified tracked targets.<BR>
+</pre></p>
 <p><IMG SRC="PhotonTrackedTargetType_frontpanel.png"  ALT="PhotonVisionLib.lvlib:PhotonTrackedTargetType.ctl" ALIGN=BOTTOM></p><br>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="TypeDef-TargetCornerType" >TypeDef-TargetCornerType</h3>
 <p><IMG SRC="TargetCornerType_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Represents a point in an image at the corner of the minimum-area bounding rectangle, in pixels.  Origin at the top left, plus-x to the right, plus-y down.</pre></p>
 <p><IMG SRC="TargetCornerType_frontpanel.png"  ALT="PhotonVisionLib.lvlib:TargetCornerType.ctl" ALIGN=BOTTOM></p><br>
 <br>
 </BODY>

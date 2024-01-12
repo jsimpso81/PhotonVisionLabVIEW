@@ -57,6 +57,14 @@ Outputs:<BR>
 <p><IMG SRC="PhotonTrackedTarget_GetDetectedCorners_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get Detected Corners from Tracked Target<BR>
 <BR>
+For fiducials, the order is known and is always counter-clock wise around the tag, like so:<BR>
+<BR>
+       -> +X     3 ----- 2<BR>
+       |               |           |<BR>
+      V               |           |<BR>
+      +Y            0 ----- 1<BR>
+<BR>
+<BR>
 Inputs:<BR>
    - TrackedTarget  --  Parsed TrackedTarget cluster.<BR>
 <BR>
@@ -66,13 +74,13 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonTrackedTarget_GetFiducialId" >PhotonTrackedTarget_GetFiducialId</h3>
 <p><IMG SRC="PhotonTrackedTarget_GetFiducialId_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get Area from Tracked Target<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get Fidicial ID (April Tag value) from Tracked Target<BR>
 <BR>
 Inputs:<BR>
    - TrackedTarget  --  Parsed TrackedTarget cluster.<BR>
 <BR>
 Outputs:<BR>
-   -  Area  -- Area value</pre></p>
+   -  Fiducial ID </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonTrackedTarget_GetMinAreaRectCorners" >PhotonTrackedTarget_GetMinAreaRectCorners</h3>
@@ -99,13 +107,14 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonTrackedTarget_GetPoseAmbiguity" >PhotonTrackedTarget_GetPoseAmbiguity</h3>
 <p><IMG SRC="PhotonTrackedTarget_GetPoseAmbiguity_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Get Area from Tracked Target<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"> Get the ratio of best:alternate pose reprojection errors, called ambiguity. This is betweeen 0  and 1 (0 being no ambiguity, and 1 meaning both have the same reprojection error). Numbers above 0.2 are likely to be ambiguous. -1 if invalid.<BR>
 <BR>
 Inputs:<BR>
    - TrackedTarget  --  Parsed TrackedTarget cluster.<BR>
 <BR>
 Outputs:<BR>
-   -  Area  -- Area value</pre></p>
+   -  PoseAmbiguity  - double  -  Get the ratio of pose reprojection errors, called ambiguity. Numbers above 0.2 are likely to be ambiguous. -1 if invalid.<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonTrackedTarget_GetSkew" >PhotonTrackedTarget_GetSkew</h3>

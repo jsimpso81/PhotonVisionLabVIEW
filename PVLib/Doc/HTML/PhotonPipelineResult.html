@@ -61,7 +61,7 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonPipelineResult_GetMultiTagResult" >PhotonPipelineResult_GetMultiTagResult</h3>
 <p><IMG SRC="PhotonPipelineResult_GetMultiTagResult_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the best target in this pipeline result. If there are no targets, this method will return an empty target. The best target is determined by the target sort mode in the PhotonVision UI.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the MultiTargetPNPREsultin this pipeline result.   Be sure to check  IsPresent before using the pose estimate!<BR>
 <BR>
 Inputs:<BR>
    - PipelineResult  --  Parsed PipelineResult cluster.<BR>
@@ -114,6 +114,7 @@ Outputs:<BR>
 Inputs:<BR>
    -  Latency_Millis  --  Latency, milliseconds<BR>
    -  TrackedTargets  --  Array of TracedTarget clusters<BR>
+   - PhotonMultiTargetPNPResult  -  Multi Target Result.<BR>
 <BR>
 Outputs:<BR>
    - PipelineResult  --  Parsed PipelineResult cluster.</pre></p>

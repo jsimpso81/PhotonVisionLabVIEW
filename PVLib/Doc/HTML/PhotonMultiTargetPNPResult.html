@@ -10,25 +10,40 @@
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonMultiTargetPNPResult_MAX_IDS" >PhotonMultiTargetPNPResult_MAX_IDS</h3>
 <p><IMG SRC="PhotonMultiTargetPNPResult_MAX_IDS_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Seeing 32 apriltags at once seems like a sane limit.  (Current value is 32.)</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonMultiTargetPNPResult_New" >PhotonMultiTargetPNPResult_New</h3>
 <p><IMG SRC="PhotonMultiTargetPNPResult_New_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Creaate an empty Multi Target PNP result<BR>
+<BR>
+Inputs:<BR>
+   -   PhotonPNPResult  -  cluster  -  Result to store in this mutilTarget results<BR>
+   -   FiducialIDsUsed  -  Array  -  List of Fidicual IDS (april tags) used to locate this target.<BR>
+<BR>
+Outputs:<BR>
+   - MultiTargetPNPResult  -  cluster  -  created result cluster.<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonMultiTargetPNPResult_New_Empty" >PhotonMultiTargetPNPResult_New_Empty</h3>
 <p><IMG SRC="PhotonMultiTargetPNPResult_New_Empty_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;"></pre></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Creaate an empty Multi Target PNP result<BR>
+<BR>
+Inputs:<BR>
+   <none><BR>
+<BR>
+Outputs:<BR>
+   - MultiTargetPNPResult  -  cluster  -  created empty result cluster.<BR>
+</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonMultiTargetPNPResult_pack" >PhotonMultiTargetPNPResult_pack</h3>
 <p><IMG SRC="PhotonMultiTargetPNPResult_pack_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Encode a TrackedTarget cluster into an array of bytes.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Encode a MultiTargetPNPResult cluster into an array of bytes.<BR>
 <BR>
 Inputs:<BR>
-   - TrackedTarget  --  TrackedTarget cluster.<BR>
+   - MultiTagetPNPResult --  cluster containing the data to pack.<BR>
 <BR>
 Outputs:<BR>
    -  RawDataOut  --  Byte array containing the encoded data.<BR>
@@ -37,13 +52,15 @@ Outputs:<BR>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonMultiTargetPNPResult_unpack" >PhotonMultiTargetPNPResult_unpack</h3>
 <p><IMG SRC="PhotonMultiTargetPNPResult_unpack_iconc.png"  ALIGN=BOTTOM></p>
-<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function to parse the data for each target returned by PhotonCamera_GetLatestResult.<BR>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Internal function to parse the data for MultiTargetPNPResult<BR>
 <BR>
 Inputs:<BR>
    -  RawData  --  Byte array containing the data to parse.<BR>
+   -  StartingByte  -  Index into RawData to start parsing.  Beginning of data is index 0.<BR>
 <BR>
 Outputs:<BR>
-   - TrackedTarget  --  Parsed TrackedTarget cluster.</pre></p>
+   - MultiTargetPNPResult  --  Parsed result cluster.<BR>
+   - NextByte  --  Index to byte following ths data in RawData.</pre></p>
 <br>
 </BODY>
 </HTML>

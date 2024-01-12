@@ -352,10 +352,9 @@ Outputs:<BR>
 <h3 id="PhotonPoseEstimator_Update" >PhotonPoseEstimator_Update</h3>
 <p><IMG SRC="PhotonPoseEstimator_Update_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Poll data from the configured cameras and update the estimated position of the robot. Returns empty if:<BR>
-<BR>
-    -   New data has not been received since the last call to {@code update()}.<BR>
-    -   No targets were found from the camera<BR>
-    -   There is no camera set<BR>
+   -   New data has not been received since the last call to {@code update()}.<BR>
+   -   No targets were found from the camera<BR>
+   -   There is no camera set<BR>
 <BR>
 Inputs:<BR>
   --  PhotonPoseEstimator  --  data cluster -- Data guiding how the position determination is done.<BR>
@@ -373,8 +372,9 @@ Outputs:<BR>
 <h3 id="PhotonPoseEstimator_Update_All" >PhotonPoseEstimator_Update_All</h3>
 <p><IMG SRC="PhotonPoseEstimator_Update_All_iconc.png"  ALIGN=BOTTOM></p>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Provided data from polling a camera, updates the estimated position of the robot. Returns empty if:<BR>
-    -    The timestamp of the provided pipeline result is the same as in the previous call to Update<BR>
-    -    No targets were found in the pipeline results.<BR>
+   -   New data has not been received since the last call to update.<BR>
+   -   No targets were found from the camera<BR>
+   -   There is no camera set<BR>
 <BR>
 <BR>
 Inputs:<BR>
@@ -397,7 +397,8 @@ Outputs:<BR>
 <BR>
     -   The timestamp of the provided pipeline result is the same as in the previous call to update<BR>
     -   No targets were found in the pipeline results.<BR>
-<BR>
+    -   No camera is set.<BR>
+ <BR>
 Inputs:<BR>
   --  PhotonPoseEstimator  --  data cluster -- Data guiding how the position determination is done.<BR>
   -- PipelineResults  -- data cluster -- Data provided from PhotonCamera_GetLatestResults.<BR>

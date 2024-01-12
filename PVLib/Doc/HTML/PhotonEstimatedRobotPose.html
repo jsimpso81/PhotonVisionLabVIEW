@@ -19,7 +19,8 @@ Inputs:<BR>
 Outputs:<BR>
   --  EstimatedPose  --  Pose3d  -- Estimated absolute position of robot on field.<BR>
   -- TimeStamp --  Double  -- Time stamp (seconds) of the packet from photonvision.  This uses the FGPA  elapsed time.<BR>
-</pre></p>
+  --  TargetsUsed  -- array  --  Array of targets used for pose estimation<BR>
+  --  StrategyUsed  --  enum  -- Strategy used for pose estimation.</pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
 <h3 id="PhotonEstimatedRobotPose_New" >PhotonEstimatedRobotPose_New</h3>
@@ -29,7 +30,8 @@ Outputs:<BR>
 Inputs:<BR>
   --  EstimatedPose  --  Pose3d  -- Estimated absolute position of robot on field.<BR>
   -- TimeStamp --  Double  -- Time stamp (seconds) of the packet from photonvision.  This uses the FGPA  elapsed time.<BR>
-<BR>
+  --  TargetsUsed  -- array  --  A list of the targets used to compute this pose<BR>
+  --  Strrategy  -- enum  --  The strategy actually used to produce this pose<BR>
 Outputs:<BR>
    - PhotonEstimatedRobotPose  --  Created data cluster..</pre></p>
 <br>

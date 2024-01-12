@@ -14,9 +14,11 @@
 <BR>
 Inputs:<BR>
    -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+   -   BaseNTName  -  string  -  Base Nework Table name.  (Optional.  Default: /photonvision )<BR>
   <BR>
 Outputs:<BR>
    - CameraMatrix  - matrix -  3 x 3 matrix of camera intrinsics.  If empty, nothing was returned or nothing exists.<BR>
+   -  Error Out  -- Contains error information if a Network table ot other error occured.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -26,9 +28,11 @@ Outputs:<BR>
 <BR>
 Inputs:<BR>
    -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+   -   BaseNTName  -  string  -  Base Nework Table name.  (Optional.  Default: /photonvision )<BR>
   <BR>
 Outputs:<BR>
    - DistCoeffs  - matrix -  5 x 1 matrix of distortion coefficients.  If empty, nothing was returned or nothing exists.<BR>
+   -  Error Out  -- Contains error information if a Network table ot other error occured.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -38,9 +42,11 @@ Outputs:<BR>
 <BR>
 Inputs:<BR>
    -  CameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+   -   BaseNTName  -  string  -  Base Nework Table name.  (Optional.  Default: /photonvision )<BR>
   <BR>
 Outputs:<BR>
    -  DriverMode  --  Boolean indicating whether the camera is in driver mode.<BR>
+   -  Error Out  -- Contains error information if a Network table ot other error occured.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -49,10 +55,11 @@ Outputs:<BR>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returns the current LED mode.<BR>
 <BR>
 Inputs:<BR>
-  <none><BR>
+   -   BaseNTName  -  string  -  Base Nework Table name.  (Optional.  Default: /photonvision )<BR>
 <BR>
 Outputs:<BR>
    -  LedMode  --  The current LED mode.<BR>
+   -  Error Out  -- Contains error information if a Network table ot other error occured.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -62,12 +69,14 @@ Outputs:<BR>
 <BR>
 Inputs:<BR>
    -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+   -   BaseNTName  -  string  -  Base Nework Table name.  (Optional.  Default: /photonvision )<BR>
    - PassThroughTime  --  (Optional.  Default: Use FPGA time.)  Time.  Once time is available from network tables, this won't be needed.  (Seconds)<BR>
    - EstimatedDataAndSampleLatency  --  Estimated Network Table packet latency.  This is based on the frames per second and other communications latencies.  (Optional.  Default: 0.050)  Once time is available from network tables, this won't be needed.  <BR>
 <BR>
 Outputs:<BR>
    -  PipelineResult  --  The latest pipeline result data cluster<BR>
    - HasTargets  --  Boolean indicating if any targets were found<BR>
+   -  Error Out  -- Contains error information if a Network table ot other error occured.<BR>
 <BR>
 </pre></p>
 <br>
@@ -78,9 +87,11 @@ Outputs:<BR>
 <BR>
 Inputs:<BR>
    -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+   -   BaseNTName  -  string  -  Base Nework Table name.  (Optional.  Default: /photonvision )<BR>
   <BR>
 Outputs:<BR>
    -  PipelineIndex  --  Active Pipeline Index<BR>
+   -  Error Out  -- Contains error information if a Network table ot other error occured.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -89,10 +100,11 @@ Outputs:<BR>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Returned photonvision version string<BR>
 <BR>
 Inputs:<BR>
-   -  CameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+   -   BaseNTName  -  string  -  Base Nework Table name.  (Optional.  Default: /photonvision )<BR>
   <BR>
 Outputs:<BR>
    -  Version  -  string  -  Photonvision version string<BR>
+   -  Error Out  -- Contains error information if a Network table ot other error occured.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -102,9 +114,11 @@ Outputs:<BR>
 <BR>
 Inputs:<BR>
    -  CameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+   -   BaseNTName  -  string  -  Base Nework Table name.  (Optional.  Default: /photonvision )<BR>
   <BR>
 Outputs:<BR>
    -  IsConnected --  TRUE if communications have been received within the last 0.5 seconds.<BR>
+   -  Error Out  -- Contains error information if a Network table ot other error occured.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -114,9 +128,11 @@ Outputs:<BR>
   <BR>
 Inputs:<BR>
    -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+   -   BaseNTName  -  string  -  Base Nework Table name.  (Optional.  Default: /photonvision )<BR>
    -  DriverMode  --  Whether to set driver mode.<BR>
+<BR>
 Outputs:<BR>
-   -  >none<  <BR>
+   -  Error Out  -- Contains error information if a Network table ot other error occured.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -125,11 +141,11 @@ Outputs:<BR>
 <p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Sets the LED mode.<BR>
 <BR>
 Inputs:<BR>
-   -  CameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+   -   BaseNTName  -  string  -  Base Nework Table name.  (Optional.  Default: /photonvision )<BR>
    -  LedMod  --   The mode to set to.<BR>
 <BR>
 Outputs:<BR>
-   -  >none<<BR>
+   -  Error Out  -- Contains error information if a Network table ot other error occured.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -139,10 +155,11 @@ Outputs:<BR>
   <BR>
 Inputs:<BR>
    -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+   -   BaseNTName  -  string  -  Base Nework Table name.  (Optional.  Default: /photonvision )<BR>
    -  index The active pipeline index.<BR>
 <BR>
 Outputs:<BR>
-   -  >none<  <BR>
+   -  Error Out  -- Contains error information if a Network table ot other error occured.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -152,9 +169,10 @@ Outputs:<BR>
 <BR>
 Inputs:<BR>
    -  cameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+   -   BaseNTName  -  string  -  Base Nework Table name.  (Optional.  Default: /photonvision )<BR>
 <BR>
 Outputs:<BR>
-   -  >none< <BR>
+   -  Error Out  -- Contains error information if a Network table ot other error occured.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
@@ -164,9 +182,25 @@ Outputs:<BR>
 <BR>
 Inputs:<BR>
    -  CameraName  --  The nickname of the camera (found in the PhotonVision UI).<BR>
+   -   BaseNTName  -  string  -  Base Nework Table name.  (Optional.  Default: /photonvision )<BR>
 <BR>
 Outputs:<BR>
-   -  >none< <BR>
+   -  Error Out  -- Contains error information if a Network table ot other error occured.<BR>
+</pre></p>
+<br>
+<HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
+<h3 id="PhotonCamera_VerifyVersion" >PhotonCamera_VerifyVersion</h3>
+<p><IMG SRC="PhotonCamera_VerifyVersion_iconc.png"  ALIGN=BOTTOM></p>
+<p><pre style="overflow-x: auto; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; word-wrap: break-word; font-family: serif; font-size: 12pt;">Verify photonvision version string<BR>
+<BR>
+Currently this does not write a driver station message if the version is wrong.<BR>
+<BR>
+Inputs:<BR>
+   -   BaseNTName  -  string  -  Base Nework Table name.  (Optional.  Default: /photonvision )<BR>
+  <BR>
+Outputs:<BR>
+   -  VersionOk  -  string  -  Version matches co-processor.<BR>
+   -  Error Out  -- Contains error information if a Network table ot other error occured.<BR>
 </pre></p>
 <br>
 </BODY>
