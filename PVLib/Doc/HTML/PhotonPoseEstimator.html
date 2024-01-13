@@ -27,9 +27,12 @@ Inputs:<BR>
   -- HasResults -- boolean  - TRUE if targets have been identified in the Pipeline results.  This can be provided by PhotonCamera_GetLatestResults.<BR>
 <BR>
 Outputs:<BR>
+   -   EstimatedPose3d  -  Pose3d  -  Estimated 3d position.  Only value if NewPoseFound = TRUE<BR>
+   -   EstimatedPose2d  -  Pose2d  -  Estimated 2d position.  Only value if NewPoseFound = TRUE<BR>
+   -   NewPoseFound -- boolean  -- A new position has been determined.<BR>
+   -   StrategyUsed  -- enum  -- The strategy used to determine the pose.<BR>
+   -   PhotonEstimatedRobotPose  -- data cluster  -- Complete estimated robot position and timestamp data cluster<BR>
   --  PhotonPoseEstimator  --  data cluster -- Updated data cluster.<BR>
-  --  PhotonEstimatedRobotPose  -- data cluster  -- Estimated robot position and timestamp.<BR>
-  -- PosFound -- boolean  -- A position has been determined.<BR>
 </pre></p>
 <br>
 <HR SIZE="6" WIDTH=" 100.000000%" COLOR="GREY">
