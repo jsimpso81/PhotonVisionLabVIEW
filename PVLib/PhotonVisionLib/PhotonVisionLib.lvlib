@@ -106,6 +106,7 @@
 			<Item Name="PhotonPoseEstimator_closestToReferencePoseStrategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_closestToReferencePoseStrategy.vi"/>
 			<Item Name="PhotonPoseEstimator_closestToReferencePoseStrategy_calc.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_closestToReferencePoseStrategy_calc.vi"/>
 			<Item Name="PhotonPoseEstimator_Execute.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_Execute.vi"/>
+			<Item Name="PhotonPoseEstimator_Execute_OLD.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_Execute_OLD.vi"/>
 			<Item Name="PhotonPoseEstimator_GetEmptyPose.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetEmptyPose.vi"/>
 			<Item Name="PhotonPoseEstimator_GetFieldTags.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetFieldTags.vi"/>
 			<Item Name="PhotonPoseEstimator_GetHighestAmbiguity.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetHighestAmbiguity.vi"/>
