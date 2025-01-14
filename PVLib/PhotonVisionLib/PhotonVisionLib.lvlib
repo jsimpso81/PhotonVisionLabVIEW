@@ -15,22 +15,30 @@
 		<Item Name="Packet" Type="Folder">
 			<Item Name="Packet_decode_Boolean.vi" Type="VI" URL="../SubVI/Packet_decode_Boolean.vi"/>
 			<Item Name="Packet_decode_ByteI8.vi" Type="VI" URL="../SubVI/Packet_decode_ByteI8.vi"/>
+			<Item Name="Packet_decode_Flt32.vi" Type="VI" URL="../SubVI/Packet_decode_Flt32.vi"/>
 			<Item Name="Packet_decode_Flt64.vi" Type="VI" URL="../SubVI/Packet_decode_Flt64.vi"/>
 			<Item Name="Packet_decode_Int16.vi" Type="VI" URL="../SubVI/Packet_decode_Int16.vi"/>
 			<Item Name="Packet_decode_Int32.vi" Type="VI" URL="../SubVI/Packet_decode_Int32.vi"/>
+			<Item Name="Packet_decode_Int64.vi" Type="VI" URL="../SubVI/Packet_decode_Int64.vi"/>
+			<Item Name="Packet_decode_TargetCornerArray.vi" Type="VI" URL="../SubVI/Packet_decode_TargetCornerArray.vi"/>
 			<Item Name="Packet_decode_Transform3d.vi" Type="VI" URL="../SubVI/Packet_decode_Transform3d.vi"/>
 			<Item Name="Packet_encode_Boolean.vi" Type="VI" URL="../SubVI/Packet_encode_Boolean.vi"/>
 			<Item Name="Packet_encode_ByteI8.vi" Type="VI" URL="../SubVI/Packet_encode_ByteI8.vi"/>
+			<Item Name="Packet_encode_FLT32.vi" Type="VI" URL="../SubVI/Packet_encode_FLT32.vi"/>
 			<Item Name="Packet_encode_FLT64.vi" Type="VI" URL="../SubVI/Packet_encode_FLT64.vi"/>
 			<Item Name="Packet_encode_Int16.vi" Type="VI" URL="../SubVI/Packet_encode_Int16.vi"/>
 			<Item Name="Packet_encode_Int32.vi" Type="VI" URL="../SubVI/Packet_encode_Int32.vi"/>
+			<Item Name="Packet_encode_Int64.vi" Type="VI" URL="../SubVI/Packet_encode_Int64.vi"/>
+			<Item Name="Packet_encode_TargetCornerArray.vi" Type="VI" URL="../SubVI/Packet_encode_TargetCornerArray.vi"/>
 			<Item Name="Packet_encode_Transform3d.vi" Type="VI" URL="../SubVI/Packet_encode_Transform3d.vi"/>
 		</Item>
 		<Item Name="PhotonCamera" Type="Folder">
+			<Item Name="PhotonCamera_CheckTimeSyncOrWarn.vi" Type="VI" URL="../SubVI/PhotonCamera_CheckTimeSyncOrWarn.vi"/>
 			<Item Name="PhotonCamera_GetCameraMatrix.vi" Type="VI" URL="../SubVI/PhotonCamera_GetCameraMatrix.vi"/>
 			<Item Name="PhotonCamera_GetDistCoeffs.vi" Type="VI" URL="../SubVI/PhotonCamera_GetDistCoeffs.vi"/>
 			<Item Name="PhotonCamera_GetDriverMode.vi" Type="VI" URL="../SubVI/PhotonCamera_GetDriverMode.vi"/>
 			<Item Name="PhotonCamera_GetLatestResult.vi" Type="VI" URL="../SubVI/PhotonCamera_GetLatestResult.vi"/>
+			<Item Name="PhotonCamera_GetLatestResult_OLD.vi" Type="VI" URL="../SubVI/PhotonCamera_GetLatestResult_OLD.vi"/>
 			<Item Name="PhotonCamera_GetLEDMode.vi" Type="VI" URL="../SubVI/PhotonCamera_GetLEDMode.vi"/>
 			<Item Name="PhotonCamera_GetPipelineIndex.vi" Type="VI" URL="../SubVI/PhotonCamera_GetPipelineIndex.vi"/>
 			<Item Name="PhotonCamera_GetVersion.vi" Type="VI" URL="../SubVI/PhotonCamera_GetVersion.vi"/>
@@ -47,32 +55,47 @@
 			<Item Name="PhotonEstimatedRobotPose_New.vi" Type="VI" URL="../SubVI/PhotonEstimatedRobotPose_New.vi"/>
 		</Item>
 		<Item Name="PhotonMultiTargetPNPResult" Type="Folder">
+			<Item Name="PhotonMultiTargetPNPResult_Equals.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_Equals.vi"/>
 			<Item Name="PhotonMultiTargetPNPResult_MAX_IDS.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_MAX_IDS.vi"/>
 			<Item Name="PhotonMultiTargetPNPResult_New.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_New.vi"/>
 			<Item Name="PhotonMultiTargetPNPResult_New_Empty.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_New_Empty.vi"/>
 			<Item Name="PhotonMultiTargetPNPResult_pack.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_pack.vi"/>
 			<Item Name="PhotonMultiTargetPNPResult_unpack.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_unpack.vi"/>
 		</Item>
+		<Item Name="PhotonPipelineMetadata" Type="Folder">
+			<Item Name="PhotonPipelineMetadata_Equals.vi" Type="VI" URL="../SubVI/PhotonPipelineMetadata_Equals.vi"/>
+			<Item Name="PhotonPipelineMetadata_GetAll.vi" Type="VI" URL="../SubVI/PhotonPipelineMetadata_GetAll.vi"/>
+			<Item Name="PhotonPipelineMetadata_GetLatency.vi" Type="VI" URL="../SubVI/PhotonPipelineMetadata_GetLatency.vi"/>
+			<Item Name="PhotonPipelineMetadata_New.vi" Type="VI" URL="../SubVI/PhotonPipelineMetadata_New.vi"/>
+			<Item Name="PhotonPipelineMetadata_Pack.vi" Type="VI" URL="../SubVI/PhotonPipelineMetadata_Pack.vi"/>
+			<Item Name="PhotonPipelineMetadata_Unpack.vi" Type="VI" URL="../SubVI/PhotonPipelineMetadata_Unpack.vi"/>
+		</Item>
 		<Item Name="PhotonPipelineResult" Type="Folder">
 			<Item Name="PhotonPipelineResult_Equals.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_Equals.vi"/>
 			<Item Name="PhotonPipelineResult_GetBestTarget.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetBestTarget.vi"/>
 			<Item Name="PhotonPipelineResult_GetBestTargetById.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetBestTargetById.vi"/>
 			<Item Name="PhotonPipelineResult_GetLatency_Millis.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetLatency_Millis.vi"/>
+			<Item Name="PhotonPipelineResult_GetMetadata.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetMetadata.vi"/>
 			<Item Name="PhotonPipelineResult_GetMultiTagResult.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetMultiTagResult.vi"/>
+			<Item Name="PhotonPipelineResult_GetTargetCount.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetTargetCount.vi"/>
 			<Item Name="PhotonPipelineResult_GetTargets.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetTargets.vi"/>
 			<Item Name="PhotonPipelineResult_GetTimeStampSecs.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_GetTimeStampSecs.vi"/>
 			<Item Name="PhotonPipelineResult_HasTargets.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_HasTargets.vi"/>
 			<Item Name="PhotonPipelineResult_New.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_New.vi"/>
+			<Item Name="PhotonPipelineResult_NewIndividual.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_NewIndividual.vi"/>
 			<Item Name="PhotonPipelineResult_Pack.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_Pack.vi"/>
 			<Item Name="PhotonPipelineResult_SetTimeStampSecs.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_SetTimeStampSecs.vi"/>
 			<Item Name="PhotonPipelineResult_Unpack.vi" Type="VI" URL="../SubVI/PhotonPipelineResult_Unpack.vi"/>
 		</Item>
 		<Item Name="PhotonPNPResult" Type="Folder">
+			<Item Name="PhotonPNPResult_Equals.vi" Type="VI" URL="../SubVI/PhotonPNPResult_Equals.vi"/>
 			<Item Name="PhotonPNPResult_New.vi" Type="VI" URL="../SubVI/PhotonPNPResult_New.vi"/>
 			<Item Name="PhotonPNPResult_New_Empty.vi" Type="VI" URL="../SubVI/PhotonPNPResult_New_Empty.vi"/>
 			<Item Name="PhotonPNPResult_New_OnlyBest.vi" Type="VI" URL="../SubVI/PhotonPNPResult_New_OnlyBest.vi"/>
 			<Item Name="PhotonPNPResult_pack.vi" Type="VI" URL="../SubVI/PhotonPNPResult_pack.vi"/>
-			<Item Name="PhotonPNPResult_unpackt.vi" Type="VI" URL="../SubVI/PhotonPNPResult_unpackt.vi"/>
+			<Item Name="PhotonPNPResult_pack_OLD.vi" Type="VI" URL="../SubVI/PhotonPNPResult_pack_OLD.vi"/>
+			<Item Name="PhotonPNPResult_unpack.vi" Type="VI" URL="../SubVI/PhotonPNPResult_unpack.vi"/>
+			<Item Name="PhotonPNPResult_unpack_OLD.vi" Type="VI" URL="../SubVI/PhotonPNPResult_unpack_OLD.vi"/>
 		</Item>
 		<Item Name="PhotonPoseEstimator" Type="Folder">
 			<Item Name="PhotonPoseEstimator_averageBestTargetsStrategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_averageBestTargetsStrategy.vi"/>
@@ -123,6 +146,8 @@
 			<Item Name="PhotonTrackedTarget_GetArea.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetArea.vi"/>
 			<Item Name="PhotonTrackedTarget_GetBestCameraToTarget.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetBestCameraToTarget.vi"/>
 			<Item Name="PhotonTrackedTarget_GetDetectedCorners.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetDetectedCorners.vi"/>
+			<Item Name="PhotonTrackedTarget_GetDetectedObjectClassID.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetDetectedObjectClassID.vi"/>
+			<Item Name="PhotonTrackedTarget_GetDetectedObjectConfidence.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetDetectedObjectConfidence.vi"/>
 			<Item Name="PhotonTrackedTarget_GetFiducialId.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetFiducialId.vi"/>
 			<Item Name="PhotonTrackedTarget_GetMinAreaRectCorners.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetMinAreaRectCorners.vi"/>
 			<Item Name="PhotonTrackedTarget_GetPitch.vi" Type="VI" URL="../SubVI/PhotonTrackedTarget_GetPitch.vi"/>
@@ -150,10 +175,14 @@
 			<Item Name="TargetCorner_GetAll.vi" Type="VI" URL="../SubVI/TargetCorner_GetAll.vi"/>
 			<Item Name="TargetCorner_New.vi" Type="VI" URL="../SubVI/TargetCorner_New.vi"/>
 		</Item>
+		<Item Name="TimeSyncServer" Type="Folder">
+			<Item Name="TimeSyncServer_Execute.vi" Type="VI" URL="../SubVI/TimeSyncServer_Execute.vi"/>
+		</Item>
 	</Item>
 	<Item Name="TypeDef" Type="Folder">
 		<Item Name="PhotonEstimatedRobotPoseType.ctl" Type="VI" URL="../TypeDef/PhotonEstimatedRobotPoseType.ctl"/>
 		<Item Name="PhotonMultiTargetPNPResultType.ctl" Type="VI" URL="../TypeDef/PhotonMultiTargetPNPResultType.ctl"/>
+		<Item Name="PhotonPipelineMetadataType.ctl" Type="VI" URL="../TypeDef/PhotonPipelineMetadataType.ctl"/>
 		<Item Name="PhotonPipelineResultType.ctl" Type="VI" URL="../TypeDef/PhotonPipelineResultType.ctl"/>
 		<Item Name="PhotonPNPResultType.ctl" Type="VI" URL="../TypeDef/PhotonPNPResultType.ctl"/>
 		<Item Name="PhotonPoseEstimator_Configuration.ctl" Type="VI" URL="../TypeDef/PhotonPoseEstimator_Configuration.ctl"/>
