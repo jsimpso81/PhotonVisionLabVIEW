@@ -12,6 +12,9 @@
 		<Item Name="VisionLEDModeType.ctl" Type="VI" URL="../Enum/VisionLEDModeType.ctl"/>
 	</Item>
 	<Item Name="SubVI" Type="Folder">
+		<Item Name="Globals" Type="Folder">
+			<Item Name="PhotonVision_Globals.vi" Type="VI" URL="../SubVI/PhotonVision_Globals.vi"/>
+		</Item>
 		<Item Name="Packet" Type="Folder">
 			<Item Name="Packet_decode_Boolean.vi" Type="VI" URL="../SubVI/Packet_decode_Boolean.vi"/>
 			<Item Name="Packet_decode_ByteI8.vi" Type="VI" URL="../SubVI/Packet_decode_ByteI8.vi"/>
@@ -33,7 +36,7 @@
 			<Item Name="Packet_encode_Transform3d.vi" Type="VI" URL="../SubVI/Packet_encode_Transform3d.vi"/>
 		</Item>
 		<Item Name="PhotonCamera" Type="Folder">
-			<Item Name="PhotonCamera_CheckTimeSyncOrWarn.vi" Type="VI" URL="../SubVI/PhotonCamera_CheckTimeSyncOrWarn.vi"/>
+			<Item Name="PhotonCamera_ChkTimeSync.vi" Type="VI" URL="../SubVI/PhotonCamera_ChkTimeSync.vi"/>
 			<Item Name="PhotonCamera_GetCameraMatrix.vi" Type="VI" URL="../SubVI/PhotonCamera_GetCameraMatrix.vi"/>
 			<Item Name="PhotonCamera_GetDistCoeffs.vi" Type="VI" URL="../SubVI/PhotonCamera_GetDistCoeffs.vi"/>
 			<Item Name="PhotonCamera_GetDriverMode.vi" Type="VI" URL="../SubVI/PhotonCamera_GetDriverMode.vi"/>
@@ -177,7 +180,8 @@
 			<Item Name="TargetCorner_New.vi" Type="VI" URL="../SubVI/TargetCorner_New.vi"/>
 		</Item>
 		<Item Name="TimeSyncServer" Type="Folder">
-			<Item Name="TimeSyncServer_Execute.vi" Type="VI" URL="../SubVI/TimeSyncServer_Execute.vi"/>
+			<Item Name="TimeSyncServ_GetAll.vi" Type="VI" URL="../SubVI/TimeSyncServ_GetAll.vi"/>
+			<Item Name="TimeSyncSrv_Exec.vi" Type="VI" URL="../SubVI/TimeSyncSrv_Exec.vi"/>
 		</Item>
 	</Item>
 	<Item Name="TypeDef" Type="Folder">
