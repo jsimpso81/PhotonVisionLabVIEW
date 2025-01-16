@@ -179,9 +179,10 @@
 			<Item Name="TargetCorner_GetAll.vi" Type="VI" URL="../SubVI/TargetCorner_GetAll.vi"/>
 			<Item Name="TargetCorner_New.vi" Type="VI" URL="../SubVI/TargetCorner_New.vi"/>
 		</Item>
-		<Item Name="TimeSyncServer" Type="Folder">
+		<Item Name="TimeSync" Type="Folder">
+			<Item Name="TimeSyncClient_Exec.vi" Type="VI" URL="../SubVI/TimeSyncClient_Exec.vi"/>
+			<Item Name="TimeSyncServ_Exec.vi" Type="VI" URL="../SubVI/TimeSyncServ_Exec.vi"/>
 			<Item Name="TimeSyncServ_GetAll.vi" Type="VI" URL="../SubVI/TimeSyncServ_GetAll.vi"/>
-			<Item Name="TimeSyncSrv_Exec.vi" Type="VI" URL="../SubVI/TimeSyncSrv_Exec.vi"/>
 		</Item>
 	</Item>
 	<Item Name="TypeDef" Type="Folder">
