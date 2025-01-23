@@ -41,7 +41,6 @@
 			<Item Name="PhotonCamera_GetDistCoeffs.vi" Type="VI" URL="../SubVI/PhotonCamera_GetDistCoeffs.vi"/>
 			<Item Name="PhotonCamera_GetDriverMode.vi" Type="VI" URL="../SubVI/PhotonCamera_GetDriverMode.vi"/>
 			<Item Name="PhotonCamera_GetLatestResult.vi" Type="VI" URL="../SubVI/PhotonCamera_GetLatestResult.vi"/>
-			<Item Name="PhotonCamera_GetLatestResult_OLD.vi" Type="VI" URL="../SubVI/PhotonCamera_GetLatestResult_OLD.vi"/>
 			<Item Name="PhotonCamera_GetLEDMode.vi" Type="VI" URL="../SubVI/PhotonCamera_GetLEDMode.vi"/>
 			<Item Name="PhotonCamera_GetPipelineIndex.vi" Type="VI" URL="../SubVI/PhotonCamera_GetPipelineIndex.vi"/>
 			<Item Name="PhotonCamera_GetVersion.vi" Type="VI" URL="../SubVI/PhotonCamera_GetVersion.vi"/>
@@ -92,13 +91,12 @@
 		</Item>
 		<Item Name="PhotonPNPResult" Type="Folder">
 			<Item Name="PhotonPNPResult_Equals.vi" Type="VI" URL="../SubVI/PhotonPNPResult_Equals.vi"/>
+			<Item Name="PhotonPNPResult_IsPresent.vi" Type="VI" URL="../SubVI/PhotonPNPResult_IsPresent.vi"/>
 			<Item Name="PhotonPNPResult_New.vi" Type="VI" URL="../SubVI/PhotonPNPResult_New.vi"/>
 			<Item Name="PhotonPNPResult_New_Empty.vi" Type="VI" URL="../SubVI/PhotonPNPResult_New_Empty.vi"/>
 			<Item Name="PhotonPNPResult_New_OnlyBest.vi" Type="VI" URL="../SubVI/PhotonPNPResult_New_OnlyBest.vi"/>
 			<Item Name="PhotonPNPResult_pack.vi" Type="VI" URL="../SubVI/PhotonPNPResult_pack.vi"/>
-			<Item Name="PhotonPNPResult_pack_OLD.vi" Type="VI" URL="../SubVI/PhotonPNPResult_pack_OLD.vi"/>
 			<Item Name="PhotonPNPResult_unpack.vi" Type="VI" URL="../SubVI/PhotonPNPResult_unpack.vi"/>
-			<Item Name="PhotonPNPResult_unpack_OLD.vi" Type="VI" URL="../SubVI/PhotonPNPResult_unpack_OLD.vi"/>
 		</Item>
 		<Item Name="PhotonPoseEstimator" Type="Folder">
 			<Item Name="PhotonPoseEstimator_averageBestTargetsStrategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_averageBestTargetsStrategy.vi"/>
@@ -109,7 +107,6 @@
 			<Item Name="PhotonPoseEstimator_closestToReferencePoseStrategy.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_closestToReferencePoseStrategy.vi"/>
 			<Item Name="PhotonPoseEstimator_closestToReferencePoseStrategy_calc.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_closestToReferencePoseStrategy_calc.vi"/>
 			<Item Name="PhotonPoseEstimator_Execute.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_Execute.vi"/>
-			<Item Name="PhotonPoseEstimator_Execute_OLD.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_Execute_OLD.vi"/>
 			<Item Name="PhotonPoseEstimator_GetEmptyPose.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetEmptyPose.vi"/>
 			<Item Name="PhotonPoseEstimator_GetFieldTags.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetFieldTags.vi"/>
 			<Item Name="PhotonPoseEstimator_GetHighestAmbiguity.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetHighestAmbiguity.vi"/>
