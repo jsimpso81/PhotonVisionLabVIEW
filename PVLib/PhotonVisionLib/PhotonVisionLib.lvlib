@@ -40,12 +40,14 @@
 			<Item Name="PhotonCamera_GetCameraMatrix.vi" Type="VI" URL="../SubVI/PhotonCamera_GetCameraMatrix.vi"/>
 			<Item Name="PhotonCamera_GetDistCoeffs.vi" Type="VI" URL="../SubVI/PhotonCamera_GetDistCoeffs.vi"/>
 			<Item Name="PhotonCamera_GetDriverMode.vi" Type="VI" URL="../SubVI/PhotonCamera_GetDriverMode.vi"/>
+			<Item Name="PhotonCamera_GetFPSLimit.vi" Type="VI" URL="../SubVI/PhotonCamera_GetFPSLimit.vi"/>
 			<Item Name="PhotonCamera_GetLatestResult.vi" Type="VI" URL="../SubVI/PhotonCamera_GetLatestResult.vi"/>
 			<Item Name="PhotonCamera_GetLEDMode.vi" Type="VI" URL="../SubVI/PhotonCamera_GetLEDMode.vi"/>
 			<Item Name="PhotonCamera_GetPipelineIndex.vi" Type="VI" URL="../SubVI/PhotonCamera_GetPipelineIndex.vi"/>
 			<Item Name="PhotonCamera_GetVersion.vi" Type="VI" URL="../SubVI/PhotonCamera_GetVersion.vi"/>
 			<Item Name="PhotonCamera_IsConnected.vi" Type="VI" URL="../SubVI/PhotonCamera_IsConnected.vi"/>
 			<Item Name="PhotonCamera_SetDriverMode.vi" Type="VI" URL="../SubVI/PhotonCamera_SetDriverMode.vi"/>
+			<Item Name="PhotonCamera_SetFPSLimit.vi" Type="VI" URL="../SubVI/PhotonCamera_SetFPSLimit.vi"/>
 			<Item Name="PhotonCamera_SetLEDMode.vi" Type="VI" URL="../SubVI/PhotonCamera_SetLEDMode.vi"/>
 			<Item Name="PhotonCamera_SetPipelineIndex.vi" Type="VI" URL="../SubVI/PhotonCamera_SetPipelineIndex.vi"/>
 			<Item Name="PhotonCamera_TakeInputSnapshot.vi" Type="VI" URL="../SubVI/PhotonCamera_TakeInputSnapshot.vi"/>
@@ -53,16 +55,16 @@
 			<Item Name="PhotonCamera_VerifyVersion.vi" Type="VI" URL="../SubVI/PhotonCamera_VerifyVersion.vi"/>
 		</Item>
 		<Item Name="PhotonEstimatedRobotPose" Type="Folder">
+			<Item Name="PhotonMultiTargetPNPResult" Type="Folder">
+				<Item Name="PhotonMultiTargetPNPResult_Equals.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_Equals.vi"/>
+				<Item Name="PhotonMultiTargetPNPResult_MAX_IDS.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_MAX_IDS.vi"/>
+				<Item Name="PhotonMultiTargetPNPResult_New.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_New.vi"/>
+				<Item Name="PhotonMultiTargetPNPResult_New_Empty.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_New_Empty.vi"/>
+				<Item Name="PhotonMultiTargetPNPResult_pack.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_pack.vi"/>
+				<Item Name="PhotonMultiTargetPNPResult_unpack.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_unpack.vi"/>
+			</Item>
 			<Item Name="PhotonEstimatedRobotPose_GetAll.vi" Type="VI" URL="../SubVI/PhotonEstimatedRobotPose_GetAll.vi"/>
 			<Item Name="PhotonEstimatedRobotPose_New.vi" Type="VI" URL="../SubVI/PhotonEstimatedRobotPose_New.vi"/>
-		</Item>
-		<Item Name="PhotonMultiTargetPNPResult" Type="Folder">
-			<Item Name="PhotonMultiTargetPNPResult_Equals.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_Equals.vi"/>
-			<Item Name="PhotonMultiTargetPNPResult_MAX_IDS.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_MAX_IDS.vi"/>
-			<Item Name="PhotonMultiTargetPNPResult_New.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_New.vi"/>
-			<Item Name="PhotonMultiTargetPNPResult_New_Empty.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_New_Empty.vi"/>
-			<Item Name="PhotonMultiTargetPNPResult_pack.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_pack.vi"/>
-			<Item Name="PhotonMultiTargetPNPResult_unpack.vi" Type="VI" URL="../SubVI/PhotonMultiTargetPNPResult_unpack.vi"/>
 		</Item>
 		<Item Name="PhotonPipelineMetadata" Type="Folder">
 			<Item Name="PhotonPipelineMetadata_Equals.vi" Type="VI" URL="../SubVI/PhotonPipelineMetadata_Equals.vi"/>
