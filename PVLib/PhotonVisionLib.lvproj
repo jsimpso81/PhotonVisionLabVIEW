@@ -42,6 +42,7 @@
 				<Item Name="FPGA_SystemStart Async Agent.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/System/FPGA_SystemStart Async Agent.vi"/>
 				<Item Name="FPGA_UtilitiesRead LocalTime.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/Utilities/FPGA_UtilitiesRead LocalTime.vi"/>
 				<Item Name="NetComm_UnloadCPPStartupProgram.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/SystemInterfaces/NetworkCommunication/NetComm_UnloadCPPStartupProgram.vi"/>
+				<Item Name="NI_Gmath.lvlib" Type="Library" URL="/&lt;vilib&gt;/gmath/NI_Gmath.lvlib"/>
 				<Item Name="NI_Matrix.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/Matrix/NI_Matrix.lvlib"/>
 				<Item Name="NT Check Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Check Errors.vi"/>
 				<Item Name="NT Datatype.ctl" Type="VI" URL="/&lt;vilib&gt;/Rock Robotics/Network Tables/NT Datatype.ctl"/>
@@ -137,10 +138,9 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{A5AA42FE-442B-4C03-92A9-ADA463D4DE3C}</Property>
 				<Property Name="Bld_removeVIObj" Type="Int">1</Property>
-				<Property Name="Bld_version.build" Type="Int">135</Property>
-				<Property Name="Bld_version.major" Type="Int">2024</Property>
+				<Property Name="Bld_version.build" Type="Int">137</Property>
+				<Property Name="Bld_version.major" Type="Int">2026</Property>
 				<Property Name="Bld_version.minor" Type="Int">1</Property>
-				<Property Name="Bld_version.patch" Type="Int">2</Property>
 				<Property Name="Destination[0].destName" Type="Str">Destination Directory</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/ThirdParty</Property>
 				<Property Name="Destination[0].path.type" Type="Str">relativeToProject</Property>
@@ -168,7 +168,7 @@
 				<Property Name="Destination[7].path" Type="Path">../builds/NI_AB_PROJECTNAME/ThirdParty/PhotonVisionLib/Enum</Property>
 				<Property Name="Destination[7].path.type" Type="Str">relativeToProject</Property>
 				<Property Name="DestinationCount" Type="Int">8</Property>
-				<Property Name="Source[0].itemID" Type="Str">{CC462A02-47DD-4840-A38A-37BEBE01AF61}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{162505A4-19FF-4F74-A4AF-888A148208AC}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">4</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/PhotonVisionLib.lvlib</Property>
@@ -229,7 +229,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/PhotonVisionLib Package LV2019/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlib-lv2019_2026.0.0-76_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlib-lv2019_2026.1.0-78_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
@@ -237,7 +237,7 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">77</Property>
+				<Property Name="PKG_buildNumber" Type="Int">79</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">PhotonVisionLib Package LV2019</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -361,7 +361,7 @@
 				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Doc</Property>
 				<Property Name="PKG_sources[1].Type" Type="Str">Folder</Property>
 				<Property Name="PKG_synopsis" Type="Str">PhotonVisionLib Library for First Robotics Competition</Property>
-				<Property Name="PKG_version" Type="Str">2026.0.0</Property>
+				<Property Name="PKG_version" Type="Str">2026.1.0</Property>
 			</Item>
 			<Item Name="PhotonVisionLib Package LV2020" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
@@ -373,7 +373,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/PhotonVisionLib Package LV2019/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlib-lv2020_2026.0.0-76_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlib-lv2020_2026.1.0-78_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
@@ -381,7 +381,7 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">77</Property>
+				<Property Name="PKG_buildNumber" Type="Int">79</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">PhotonVisionLib Package LV2020</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -505,7 +505,7 @@
 				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Doc</Property>
 				<Property Name="PKG_sources[1].Type" Type="Str">Folder</Property>
 				<Property Name="PKG_synopsis" Type="Str">PhotonVisionLib Library for First Robotics Competition</Property>
-				<Property Name="PKG_version" Type="Str">2026.0.0</Property>
+				<Property Name="PKG_version" Type="Str">2026.1.0</Property>
 			</Item>
 			<Item Name="PhotonVisionLib Package LV2023" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
@@ -517,7 +517,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/PhotonVisionLib Package LV2019/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlib-lv2023_2026.0.0-76_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlib-lv2023_2026.1.0-78_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
@@ -525,7 +525,7 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">77</Property>
+				<Property Name="PKG_buildNumber" Type="Int">79</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">PhotonVisionLib Package LV2023</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -649,7 +649,7 @@
 				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Doc</Property>
 				<Property Name="PKG_sources[1].Type" Type="Str">Folder</Property>
 				<Property Name="PKG_synopsis" Type="Str">PhotonVisionLib Library for First Robotics Competition</Property>
-				<Property Name="PKG_version" Type="Str">2026.0.0</Property>
+				<Property Name="PKG_version" Type="Str">2026.1.0</Property>
 			</Item>
 			<Item Name="PhotonVisionLib Package LV2025" Type="{E661DAE2-7517-431F-AC41-30807A3BDA38}">
 				<Property Name="NIPKG_addToFeed" Type="Bool">false</Property>
@@ -661,7 +661,7 @@
 				<Property Name="NIPKG_installerBuiltBefore" Type="Bool">false</Property>
 				<Property Name="NIPKG_installerDestination" Type="Path">../builds/NI_AB_PROJECTNAME/PhotonVisionLib Package LV2019/Package Installer</Property>
 				<Property Name="NIPKG_installerDestination.Type" Type="Str">relativeToCommon</Property>
-				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlib-lv2025_2026.0.0-76_windows_all.nipkg</Property>
+				<Property Name="NIPKG_lastBuiltPackage" Type="Str">photonvisionlib-lv2025_2026.1.0-78_windows_all.nipkg</Property>
 				<Property Name="NIPKG_license" Type="Ref"></Property>
 				<Property Name="NIPKG_releaseNotes" Type="Str"></Property>
 				<Property Name="NIPKG_storeProduct" Type="Bool">false</Property>
@@ -669,7 +669,7 @@
 				<Property Name="PKG_actions.Count" Type="Int">0</Property>
 				<Property Name="PKG_autoIncrementBuild" Type="Bool">true</Property>
 				<Property Name="PKG_autoSelectDeps" Type="Bool">true</Property>
-				<Property Name="PKG_buildNumber" Type="Int">77</Property>
+				<Property Name="PKG_buildNumber" Type="Int">79</Property>
 				<Property Name="PKG_buildSpecName" Type="Str">PhotonVisionLib Package LV2025</Property>
 				<Property Name="PKG_dependencies.Count" Type="Int">4</Property>
 				<Property Name="PKG_dependencies[0].Enhanced" Type="Bool">false</Property>
@@ -793,7 +793,7 @@
 				<Property Name="PKG_sources[1].ID" Type="Ref">/My Computer/Doc</Property>
 				<Property Name="PKG_sources[1].Type" Type="Str">Folder</Property>
 				<Property Name="PKG_synopsis" Type="Str">PhotonVisionLib Library for First Robotics Competition</Property>
-				<Property Name="PKG_version" Type="Str">2026.0.0</Property>
+				<Property Name="PKG_version" Type="Str">2026.1.0</Property>
 			</Item>
 		</Item>
 	</Item>

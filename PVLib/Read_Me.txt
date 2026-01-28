@@ -42,10 +42,13 @@ photonPNPResult
 
 photonPoseEstimator
 	photon-lib\src\main\java\org\photonvision\photonPoseEstimator.java
+	2026TODO:
+		- REVIEW AND LIST
 
 photonTargetModel
 	*** photon-targeting\src\main\java\org\photonvision\estimation
 	NOT photon-core\src\main\java\org\photonvision\vision\target
+	2026 TODO: - nothing
 
 photonTrackedTarget
 	photon-targeting\src\main\java\org\photonvision\targeting\PhotonTrackedTarget.java
@@ -74,4 +77,8 @@ photoncamera
 	- version checking switch
 	- alerts
 	- version checking
+
+photonposeest
+	- multicam on rio strategy
+	- CONSTRAINED_SOLVEPNP stragegy
 
