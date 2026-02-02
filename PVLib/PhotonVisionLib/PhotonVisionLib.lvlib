@@ -130,6 +130,7 @@
 			<Item Name="PhotonPoseEstimator_GetTagModel.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_GetTagModel.vi"/>
 			<Item Name="PhotonPoseEstimator_InvalidatePoseCache.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_InvalidatePoseCache.vi"/>
 			<Item Name="PhotonPoseEstimator_New.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_New.vi"/>
+			<Item Name="PhotonPoseEstimator_New_Minimal.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_New_Minimal.vi"/>
 			<Item Name="PhotonPoseEstimator_PackConfig.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_PackConfig.vi"/>
 			<Item Name="PhotonPoseEstimator_ResetHeadingData_Rotation2d.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_ResetHeadingData_Rotation2d.vi"/>
 			<Item Name="PhotonPoseEstimator_ResetHeadingData_Rotation3d.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_ResetHeadingData_Rotation3d.vi"/>
@@ -144,6 +145,7 @@
 			<Item Name="PhotonPoseEstimator_SetReferencePose_Pose2d.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetReferencePose_Pose2d.vi"/>
 			<Item Name="PhotonPoseEstimator_SetRobotToCameraTransform.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetRobotToCameraTransform.vi"/>
 			<Item Name="PhotonPoseEstimator_SetTagModel.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_SetTagModel.vi"/>
+			<Item Name="PhotonPoseEstimator_ShouldEstimate.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_ShouldEstimate.vi"/>
 			<Item Name="PhotonPoseEstimator_Strategy_averageBestTargets_calc.vi" Type="VI" URL="../SubVI/PhotonPoseEstimator_Strategy_averageBestTargets_calc.vi">
 				<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 			</Item>
